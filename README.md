@@ -29,8 +29,10 @@ graph/context kernels.
 
 ## Dependency note
 
-`rcount-district` and `rcount-rhist` use sibling paths to RLINE for `rctx-core`
-and `rhist-core`. RPLAN dependencies point at the sibling RPLAN repo.
+`rcount-district` and `rcount-rhist` use GitHub dependencies on RLINE for
+`rctx-core` and `rhist-core`. RPLAN dependencies also resolve from GitHub. For
+local peer development, copy `.cargo\config.local.example.toml` to
+`.cargo\config.toml`.
 
 ## Commands
 

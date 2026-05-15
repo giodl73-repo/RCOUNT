@@ -493,6 +493,7 @@ dependencies = [
 [[package]]
 name = "rctx-core"
 version = "0.1.0"
+source = "git+https://github.com/giodl73-repo/RLINE.git?branch=master#7a612a3be30e398590787f64cfae097e865ff4b8"
 dependencies = [
  "serde",
  "serde_json",
@@ -503,6 +504,7 @@ dependencies = [
 [[package]]
 name = "rhist-core"
 version = "0.1.0"
+source = "git+https://github.com/giodl73-repo/RLINE.git?branch=master#7a612a3be30e398590787f64cfae097e865ff4b8"
 dependencies = [
  "rctx-core",
  "serde",
@@ -514,6 +516,7 @@ dependencies = [
 [[package]]
 name = "rplan-core"
 version = "0.1.0"
+source = "git+https://github.com/giodl73-repo/RPLAN.git?branch=master#e63b5a88f4a9c4bae3c0bc0d58164eb6015fd6b5"
 dependencies = [
  "serde",
  "serde_json",
@@ -524,6 +527,7 @@ dependencies = [
 [[package]]
 name = "rplan-io"
 version = "0.1.0"
+source = "git+https://github.com/giodl73-repo/RPLAN.git?branch=master#e63b5a88f4a9c4bae3c0bc0d58164eb6015fd6b5"
 dependencies = [
  "rplan-core",
  "serde",

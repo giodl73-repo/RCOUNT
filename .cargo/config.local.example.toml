@@ -1,0 +1,13 @@
+# Copy this file to .cargo/config.toml when developing RCOUNT beside the RLINE
+# and RPLAN checkouts at C:\src\RLINE and C:\src\RPLAN. The checked-in
+# Cargo.toml remains wired to GitHub so CI and clean clones use canonical
+# upstream packages.
+
+[patch."https://github.com/giodl73-repo/RLINE.git"]
+rctx-core = { path = "../RLINE/crates/rctx-core" }
+rhist-core = { path = "../RLINE/crates/rhist-core" }
+
+[patch."https://github.com/giodl73-repo/RPLAN.git"]
+rplan-core = { path = "../RPLAN/crates/rplan-core" }
+rplan-io = { path = "../RPLAN/crates/rplan-io" }
+

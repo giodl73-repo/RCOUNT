@@ -26,8 +26,7 @@ BISECT redistricting workflows.
 
 ## Dependency plan
 
-1. Depend on sibling RPLAN for plan package types.
-2. Depend on sibling RLINE for `rctx-core` and `rhist-core`.
-3. Later switch sibling paths to git dependencies after the consumer migration
-   pulse lands.
+1. Depend on GitHub RPLAN for plan package types.
+2. Depend on GitHub RLINE for `rctx-core` and `rhist-core`.
+3. Use `.cargo\config.local.example.toml` only for local peer development.
 

@@ -22,10 +22,10 @@ anyhow = "1"
 clap = { version = "4", features = ["derive"] }
 csv = "1"
 rayon = "1.10"
-rctx-core = { path = "../RLINE/crates/rctx-core" }
-rhist-core = { path = "../RLINE/crates/rhist-core" }
-rplan-core = { path = "../RPLAN/crates/rplan-core" }
-rplan-io = { path = "../RPLAN/crates/rplan-io" }
+rctx-core = { git = "https://github.com/giodl73-repo/RLINE.git", package = "rctx-core", branch = "master" }
+rhist-core = { git = "https://github.com/giodl73-repo/RLINE.git", package = "rhist-core", branch = "master" }
+rplan-core = { git = "https://github.com/giodl73-repo/RPLAN.git", package = "rplan-core", branch = "master" }
+rplan-io = { git = "https://github.com/giodl73-repo/RPLAN.git", package = "rplan-io", branch = "master" }
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 sha2 = "0.10"
