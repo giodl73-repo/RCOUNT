@@ -1,0 +1,19 @@
+{
+  "expected_status": "pass",
+  "expected_checks": [
+    "manifest_cycle_refs",
+    "source_refs_resolve",
+    "context_cycle_refs",
+    "context_unit_ids_unique",
+    "cycle_context_refs",
+    "lineage_unit_refs",
+    "lineage_cardinality",
+    "crosswalk_unit_refs",
+    "crosswalk_weight_sum",
+    "claim_boundary_present"
+  ],
+  "expected_io_checks": [
+    "package_content_hash"
+  ],
+  "deferred_checks": []
+}

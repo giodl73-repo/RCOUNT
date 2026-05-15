@@ -1,0 +1,25 @@
+{
+  "transcript_version": "rcount-audit-transcript-v1",
+  "verifier": "rcount-audit",
+  "status": "fail",
+  "package_content_hash": "sha256:76e8843038e6c05d5311c6dfb0dde78e976f889cf13e39a608d8f8d6539b51b2",
+  "manifest_content_hash": "sha256:76e8843038e6c05d5311c6dfb0dde78e976f889cf13e39a608d8f8d6539b51b2",
+  "checks": [
+    {
+      "equation_id": "rla_stopping_rule",
+      "status": "fail",
+      "error": "RLA audit rla:syn-2024-mayor:round-1 risk estimate mismatch: declared 1304 ppm, computed 1303 ppm"
+    },
+    {
+      "equation_id": "jurisdiction_contest_total",
+      "status": "pass",
+      "contest_id": "syn-2024-mayor",
+      "reporting_unit_id": "syn:jurisdiction:SYN"
+    },
+    {
+      "equation_id": "source_hash_match",
+      "status": "pass",
+      "reporting_unit_id": "source:synthetic-summary-export"
+    }
+  ]
+}

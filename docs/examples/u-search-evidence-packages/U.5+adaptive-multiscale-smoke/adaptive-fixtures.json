@@ -1,0 +1,37 @@
+{
+  "fixture_version": "u5-adaptive-multiscale-smoke-fixtures v1",
+  "robbins_monro": {
+    "paper": "U.5",
+    "total_steps": 12,
+    "adapt_interval": 4,
+    "initial_alpha": 0.30,
+    "target_accept": 0.30,
+    "gamma_0": 0.10,
+    "gamma_exponent": 0.75,
+    "min_alpha": 0.05,
+    "max_alpha": 0.95,
+    "pop_tolerance": 0.005,
+    "expected_coarse_tol": 0.015,
+    "base_seed": 42,
+    "chain_idx": 2,
+    "seed_step": 1,
+    "expected_step_seed": 11355130806820699707,
+    "coarse_acceptance_windows": [
+      [true, true, false, false],
+      [false, false, false, false],
+      [true, true, true, true]
+    ],
+    "expected_acceptance_rates": [0.5, 0.0, 1.0],
+    "expected_gamma_trace": [
+      0.1,
+      0.05946035575013606,
+      0.043869133765083085
+    ],
+    "expected_alpha_trace": [
+      0.32,
+      0.3021618932749592,
+      0.33287028691051734
+    ],
+    "expected_final_alpha": 0.33287028691051734
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "summary_version": "g-ensemble-scout-summary v1",
+  "scope": ["G.1", "G.2", "G.3"],
+  "classification": [
+    {
+      "artifact": "G.1-G.3 paper claim boundaries",
+      "status": "present",
+      "evidence": "research/tracks/G-ensemble and docs/papers/ALGORITHM-PAPER-SCORECARD.md describe external trace and metric package requirements."
+    },
+    {
+      "artifact": "external GerryChain/ReCom trace package",
+      "status": "missing",
+      "evidence": "Pulse 01 and 02 targeted searches found no dedicated G.1-G.3 external-trace package."
+    },
+    {
+      "artifact": "election input model for partisan outcome distributions",
+      "status": "missing",
+      "evidence": "No package-level election-input artifact is linked to G.2 claims."
+    },
+    {
+      "artifact": "metric output package for compactness distribution position",
+      "status": "missing",
+      "evidence": "No hash-bound metric-output package is linked to G.1/G.3 percentile claims."
+    },
+    {
+      "artifact": "RPLAN/RCTX deterministic plan package for comparison baseline",
+      "status": "insufficient",
+      "evidence": "RPLAN/RCTX example packages exist for other tracks, but no G.1-G.3 baseline package was found."
+    }
+  ]
+}

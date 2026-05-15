@@ -1,0 +1,11 @@
+[package]
+name = "rcount-stats"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Deterministic statistical primitives for RCOUNT audit replay"
+
+[dependencies]
+serde.workspace = true
+thiserror.workspace = true

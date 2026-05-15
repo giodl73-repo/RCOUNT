@@ -1,0 +1,18 @@
+{
+  "schema_version": "j-apportionment-evidence-manifest v1",
+  "package_id": "J.0-J.6+2020-census-table01",
+  "census_table": "Table 1. Apportionment Population and Number of Representatives by State: 2020 Census",
+  "source_url": "https://www2.census.gov/programs-surveys/decennial/2020/data/apportionment/apportionment-2020-table01.xlsx",
+  "source_sha256": "93e7e77a222f078c0af32457af2ecc7bcae2bcb9db0cedca4ad93ff3f99b55bf",
+  "extracted_files": [
+    {
+      "path": "apportionment-table01.json",
+      "sha256": "9d2b4a461953e53d54c189ebc8b34dbc94a60a6325c079713a5d818a525a2668",
+      "role": "extracted-census-table"
+    }
+  ],
+  "verifier_path": "crates/bisect-apportion/src/evidence_manifest.rs",
+  "verification_commands": [
+    "cargo test -p bisect-apportion census_2020_table01_replays_huntington_hill"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "transcript_version": "rcount-audit-transcript-v1",
+  "verifier": "rcount-audit",
+  "status": "fail",
+  "package_content_hash": "sha256:f30dad5ff1c768898f8e3098193bc7e72539e34ee37bc2418d4ca0add7e7983c",
+  "manifest_content_hash": "sha256:f30dad5ff1c768898f8e3098193bc7e72539e34ee37bc2418d4ca0add7e7983c",
+  "checks": [
+    {
+      "equation_id": "rla_stopping_rule",
+      "status": "fail",
+      "error": "RLA audit rla:syn-2024-mayor:round-1 declares status Pass, computed Escalate"
+    },
+    {
+      "equation_id": "jurisdiction_contest_total",
+      "status": "pass",
+      "contest_id": "syn-2024-mayor",
+      "reporting_unit_id": "syn:jurisdiction:SYN"
+    },
+    {
+      "equation_id": "source_hash_match",
+      "status": "pass",
+      "reporting_unit_id": "source:synthetic-summary-export"
+    }
+  ]
+}

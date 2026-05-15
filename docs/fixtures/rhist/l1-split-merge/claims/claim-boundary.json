@@ -1,0 +1,14 @@
+{
+  "package_id": "syn-rhist-l1-split-merge",
+  "proves": [
+    "declared split and merge lineage records are internally consistent",
+    "declared exhaustive crosswalk weights sum to one",
+    "declared source refs resolve to preserved source hashes"
+  ],
+  "does_not_prove": [
+    "official legal validity of boundary changes",
+    "completeness of all historical sources",
+    "vote totals or district assignments"
+  ],
+  "caveats": []
+}

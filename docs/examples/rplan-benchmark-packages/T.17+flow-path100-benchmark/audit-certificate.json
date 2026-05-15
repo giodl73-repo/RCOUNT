@@ -1,0 +1,94 @@
+{
+  "schema_version": "audit-certificate-v1",
+  "certificate_id": "sha256:6f37948500386f03605a8cebf49cc430d1241a856875c029ebbc1e6af9ddc4e6",
+  "generated_at_utc": "2026-05-11T00:00:00Z",
+  "content_hash": "sha256:6f37948500386f03605a8cebf49cc430d1241a856875c029ebbc1e6af9ddc4e6",
+  "plan_hash": "sha256:df1a6dc6cf81baabab74c52f2bb261f52bc4461962bb240d19b870545ccbef5b",
+  "plan_schema_version": "district-plan-v1",
+  "context_hash": "sha256:c87131bfc24c8f9a6bb9f96d499e4c17333f42b857bec94132a50458bd0cfa15",
+  "legal_profile_hash": "sha256:47330820265931878d2d7feb6568710e636d0e2db9cec0fa2cb4ca40bf5e515c",
+  "legal_profile": {
+    "schema_version": "legal-profile-v1",
+    "profile_id": "US_CONGRESSIONAL_PROJECT_V1",
+    "jurisdiction": "US",
+    "chamber": "congressional",
+    "year": 2020,
+    "population_tolerance": {
+      "type": "exact-ppm",
+      "max_deviation_ppm": 5000
+    },
+    "county_split_rule": {
+      "type": "count-only"
+    },
+    "municipal_split_rule": {
+      "type": "not-evaluated"
+    },
+    "vra_policy": {
+      "type": "not-evaluated"
+    },
+    "legal_disclaimer": "Pass means the plan passes the supplied profile, not every possible legal requirement."
+  },
+  "source_hashes": {
+    "fixture": "sha256:1f8a1fce247394cd7dce55ca229e4b3059b577ac574708c92455fcfedb05f7fa"
+  },
+  "runtime": {
+    "binary_name": "bisect-cli-example",
+    "binary_version": "0.1.0"
+  },
+  "algorithm_lineage": {
+    "producer_crate": "bisect-flow",
+    "producer_version": "0.1.0",
+    "method": "flow-construction",
+    "parent_plan_hashes": [],
+    "parameters_hash": "sha256:a055de9061ab59297ebca24bfff310e5d9af971fa1d863c1f90c49f4d33ccec7",
+    "extra": {
+      "benchmark_notes_path": "benchmark-notes.json",
+      "benchmark_notes_sha256": "9e5627baa3543226e693a54c79ef7cf355b3eaa4364d5ef1815ae8c35c3aeec8",
+      "cost_method": "edge-cut",
+      "edge_cut": 1,
+      "infeasibility_witness": null,
+      "input_fixture": "path100-flow-synthetic",
+      "lineage_schema_version": "bisect-flow-summary-v1",
+      "method": "flow-construction",
+      "method_transcript_path": "method-transcript.json",
+      "method_transcript_sha256": "6d740de0e95db7cde4a8cddad49ceb094c76c786478421dd97f2c04ec340d4c9",
+      "package_id": "T.17+flow-path100-benchmark",
+      "parameter_hash": "sha256:32b6ac971753d97c544bc2393139cd567fa3980cfd727c7301e49a760574e7c7",
+      "population_deviation": 0.0,
+      "repair_method": "bfs",
+      "seed_method": "farthest",
+      "seeds": [
+        0,
+        99
+      ],
+      "status": "valid",
+      "summary_path": "flow-summary.json",
+      "summary_sha256": "2c8a6776f17dbe3fd91c354f01904edd762df939c04543568c636264fd4c7ad9"
+    }
+  },
+  "result": "pass",
+  "checks": [
+    {
+      "name": "plan-shape",
+      "status": "pass",
+      "severity": "info",
+      "summary": "plan shape is valid",
+      "witnesses": []
+    },
+    {
+      "name": "population",
+      "status": "pass",
+      "severity": "info",
+      "summary": "all districts pass population tolerance",
+      "witnesses": []
+    },
+    {
+      "name": "contiguity",
+      "status": "pass",
+      "severity": "info",
+      "summary": "all districts are contiguous",
+      "witnesses": []
+    }
+  ],
+  "warnings": []
+}

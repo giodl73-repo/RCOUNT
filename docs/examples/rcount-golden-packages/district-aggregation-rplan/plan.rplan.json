@@ -1,0 +1,49 @@
+{
+  "rplan_version": "0.2",
+  "plan": {
+    "schema_version": "district-plan-v1",
+    "units": {
+      "unit_kind": "precinct",
+      "state": "SYN",
+      "year": 2024,
+      "canonical_order": "explicit-unit-ids",
+      "unit_ids": [
+        "syn:precinct:P-001",
+        "syn:precinct:P-002"
+      ],
+      "unit_universe_hash": "sha256:72beae0d4e61c061c5f373089f71d216b306d7099f11ea5a3c32447bc13b0399",
+      "source_id": "rcount:summary-basic"
+    },
+    "assignment": [
+      0,
+      1
+    ],
+    "k": 2,
+    "display_labels": [
+      "SYN-D1",
+      "SYN-D2"
+    ],
+    "allow_empty_districts": false
+  },
+  "metadata": {
+    "label": "synthetic-count-districts",
+    "jurisdiction": "SYN",
+    "chamber": "county-council",
+    "created_at": "2026-05-12T00:00:00Z",
+    "description": "Two-precinct synthetic district assignment for RCOUNT aggregation."
+  },
+  "provenance": {
+    "producer": {},
+    "source_hashes": {},
+    "conversion_lineage": []
+  },
+  "geometry": null,
+  "extensions": {
+    "civic_evidence_base_references": {
+      "claim_boundary": "RPLAN records assignments only; RHIST owns cross-cycle lineage.",
+      "rctx_crosswalk_hash": "sha256:906054d087e8c006047448c821d79e75a81bb1bbeb1d9349ab7b5d025029d9bb",
+      "rctx_package_hash": "sha256:bf552e9d9753d3376155ca9c4b21db6b1930e37919a58bcb9096cd563653d532",
+      "rhist_package_hash": "sha256:2c391099d7b61ba0c27fd231376391aadec81de62a387e291a043ed18d69db0b"
+    }
+  }
+}

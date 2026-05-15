@@ -1,0 +1,65 @@
+{
+  "schema_version": "g-ensemble-evidence-manifest v1",
+  "package_id": "G.1-G.3+missing-evidence",
+  "status": "missing-evidence",
+  "papers": ["G.1", "G.2", "G.3"],
+  "claims": [
+    {
+      "paper": "G.1",
+      "claim": "BISECT compactness percentile relative to external GerryChain/ReCom congressional ensembles",
+      "required_roles": ["external-trace", "metric-output", "bisect-plan", "rctx-context", "diagnostic"]
+    },
+    {
+      "paper": "G.2",
+      "claim": "BISECT partisan seat outcome position relative to ensemble distribution",
+      "required_roles": ["external-trace", "election-input", "bisect-plan", "rctx-context", "diagnostic"]
+    },
+    {
+      "paper": "G.3",
+      "claim": "BISECT compactness metric distribution position relative to ensemble plans",
+      "required_roles": ["external-trace", "metric-output", "bisect-plan", "rctx-context", "diagnostic"]
+    }
+  ],
+  "files": [
+    {
+      "path": "scout-summary.json",
+      "sha256": "83db1641b1b579be5db97f9c56d33bbc57593f5dbba46ebbda7a16d1cf26add8",
+      "role": "diagnostic",
+      "description": "Pulse scout classification of present, missing, and insufficient G.1-G.3 evidence artifacts."
+    }
+  ],
+  "verifier_path": "crates/bisect-ensemble/src/evidence_manifest.rs",
+  "verification_commands": ["cargo test -p bisect-ensemble missing_evidence_package_fixture_validates"],
+  "missing_evidence": [
+    {
+      "role": "external-trace",
+      "reason": "No archived external GerryChain/ReCom trace package was found for the G.1-G.3 headline claims.",
+      "next_step": "Add or generate a trace package with diagnostics before citing external-ensemble percentiles."
+    },
+    {
+      "role": "election-input",
+      "reason": "No hash-bound election input model was found for G.2 partisan outcome claims.",
+      "next_step": "Package the election source, vote fields, normalization, and district aggregation model."
+    },
+    {
+      "role": "metric-output",
+      "reason": "No hash-bound compactness metric output was found for G.1/G.3 percentile claims.",
+      "next_step": "Package metric version, inputs, plan outputs, and percentile computation transcript."
+    },
+    {
+      "role": "bisect-plan",
+      "reason": "No G.1-G.3-specific RPLAN baseline package was found.",
+      "next_step": "Attach deterministic BISECT RPLAN output for every compared state/scenario."
+    },
+    {
+      "role": "rctx-context",
+      "reason": "No G.1-G.3-specific RCTX context package was found.",
+      "next_step": "Attach the corresponding unit universe, graph, population, geometry, and source hashes."
+    },
+    {
+      "role": "diagnostic",
+      "reason": "No external trace convergence, ESS, R-hat, or acceptance diagnostic package was found for the headline claims.",
+      "next_step": "Package sampler diagnostics alongside the external traces."
+    }
+  ]
+}

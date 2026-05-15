@@ -1,0 +1,21 @@
+{
+  "status": "pass",
+  "checks": [
+    "manifest_package_hash",
+    "context_unit_index",
+    "source_index",
+    "crosswalk_unit_refs",
+    "crosswalk_weight_sum",
+    "crosswalk_source_refs",
+    "graph_context_refs",
+    "graph_source_refs",
+    "claim_boundary_present"
+  ],
+  "does_not_replay": [
+    "official legal validity of geography",
+    "vote totals",
+    "district assignments",
+    "rendered maps",
+    "historical lineage"
+  ]
+}

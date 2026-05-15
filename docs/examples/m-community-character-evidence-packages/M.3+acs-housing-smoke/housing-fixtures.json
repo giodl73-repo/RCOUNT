@@ -1,0 +1,53 @@
+{
+  "fixture_version": "m3-acs-housing-smoke-fixtures v1",
+  "rows": [
+    {
+      "geoid": "37063000100",
+      "raw": {
+        "total_units": 100.0,
+        "single_family_detached": 60.0,
+        "single_family_attached": 10.0,
+        "multifamily_10_19": 10.0,
+        "multifamily_20_49": 5.0,
+        "multifamily_50_plus": 5.0,
+        "occupied_total": 80.0,
+        "owner_occupied": 60.0,
+        "median_year_built": 1980.0
+      },
+      "expected": {
+        "pct_single_family": 0.7,
+        "pct_multifamily": 0.2,
+        "pct_owner": 0.75,
+        "housing_vintage": 0.5
+      }
+    },
+    {
+      "geoid": "37063000200",
+      "raw": {
+        "total_units": 100.0,
+        "single_family_detached": 8.0,
+        "single_family_attached": 0.0,
+        "multifamily_10_19": 30.0,
+        "multifamily_20_49": 22.0,
+        "multifamily_50_plus": 20.0,
+        "occupied_total": 90.0,
+        "owner_occupied": 18.0,
+        "median_year_built": 2004.0
+      },
+      "expected": {
+        "pct_single_family": 0.08,
+        "pct_multifamily": 0.72,
+        "pct_owner": 0.2,
+        "housing_vintage": 0.2
+      }
+    }
+  ],
+  "edges": [
+    {
+      "endpoints": [0, 1],
+      "base_weight": 100.0,
+      "alpha": 0.5,
+      "expected_weight": 74.970054
+    }
+  ]
+}

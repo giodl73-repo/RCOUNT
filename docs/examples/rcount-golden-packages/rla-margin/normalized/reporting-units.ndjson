@@ -1,0 +1,3 @@
+{"reporting_unit_id":"syn:precinct:P-001","kind":"precinct","parent_jurisdiction":"syn-county-1","source_ids":["P-001"],"valid_from":"2024-11-05"}
+{"reporting_unit_id":"syn:precinct:P-002","kind":"precinct","parent_jurisdiction":"syn-county-1","source_ids":["P-002"],"valid_from":"2024-11-05"}
+{"reporting_unit_id":"syn:jurisdiction:SYN","kind":"jurisdiction-total","parent_jurisdiction":"syn","source_ids":["SYN"],"valid_from":"2024-11-05"}

@@ -1,0 +1,20 @@
+{
+  "context_hash": "sha256:ca29070d867105f13d05c6c6da33b7a30c946391acf1a6188e48db8e8d6680b8",
+  "edge_count_undirected": 180,
+  "grid_side": 10,
+  "input_fixture": "grid10-audit-synthetic",
+  "method": "audit-fixed-point",
+  "package_id": "U.20+audit-grid10-benchmark",
+  "package_tier": "benchmark-package",
+  "paper": "U.20+plan-audit-certificates",
+  "plan_hash": "sha256:bc994aaaddcd3491ebcdd661bfc8649133fedee26c55c1111e4c7b7a4b88bc6b",
+  "producer_crate": "rplan-audit",
+  "producer_version": "0.1.0",
+  "schema_version": "method-transcript-v1",
+  "scope_note": "This transcript records certificate generation for a deterministic synthetic RPLAN/RCTX pair, not an algorithmic search or construction run.",
+  "source_workflow": "cargo run -p bisect-cli --no-default-features --example u20_audit_grid10_benchmark_package",
+  "status": "audit-certificate-issued",
+  "summary_path": "audit-stress-summary.json",
+  "summary_sha256": "c4cd29ff4e365265f5a2516b5701a7a55488cd9d8cca17708da57dbfdbba3a34",
+  "unit_count": 100
+}

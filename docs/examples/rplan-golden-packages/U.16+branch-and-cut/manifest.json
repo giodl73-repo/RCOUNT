@@ -1,0 +1,28 @@
+{
+  "schema_version": "u20-public-example-manifest-v1",
+  "example_id": "U.16+branch-and-cut",
+  "paper": "U.16+branch-and-cut-redistricting",
+  "files": [
+    {
+      "path": "plan.rplan",
+      "sha256": "354470c7a18e0407c6498a9eb6518f7369d241cdfc7754a520b968e4e7b00b27",
+      "role": "plan"
+    },
+    {
+      "path": "context.rctx",
+      "sha256": "107c60b317b24e328c90a69ab2eace24ce4e42e9122f38b3a224daef9632e2e2",
+      "role": "context"
+    },
+    {
+      "path": "audit-certificate.json",
+      "sha256": "716a5b275afbbaa40ad1c07e3c35f955bc7d53bc871b20d8144bc08fa4a55aa0",
+      "role": "certificate"
+    },
+    {
+      "path": "method-transcript.json",
+      "sha256": "66d0ffd09f405ea7193d0ff086e9c31dc97795f1194c48d788eda09ab3a503be",
+      "role": "method-transcript"
+    }
+  ],
+  "verification_command": "cargo run -p rplan-cli -- verify-certificate --certificate docs/examples/rplan-golden-packages/U.16+branch-and-cut/audit-certificate.json --plan docs/examples/rplan-golden-packages/U.16+branch-and-cut/plan.rplan --context docs/examples/rplan-golden-packages/U.16+branch-and-cut/context.rctx"
+}

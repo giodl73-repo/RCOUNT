@@ -1,0 +1,2 @@
+GEOID,state,county,tract,total_pop,male,female,white_non_hispanic,black_non_hispanic,asian_non_hispanic,hispanic,other
+44001030601,44,001,030601,3610,1728,1882,2666,12,11,32,889

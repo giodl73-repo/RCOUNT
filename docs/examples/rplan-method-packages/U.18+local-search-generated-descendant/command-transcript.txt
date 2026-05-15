@@ -1,0 +1,7 @@
+cargo run -p bisect-cli -- improve --plan docs/examples/u20-plan-audit-certificates/grid3x3-valid/plan.rplan --context docs/examples/u20-plan-audit-certificates/grid3x3-valid/context.rctx --out-dir docs/examples/rplan-method-packages/U.18+local-search-generated-descendant --method one-move --tolerance 5 --label u18-local-search-generated-descendant --generated-at 2026-05-11T00:00:00Z
+
+Result:
+improve: 6 -> 6 (NoImprovement)
+wrote docs/examples/rplan-method-packages/U.18+local-search-generated-descendant\improved.rplan
+wrote docs/examples/rplan-method-packages/U.18+local-search-generated-descendant\improved.rctx
+wrote docs/examples/rplan-method-packages/U.18+local-search-generated-descendant\audit-certificate.json

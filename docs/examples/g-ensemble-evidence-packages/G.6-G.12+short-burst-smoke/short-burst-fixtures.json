@@ -1,0 +1,80 @@
+{
+  "fixture_version": "g-short-burst-smoke-fixtures v1",
+  "standard": {
+    "paper": "G.6",
+    "seed_prefix": "SHORT_BURST_CHAIN_",
+    "base_seed": 42,
+    "burst_length": 20,
+    "n_bursts": 4,
+    "percentile": 0.0,
+    "expected_chain_seeds": [
+      1836343225165677703,
+      2347129911628488980,
+      6359209676406658467,
+      10335415803461808864
+    ],
+    "bursts": [
+      {
+        "burst_index": 0,
+        "start_plan_id": "metis-seed-42",
+        "endpoint_plan_id": "endpoint-0",
+        "within_burst_min_plan_id": "endpoint-0",
+        "edge_cut": 31,
+        "accepted_steps": 15,
+        "acceptance_rate": 0.75
+      },
+      {
+        "burst_index": 1,
+        "start_plan_id": "endpoint-0",
+        "endpoint_plan_id": "endpoint-1",
+        "within_burst_min_plan_id": "min-1",
+        "edge_cut": 34,
+        "accepted_steps": 14,
+        "acceptance_rate": 0.70
+      },
+      {
+        "burst_index": 2,
+        "start_plan_id": "endpoint-1",
+        "endpoint_plan_id": "endpoint-2",
+        "within_burst_min_plan_id": "min-2",
+        "edge_cut": 28,
+        "accepted_steps": 16,
+        "acceptance_rate": 0.80
+      },
+      {
+        "burst_index": 3,
+        "start_plan_id": "endpoint-2",
+        "endpoint_plan_id": "endpoint-3",
+        "within_burst_min_plan_id": "endpoint-3",
+        "edge_cut": 28,
+        "accepted_steps": 13,
+        "acceptance_rate": 0.65
+      }
+    ],
+    "expected_selected_burst_index": 2
+  },
+  "forest_recom": {
+    "paper": "G.12",
+    "chain_seed_prefix": "SBF_CHAIN_",
+    "forward_seed_prefix": "SBF_FWD_",
+    "reverse_seed_prefix": "SBF_REV_",
+    "base_seed": 42,
+    "burst_index": 1,
+    "step_index": 2,
+    "expected_chain_seed": 5170053362043129521,
+    "expected_forward_seed": 14111133132687187760,
+    "expected_reverse_seed": 162742150319210176
+  },
+  "merge_split": {
+    "paper": "G.12",
+    "chain_seed_prefix": "SBMS_CHAIN_",
+    "forward_seed_prefix": "SBMS_FWD_",
+    "reverse_seed_prefix": "SBMS_REV_",
+    "base_seed": 42,
+    "burst_index": 1,
+    "step_index": 2,
+    "expected_chain_seed": 7513433132416724618,
+    "expected_forward_seed": 12017950997421905323,
+    "expected_reverse_seed": 16048919448730415166
+  }
+}

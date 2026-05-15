@@ -1,0 +1,80 @@
+{
+  "transcript_version": "rcount-audit-transcript-v1",
+  "verifier": "rcount-audit",
+  "status": "pass",
+  "package_content_hash": "sha256:bbf12f948536644f26131234a969905ded25cef42eadfbd9ed3da280bfb51781",
+  "manifest_content_hash": "sha256:bbf12f948536644f26131234a969905ded25cef42eadfbd9ed3da280bfb51781",
+  "checks": [
+    {
+      "equation_id": "contest_selection_sum",
+      "status": "pass",
+      "contest_id": "syn-2024-mayor",
+      "reporting_unit_id": "syn:precinct:P-001"
+    },
+    {
+      "equation_id": "contest_selection_sum",
+      "status": "pass",
+      "contest_id": "syn-2024-mayor",
+      "reporting_unit_id": "syn:precinct:P-002"
+    },
+    {
+      "equation_id": "contest_selection_sum",
+      "status": "pass",
+      "contest_id": "syn-2024-mayor",
+      "reporting_unit_id": "syn:jurisdiction:SYN"
+    },
+    {
+      "equation_id": "contest_selection_sum",
+      "status": "pass",
+      "contest_id": "syn-2024-mayor",
+      "reporting_unit_id": "syn:precinct:P-001"
+    },
+    {
+      "equation_id": "contest_selection_sum",
+      "status": "pass",
+      "contest_id": "syn-2024-mayor",
+      "reporting_unit_id": "syn:precinct:P-002"
+    },
+    {
+      "equation_id": "contest_selection_sum",
+      "status": "pass",
+      "contest_id": "syn-2024-mayor",
+      "reporting_unit_id": "syn:jurisdiction:SYN"
+    },
+    {
+      "equation_id": "status_event_declared",
+      "status": "pass",
+      "contest_id": "*",
+      "reporting_unit_id": "event-0001"
+    },
+    {
+      "equation_id": "status_event_declared",
+      "status": "pass",
+      "contest_id": "*",
+      "reporting_unit_id": "event-0002"
+    },
+    {
+      "equation_id": "jurisdiction_contest_total",
+      "status": "pass",
+      "contest_id": "syn-2024-mayor",
+      "reporting_unit_id": "syn:jurisdiction:SYN"
+    },
+    {
+      "equation_id": "jurisdiction_contest_total",
+      "status": "pass",
+      "contest_id": "syn-2024-mayor",
+      "reporting_unit_id": "syn:jurisdiction:SYN"
+    },
+    {
+      "equation_id": "canvass_correction_event",
+      "status": "pass",
+      "contest_id": "*",
+      "reporting_unit_id": "*"
+    },
+    {
+      "equation_id": "source_hash_match",
+      "status": "pass",
+      "reporting_unit_id": "source:synthetic-summary-export"
+    }
+  ]
+}

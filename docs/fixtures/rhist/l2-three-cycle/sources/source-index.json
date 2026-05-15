@@ -1,0 +1,37 @@
+[
+  {
+    "source_id": "syn-2024-precincts.csv",
+    "path": "sources/syn-2024-precincts.csv",
+    "sha256": "sha256:c263580e8717534c220e54d993c552b5c30665c4932e63567e6c19b65cca7990",
+    "media_type": "text/csv",
+    "description": "Synthetic 2024 precinct list for three-cycle fixture"
+  },
+  {
+    "source_id": "syn-2026-precincts.csv",
+    "path": "sources/syn-2026-precincts.csv",
+    "sha256": "sha256:75e39fdf8623f07411aa4a7b11229327a9c8a7d7d7943dc6a0881e51fdf5687a",
+    "media_type": "text/csv",
+    "description": "Synthetic 2026 precinct list for three-cycle fixture"
+  },
+  {
+    "source_id": "syn-2028-precincts.csv",
+    "path": "sources/syn-2028-precincts.csv",
+    "sha256": "sha256:9b4c31dde31cdf268ff1af669481028cd33c3b47cc45768880e884313d934942",
+    "media_type": "text/csv",
+    "description": "Synthetic 2028 precinct list for three-cycle fixture"
+  },
+  {
+    "source_id": "syn-2026-rename-notice.txt",
+    "path": "sources/syn-2026-rename-notice.txt",
+    "sha256": "sha256:cd30708303cd7431d45ad655a0870715f8af61fcea50070ebaeb958c1409f364",
+    "media_type": "text/plain",
+    "description": "Synthetic rename notice"
+  },
+  {
+    "source_id": "syn-2028-precinct-change-notice.txt",
+    "path": "sources/syn-2028-precinct-change-notice.txt",
+    "sha256": "sha256:018dcfd6b63bcb0c98531b5fd05a6df47ee3add8c787605628f5284f683d757e",
+    "media_type": "text/plain",
+    "description": "Synthetic split/merge notice"
+  }
+]

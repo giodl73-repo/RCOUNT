@@ -1,0 +1,14 @@
+{
+  "schema_version": "j-divisor-evidence-manifest v1",
+  "package_id": "J.2-J.5+divisor-method-smoke",
+  "papers": ["J.2", "J.3", "J.4", "J.5"],
+  "fixture_file": {
+    "path": "divisor-fixtures.json",
+    "sha256": "e21ad39c449ee65a060fd078078604c33672ac2af9cf08bfd5ee1adff6e7c5b6",
+    "role": "divisor-method-fixture"
+  },
+  "verifier_path": "crates/bisect-apportion/src/divisor_evidence.rs",
+  "verification_commands": [
+    "cargo test -p bisect-apportion divisor_method_smoke"
+  ]
+}

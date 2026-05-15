@@ -1,0 +1,19 @@
+{
+  "rctx_version": "0.1",
+  "context_hash": "sha256:b11f1eabcaf33e2d2691ddbe498c650830cffb9b0fb62820292d4ca0166c0bb7",
+  "units": {
+    "unit_kind": "precinct",
+    "state": "SYN",
+    "year": 2024,
+    "canonical_order": "explicit-unit-ids",
+    "unit_ids": [
+      "syn:precinct:P-001",
+      "syn:precinct:P-002"
+    ],
+    "unit_universe_hash": "sha256:72beae0d4e61c061c5f373089f71d216b306d7099f11ea5a3c32447bc13b0399",
+    "source_id": "rcount:summary-basic"
+  },
+  "graph": null,
+  "populations": null,
+  "source_hashes": {}
+}

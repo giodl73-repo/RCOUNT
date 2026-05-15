@@ -1,0 +1,20 @@
+{
+  "fixture_version": "u3-sa-smoke-fixtures v1",
+  "seed_fixture": {
+    "base_seed": 42,
+    "node_path": "root",
+    "expected_sa_seed": 12439968756321294162
+  },
+  "grid_fixture": {
+    "rows": 4,
+    "cols": 4,
+    "balance_tolerance": 0.10,
+    "steps_per_tract": 5,
+    "t0_factor": 0.01,
+    "t_final": 0.0001,
+    "base_seed": 42,
+    "node_path": "root",
+    "expected_total_tracts": 16,
+    "max_edge_cut": 8
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "transcript_version": "rcount-audit-transcript-v1",
+  "verifier": "rcount-audit",
+  "status": "fail",
+  "package_content_hash": "sha256:b1e42fe66b7ecbe7173c5f046c227256ded63fb73aafc596b51541af7a9a8a95",
+  "manifest_content_hash": "sha256:b1e42fe66b7ecbe7173c5f046c227256ded63fb73aafc596b51541af7a9a8a95",
+  "checks": [
+    {
+      "equation_id": "rla_margin_metadata",
+      "status": "fail",
+      "error": "RLA audit rla:syn-2024-mayor:round-1 reported margin mismatch: declared 65, summary 64"
+    },
+    {
+      "equation_id": "jurisdiction_contest_total",
+      "status": "pass",
+      "contest_id": "syn-2024-mayor",
+      "reporting_unit_id": "syn:jurisdiction:SYN"
+    },
+    {
+      "equation_id": "source_hash_match",
+      "status": "pass",
+      "reporting_unit_id": "source:synthetic-summary-export"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "trace_version": "g-active-synthetic-trace v1",
+  "sampler": "synthetic-recom",
+  "state": "SYN",
+  "year": "2020",
+  "seed": 424242,
+  "steps": [
+    {
+      "step": 0,
+      "plan_id": "baseline",
+      "accepted": true,
+      "cut_fraction": 0.31,
+      "dem_seats": 2,
+      "mean_polsby_popper": 0.43
+    },
+    {
+      "step": 1,
+      "plan_id": "ensemble-001",
+      "accepted": true,
+      "cut_fraction": 0.29,
+      "dem_seats": 2,
+      "mean_polsby_popper": 0.45
+    },
+    {
+      "step": 2,
+      "plan_id": "ensemble-002",
+      "accepted": false,
+      "cut_fraction": 0.35,
+      "dem_seats": 3,
+      "mean_polsby_popper": 0.39
+    }
+  ]
+}

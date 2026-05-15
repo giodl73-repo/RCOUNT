@@ -1,0 +1,10 @@
+{
+  "schema_version": "method-transcript-v1",
+  "package_id": "T.14+spectral-partitioning",
+  "paper": "T.14+spectral-partitioning",
+  "producer_crate": "bisect-apportion",
+  "method": "spectral-partitioning",
+  "status": "fixture-exported",
+  "fixture": "grid3x3-valid",
+  "scope_note": "Tiny public golden package proving RPLAN/RCTX/certificate packaging and lineage semantics; not an algorithm-performance benchmark."
+}

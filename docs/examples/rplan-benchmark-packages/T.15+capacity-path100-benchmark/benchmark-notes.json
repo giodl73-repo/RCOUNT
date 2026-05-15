@@ -1,0 +1,20 @@
+{
+  "edge_count_undirected": 99,
+  "measurement_protocol": [
+    "cargo run -p bisect-cli --no-default-features --example capacity_path100_benchmark_package",
+    "cargo run -p rplan-cli -- verify-certificate --certificate docs/examples/rplan-benchmark-packages/T.15+capacity-path100-benchmark/audit-certificate.json --plan docs/examples/rplan-benchmark-packages/T.15+capacity-path100-benchmark/plan.rplan --context docs/examples/rplan-benchmark-packages/T.15+capacity-path100-benchmark/context.rctx",
+    "cargo run -p bisect-cli -- verify --manifest docs/examples/rplan-benchmark-packages/T.15+capacity-path100-benchmark/manifest.json"
+  ],
+  "package_id": "T.15+capacity-path100-benchmark",
+  "reference_hardware": {
+    "core_count": "not pinned",
+    "cpu": "not pinned",
+    "os": "Windows development workstation",
+    "ram": "not pinned"
+  },
+  "schema_version": "benchmark-timing-notes-v1",
+  "scope_note": "This benchmark package records benchmark protocol and scale metadata. It is a verifier-scale smoke benchmark, not a formal runtime claim.",
+  "timing_kind": "deterministic-construction-scale-smoke",
+  "unit_count": 100,
+  "wall_clock_claim": "none"
+}

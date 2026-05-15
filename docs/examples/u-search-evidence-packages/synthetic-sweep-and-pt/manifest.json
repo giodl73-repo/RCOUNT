@@ -1,0 +1,14 @@
+{
+  "schema_version": "u-search-evidence-manifest v1",
+  "package_id": "U.2-U.4+synthetic-sweep-and-pt",
+  "papers": ["U.2", "U.4"],
+  "fixture_file": {
+    "path": "search-fixtures.json",
+    "sha256": "17952daf1d6658bd17c9722d23c90edd4a619d469bbb5020db910a53725e90ef",
+    "role": "search-fixture"
+  },
+  "verifier_path": "crates/bisect-ensemble/src/search_evidence.rs",
+  "verification_commands": [
+    "cargo test -p bisect-ensemble search_evidence"
+  ]
+}

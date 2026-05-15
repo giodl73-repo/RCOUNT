@@ -1,0 +1,16 @@
+{
+  "metric_output_version": "g-active-synthetic-metrics v1",
+  "metric_implementation": "synthetic-smoke",
+  "baseline_plan_id": "baseline",
+  "ensemble_size": 3,
+  "baseline_positions": {
+    "cut_fraction_percentile": 0.67,
+    "mean_polsby_popper_percentile": 0.50,
+    "dem_seats_percentile": 0.50
+  },
+  "ensemble_summary": {
+    "mean_cut_fraction": 0.3166666667,
+    "mean_polsby_popper": 0.4233333333,
+    "dem_seats_values": [2, 2, 3]
+  }
+}

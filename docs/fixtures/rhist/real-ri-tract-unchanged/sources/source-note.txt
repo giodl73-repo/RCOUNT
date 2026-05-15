@@ -1,0 +1,1 @@
+Rows are preserved slices from local Census-derived Rhode Island demographic CSVs under data/{2000,2010,2020}/demographics. This fixture validates RHIST source pressure and stable tract identity only; it does not claim full Census tract relationship coverage.

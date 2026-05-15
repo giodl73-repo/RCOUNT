@@ -1,0 +1,76 @@
+{
+  "schema_version": "audit-certificate-v1",
+  "certificate_id": "sha256:29a2ab238f525d79560906658858fb29b9fcadb57674d464aba4f0403a1d2f51",
+  "generated_at_utc": "2026-05-10T00:00:00Z",
+  "content_hash": "sha256:29a2ab238f525d79560906658858fb29b9fcadb57674d464aba4f0403a1d2f51",
+  "plan_hash": "sha256:50d18ba3c303865a4bec09f45256942d482fba6dfefbe56706964aa678864fac",
+  "plan_schema_version": "district-plan-v1",
+  "context_hash": "sha256:f1810fa22072ad3228677ab67cf389b9b875bb69e2dc5bbc5884c401a35de875",
+  "legal_profile_hash": "sha256:47330820265931878d2d7feb6568710e636d0e2db9cec0fa2cb4ca40bf5e515c",
+  "legal_profile": {
+    "schema_version": "legal-profile-v1",
+    "profile_id": "US_CONGRESSIONAL_PROJECT_V1",
+    "jurisdiction": "US",
+    "chamber": "congressional",
+    "year": 2020,
+    "population_tolerance": {
+      "type": "exact-ppm",
+      "max_deviation_ppm": 5000
+    },
+    "county_split_rule": {
+      "type": "count-only"
+    },
+    "municipal_split_rule": {
+      "type": "not-evaluated"
+    },
+    "vra_policy": {
+      "type": "not-evaluated"
+    },
+    "legal_disclaimer": "Pass means the plan passes the supplied profile, not every possible legal requirement."
+  },
+  "source_hashes": {
+    "fixture": "sha256:grid3x3"
+  },
+  "runtime": {
+    "binary_name": "rplan",
+    "binary_version": "0.1.0"
+  },
+  "algorithm_lineage": {
+    "producer_crate": "bisect-apportion",
+    "producer_version": "0.1.0",
+    "method": "spectral-partitioning",
+    "parent_plan_hashes": [],
+    "parameters_hash": "sha256:0c807eec722ea644a9d58ae7d407294274e25611a79c5635690d0a5bbba64765",
+    "extra": {
+      "evidence_level": "public-golden-package",
+      "fixture": "grid3x3-valid",
+      "paper": "T.14+spectral-partitioning",
+      "status": "fixture-exported"
+    }
+  },
+  "result": "pass",
+  "checks": [
+    {
+      "name": "plan-shape",
+      "status": "pass",
+      "severity": "info",
+      "summary": "plan shape is valid",
+      "witnesses": []
+    },
+    {
+      "name": "population",
+      "status": "pass",
+      "severity": "info",
+      "summary": "all districts pass population tolerance",
+      "witnesses": []
+    },
+    {
+      "name": "contiguity",
+      "status": "pass",
+      "severity": "info",
+      "summary": "all districts are contiguous",
+      "witnesses": []
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "source_id": "syn-2024-precincts.csv",
+    "path": "sources/syn-2024-precincts.csv",
+    "sha256": "sha256:4615f7a4fefc7d9764950014f74ccf0d1ece917c3b105a22e53b80dccf29a771",
+    "media_type": "text/csv",
+    "description": "Synthetic 2024 precinct list for bad-weight fixture"
+  },
+  {
+    "source_id": "syn-2028-precincts.csv",
+    "path": "sources/syn-2028-precincts.csv",
+    "sha256": "sha256:ae523e5be8f1a0c0cd1a3f6b692e39313a0f2ef13b5d53cb96f3a21218d5362a",
+    "media_type": "text/csv",
+    "description": "Synthetic 2028 precinct list for bad-weight fixture"
+  },
+  {
+    "source_id": "syn-2028-precinct-change-notice.txt",
+    "path": "sources/syn-2028-precinct-change-notice.txt",
+    "sha256": "sha256:018dcfd6b63bcb0c98531b5fd05a6df47ee3add8c787605628f5284f683d757e",
+    "media_type": "text/plain",
+    "description": "Synthetic split/merge notice"
+  }
+]

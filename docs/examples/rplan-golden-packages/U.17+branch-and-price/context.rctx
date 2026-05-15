@@ -1,0 +1,73 @@
+{
+  "rctx_version": "0.1",
+  "context_hash": "sha256:f1810fa22072ad3228677ab67cf389b9b875bb69e2dc5bbc5884c401a35de875",
+  "units": {
+    "unit_kind": "tract",
+    "state": "WA",
+    "year": 2020,
+    "canonical_order": "explicit-unit-ids",
+    "unit_ids": [
+      "53001000100",
+      "53001000200",
+      "53001000300",
+      "53001000400",
+      "53001000500",
+      "53001000600",
+      "53001000700",
+      "53001000800",
+      "53001000900"
+    ],
+    "unit_universe_hash": "sha256:34fb3feba8479e2f2ae5fa983de1545baec73b61361d61476609588fb4ba0010"
+  },
+  "graph": {
+    "edge_semantics": "undirected",
+    "adjacency": [
+      [
+        { "to": 1, "kind": "boundary" },
+        { "to": 3, "kind": "boundary" }
+      ],
+      [
+        { "to": 0, "kind": "boundary" },
+        { "to": 2, "kind": "boundary" },
+        { "to": 4, "kind": "boundary" }
+      ],
+      [
+        { "to": 1, "kind": "boundary" },
+        { "to": 5, "kind": "boundary" }
+      ],
+      [
+        { "to": 0, "kind": "boundary" },
+        { "to": 4, "kind": "boundary" },
+        { "to": 6, "kind": "boundary" }
+      ],
+      [
+        { "to": 1, "kind": "boundary" },
+        { "to": 3, "kind": "boundary" },
+        { "to": 5, "kind": "boundary" },
+        { "to": 7, "kind": "boundary" }
+      ],
+      [
+        { "to": 2, "kind": "boundary" },
+        { "to": 4, "kind": "boundary" },
+        { "to": 8, "kind": "boundary" }
+      ],
+      [
+        { "to": 3, "kind": "boundary" },
+        { "to": 7, "kind": "boundary" }
+      ],
+      [
+        { "to": 4, "kind": "boundary" },
+        { "to": 6, "kind": "boundary" },
+        { "to": 8, "kind": "boundary" }
+      ],
+      [
+        { "to": 5, "kind": "boundary" },
+        { "to": 7, "kind": "boundary" }
+      ]
+    ]
+  },
+  "populations": [100, 100, 100, 100, 100, 100, 100, 100, 100],
+  "source_hashes": {
+    "fixture": "sha256:grid3x3"
+  }
+}

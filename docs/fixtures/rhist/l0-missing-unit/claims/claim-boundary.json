@@ -1,0 +1,11 @@
+{
+  "package_id": "syn-rhist-l0-missing-unit",
+  "proves": [
+    "negative fixture should fail lineage unit reference validation"
+  ],
+  "does_not_prove": [
+    "official legal validity of boundary changes",
+    "vote totals or district assignments"
+  ],
+  "caveats": []
+}

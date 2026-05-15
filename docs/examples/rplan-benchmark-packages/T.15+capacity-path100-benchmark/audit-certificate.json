@@ -1,0 +1,89 @@
+{
+  "schema_version": "audit-certificate-v1",
+  "certificate_id": "sha256:bb02ab88abff44931c924a62d0f0aa7435eed117e999cdfbed74ed84651347ba",
+  "generated_at_utc": "2026-05-11T00:00:00Z",
+  "content_hash": "sha256:bb02ab88abff44931c924a62d0f0aa7435eed117e999cdfbed74ed84651347ba",
+  "plan_hash": "sha256:0191425fea2d350a7e108f7aa0b8432b96b8b96547dc1d36475773ccf19a3f12",
+  "plan_schema_version": "district-plan-v1",
+  "context_hash": "sha256:a60450a4271df93615ab9fa4a02304352ae1cfef970cde9f45bbbe4068ca6735",
+  "legal_profile_hash": "sha256:47330820265931878d2d7feb6568710e636d0e2db9cec0fa2cb4ca40bf5e515c",
+  "legal_profile": {
+    "schema_version": "legal-profile-v1",
+    "profile_id": "US_CONGRESSIONAL_PROJECT_V1",
+    "jurisdiction": "US",
+    "chamber": "congressional",
+    "year": 2020,
+    "population_tolerance": {
+      "type": "exact-ppm",
+      "max_deviation_ppm": 5000
+    },
+    "county_split_rule": {
+      "type": "count-only"
+    },
+    "municipal_split_rule": {
+      "type": "not-evaluated"
+    },
+    "vra_policy": {
+      "type": "not-evaluated"
+    },
+    "legal_disclaimer": "Pass means the plan passes the supplied profile, not every possible legal requirement."
+  },
+  "source_hashes": {
+    "fixture": "sha256:997cd9765237619bd43e3e2730023a619dac616c75a2c84033c5d73af6aa989e"
+  },
+  "runtime": {
+    "binary_name": "bisect-cli-example",
+    "binary_version": "0.1.0"
+  },
+  "algorithm_lineage": {
+    "producer_crate": "bisect-clustering",
+    "producer_version": "0.1.0",
+    "method": "capacity-clustering",
+    "parent_plan_hashes": [],
+    "parameters_hash": "sha256:558b83fbc55b79d580d32a0861d947641c122a2329b276d40a79693568b2d0c7",
+    "extra": {
+      "benchmark_notes_path": "benchmark-notes.json",
+      "benchmark_notes_sha256": "eadd0b5d8335e4c57b4a338bd517ba4400586ac3a2b78a9339cacb2c95fe41c4",
+      "capacity_status": "valid",
+      "edge_cut": 1,
+      "input_fixture": "path100-capacity-synthetic",
+      "lineage_schema_version": "bisect-clustering-summary-v1",
+      "method": "capacity-clustering",
+      "method_transcript_path": "method-transcript.json",
+      "method_transcript_sha256": "b15f78b3ced5403843e99a9780099d03fdfe5766cb1d8afa0c2394ad4c8578f3",
+      "package_id": "T.15+capacity-path100-benchmark",
+      "parameter_hash": "sha256:11409d85e61ef88a5cdadfdb560e386509d78c245e5cd9b2f6e2dc82c02e6cf8",
+      "population_deviation": 0.0,
+      "repair_method": "none",
+      "repair_status": "not-needed",
+      "seed_method": "farthest",
+      "summary_path": "capacity-summary.json",
+      "summary_sha256": "2b21ec1a57b9ae7b1a549ffb9ff97c7abc7c93636ad5081608e449ee4be16a5b"
+    }
+  },
+  "result": "pass",
+  "checks": [
+    {
+      "name": "plan-shape",
+      "status": "pass",
+      "severity": "info",
+      "summary": "plan shape is valid",
+      "witnesses": []
+    },
+    {
+      "name": "population",
+      "status": "pass",
+      "severity": "info",
+      "summary": "all districts pass population tolerance",
+      "witnesses": []
+    },
+    {
+      "name": "contiguity",
+      "status": "pass",
+      "severity": "info",
+      "summary": "all districts are contiguous",
+      "witnesses": []
+    }
+  ],
+  "warnings": []
+}

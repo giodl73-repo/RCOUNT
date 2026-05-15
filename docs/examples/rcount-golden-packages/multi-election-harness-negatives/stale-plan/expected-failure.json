@@ -1,0 +1,4 @@
+{
+  "expected_result": "fail",
+  "failure": "missing plan unit summary for contest syn-cycle-mayor, unit syn:precinct:P-002, status Canvassed"
+}

@@ -1,0 +1,16 @@
+{
+  "package_content_hash": "sha256:acdc48a4cf60ec1df93f624dec19b85856dca7930f1dde35291126f9facfe621",
+  "contest_count": 1,
+  "reporting_unit_count": 3,
+  "batch_count": 0,
+  "lineage_count": 0,
+  "rhist_ref_count": 1,
+  "rctx_ref_count": 1,
+  "inclusion_proof_count": 0,
+  "cvr_count": 0,
+  "audit_algorithm_run_count": 0,
+  "rla_audit_count": 0,
+  "manual_audit_count": 0,
+  "batch_comparison_audit_count": 0,
+  "summary_count": 3
+}

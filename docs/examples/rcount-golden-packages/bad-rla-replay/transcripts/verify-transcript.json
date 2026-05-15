@@ -1,0 +1,25 @@
+{
+  "transcript_version": "rcount-audit-transcript-v1",
+  "verifier": "rcount-audit",
+  "status": "fail",
+  "package_content_hash": "sha256:a58713680047d37030c3640907b8359a0fc0ec5fb114b5a789f6965000edaab4",
+  "manifest_content_hash": "sha256:a58713680047d37030c3640907b8359a0fc0ec5fb114b5a789f6965000edaab4",
+  "checks": [
+    {
+      "equation_id": "rla_sampler_replay",
+      "status": "fail",
+      "error": "RLA audit rla:syn-2024-mayor:round-1 sample mismatch at draw 0: declared cvr:P-999:999, computed cvr:P-001:022"
+    },
+    {
+      "equation_id": "jurisdiction_contest_total",
+      "status": "pass",
+      "contest_id": "syn-2024-mayor",
+      "reporting_unit_id": "syn:jurisdiction:SYN"
+    },
+    {
+      "equation_id": "source_hash_match",
+      "status": "pass",
+      "reporting_unit_id": "source:synthetic-summary-export"
+    }
+  ]
+}

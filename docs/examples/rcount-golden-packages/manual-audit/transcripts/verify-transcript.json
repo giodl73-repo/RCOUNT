@@ -1,0 +1,44 @@
+{
+  "transcript_version": "rcount-audit-transcript-v1",
+  "verifier": "rcount-audit",
+  "status": "pass",
+  "package_content_hash": "sha256:139493f950b679c37d4c01ea79e533d89ccb296f4c67c623194f0a6f4ce20410",
+  "manifest_content_hash": "sha256:139493f950b679c37d4c01ea79e533d89ccb296f4c67c623194f0a6f4ce20410",
+  "checks": [
+    {
+      "equation_id": "contest_selection_sum",
+      "status": "pass",
+      "contest_id": "syn-2024-mayor",
+      "reporting_unit_id": "syn:precinct:P-001"
+    },
+    {
+      "equation_id": "contest_selection_sum",
+      "status": "pass",
+      "contest_id": "syn-2024-mayor",
+      "reporting_unit_id": "syn:precinct:P-002"
+    },
+    {
+      "equation_id": "contest_selection_sum",
+      "status": "pass",
+      "contest_id": "syn-2024-mayor",
+      "reporting_unit_id": "syn:jurisdiction:SYN"
+    },
+    {
+      "equation_id": "manual_audit_reconciliation",
+      "status": "pass",
+      "contest_id": "syn-2024-mayor",
+      "reporting_unit_id": "syn:precinct:P-001"
+    },
+    {
+      "equation_id": "jurisdiction_contest_total",
+      "status": "pass",
+      "contest_id": "syn-2024-mayor",
+      "reporting_unit_id": "syn:jurisdiction:SYN"
+    },
+    {
+      "equation_id": "source_hash_match",
+      "status": "pass",
+      "reporting_unit_id": "source:synthetic-summary-export"
+    }
+  ]
+}

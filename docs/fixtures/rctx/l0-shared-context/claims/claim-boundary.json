@@ -1,0 +1,14 @@
+{
+  "package_id": "syn-rctx-l0-shared-context",
+  "proves": [
+    "declared canonical unit ids are unique",
+    "declared graph and crosswalk records reference known context and source ids",
+    "declared exhaustive crosswalk weights sum to one"
+  ],
+  "does_not_prove": [
+    "official legal validity of geography",
+    "completeness of all geography sources",
+    "vote totals, district assignments, or rendered maps"
+  ],
+  "caveats": []
+}

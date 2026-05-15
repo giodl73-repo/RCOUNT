@@ -1,0 +1,10 @@
+{
+  "schema_version": "method-transcript-v1",
+  "package_id": "U.17+branch-and-price",
+  "paper": "U.17+branch-and-price-redistricting",
+  "producer_crate": "bisect-column",
+  "method": "branch-and-price",
+  "status": "fixture-solved",
+  "fixture": "grid3x3-valid",
+  "scope_note": "Tiny public golden package proving RPLAN/RCTX/certificate packaging and lineage semantics; not an algorithm-performance benchmark."
+}

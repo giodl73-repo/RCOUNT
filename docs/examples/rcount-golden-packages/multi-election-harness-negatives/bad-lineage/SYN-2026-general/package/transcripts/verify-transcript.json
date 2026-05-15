@@ -1,0 +1,8 @@
+{
+  "checks": [
+    "contest_selection_sum",
+    "jurisdiction_contest_total"
+  ],
+  "status": "generated-fixture",
+  "verifier": "rcount-io"
+}

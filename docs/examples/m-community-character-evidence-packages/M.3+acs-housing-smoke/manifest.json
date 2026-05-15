@@ -1,0 +1,14 @@
+{
+  "schema_version": "m3-housing-evidence-manifest v1",
+  "package_id": "M.3+acs-housing-smoke",
+  "papers": ["M.3"],
+  "fixture_file": {
+    "path": "housing-fixtures.json",
+    "sha256": "0123f43d78e91374d4ab4cf0dcc290e85605ef91eb088f148a592d4069a60328",
+    "role": "acs-housing-formula-and-weight-fixture"
+  },
+  "verifier_path": "crates/bisect-cli/src/housing_evidence.rs",
+  "verification_commands": [
+    "cargo test -p bisect-cli m3_housing_smoke"
+  ]
+}

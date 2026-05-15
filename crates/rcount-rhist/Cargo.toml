@@ -1,0 +1,12 @@
+[package]
+name = "rcount-rhist"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Optional bridge from embedded RCOUNT lineage to RHIST unit-history records"
+
+[dependencies]
+rcount-core = { path = "../rcount-core" }
+rhist-core.workspace = true
+thiserror.workspace = true

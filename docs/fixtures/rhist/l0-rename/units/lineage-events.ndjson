@@ -1,0 +1,1 @@
+{"event_id":"lineage:P-001-rename","event_kind":"rename","from_cycle_id":"syn-2024-general","to_cycle_id":"syn-2028-general","from_unit_ids":["syn:precinct:P-001"],"to_unit_ids":["syn:precinct:P-001A"],"effective_date":"2028-11-07","authority":"SYN County Election Office","confidence":"official","source_refs":["syn-rename-notice.txt"],"explanation":"P-001 was renamed to P-001A."}

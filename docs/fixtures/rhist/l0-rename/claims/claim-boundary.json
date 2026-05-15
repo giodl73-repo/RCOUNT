@@ -1,0 +1,13 @@
+{
+  "package_id": "syn-rhist-l0-rename",
+  "proves": [
+    "declared lineage records are internally consistent",
+    "declared source refs resolve to preserved source hashes"
+  ],
+  "does_not_prove": [
+    "official legal validity of boundary changes",
+    "completeness of all historical sources",
+    "vote totals or district assignments"
+  ],
+  "caveats": []
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": "g-short-burst-evidence-manifest v1",
+  "package_id": "G.6-G.12+short-burst-smoke",
+  "papers": ["G.6", "G.12"],
+  "fixture_file": {
+    "path": "short-burst-fixtures.json",
+    "sha256": "11de95ee45b6534231bdbf8a1c9199b97084e15712fdc5c0b925b0c86d6030cf",
+    "role": "short-burst-seed-endpoint-diagnostic-fixture"
+  },
+  "verifier_path": "crates/bisect-ensemble/src/short_burst_evidence.rs",
+  "verification_commands": [
+    "cargo test -p bisect-ensemble g_short_burst_smoke"
+  ]
+}

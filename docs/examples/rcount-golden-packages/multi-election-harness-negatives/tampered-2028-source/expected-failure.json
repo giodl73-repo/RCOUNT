@@ -1,0 +1,4 @@
+{
+  "expected_result": "fail",
+  "failure": "source hash mismatch in SYN-2028-general package"
+}

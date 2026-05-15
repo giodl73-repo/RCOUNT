@@ -1,0 +1,8 @@
+{
+  "rctx_version": "0.1",
+  "package_id": "syn-rctx-l0-shared-context",
+  "jurisdiction": "SYN",
+  "producer": "rctx-fixture",
+  "created_at": "2026-05-13T00:00:00Z",
+  "package_content_hash": "sha256:bf552e9d9753d3376155ca9c4b21db6b1930e37919a58bcb9096cd563653d532"
+}

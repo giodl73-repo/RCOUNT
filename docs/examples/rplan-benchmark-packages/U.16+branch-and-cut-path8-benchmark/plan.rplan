@@ -1,0 +1,65 @@
+{
+  "rplan_version": "0.2",
+  "plan": {
+    "schema_version": "district-plan-v1",
+    "units": {
+      "unit_kind": "tract",
+      "state": "WA",
+      "year": 2020,
+      "canonical_order": "explicit-unit-ids",
+      "unit_ids": [
+        "53016000100",
+        "53016000200",
+        "53016000300",
+        "53016000400",
+        "53016000500",
+        "53016000600",
+        "53016000700",
+        "53016000800"
+      ],
+      "unit_universe_hash": "sha256:b4ac4d37671e62e395f08b8e37b237b00b96f3b4777a117057d5c75d9138788b",
+      "source_id": "path8-synthetic"
+    },
+    "assignment": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    "k": 2,
+    "display_labels": [
+      "1",
+      "2"
+    ],
+    "allow_empty_districts": false
+  },
+  "metadata": {
+    "label": "U.16+branch-and-cut-path8-benchmark",
+    "jurisdiction": "WA-synthetic",
+    "chamber": "congressional",
+    "created_at": "2026-05-11T00:00:00Z",
+    "description": "Synthetic path graph solved by bisect-ilp branch-and-cut exact branch-and-bound."
+  },
+  "provenance": {
+    "producer": {
+      "crate": "bisect-cli",
+      "method": "branch-and-cut",
+      "method_crate": "bisect-ilp"
+    },
+    "source_hashes": {
+      "fixture": "sha256:b4252f0de0cacc89329c3bc2e3015c7daeed4b0227feae3d66932adedf0f54c4"
+    },
+    "conversion_lineage": [
+      {
+        "package_tier": "benchmark-package",
+        "workflow": "cargo run -p bisect-cli --no-default-features --example u16_branch_cut_path8_benchmark_package"
+      }
+    ]
+  },
+  "geometry": null,
+  "extensions": {}
+}

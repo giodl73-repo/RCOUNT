@@ -1,0 +1,25 @@
+{
+  "fixture_version": "k-reock-exact-mbc-smoke v1",
+  "shapes": [
+    {
+      "id": "unit-square",
+      "description": "Unit square; exact MBC and centroid-radius proxy coincide.",
+      "vertices": [[0.0, 0.0], [1.0, 0.0], [1.0, 1.0], [0.0, 1.0]],
+      "expected_area": 1.0,
+      "expected_mbc_center": [0.5, 0.5],
+      "expected_mbc_radius": 0.7071067811865476,
+      "expected_exact_reock": 0.6366197723675813,
+      "expected_proxy_reock": 0.6366197723675813
+    },
+    {
+      "id": "right-triangle-3-4-5",
+      "description": "Right triangle whose exact MBC is the hypotenuse circle; centroid-radius proxy is lower.",
+      "vertices": [[0.0, 0.0], [4.0, 0.0], [0.0, 3.0]],
+      "expected_area": 6.0,
+      "expected_mbc_center": [2.0, 1.5],
+      "expected_mbc_radius": 2.5,
+      "expected_exact_reock": 0.30557749073643903,
+      "expected_proxy_reock": 0.2354621075880095
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "fixture_version": "m1-economic-character-smoke-fixtures v1",
+  "rows": [
+    {
+      "geoid": "37063000100",
+      "raw": {
+        "c000": 1000.0,
+        "cns01": 10.0,
+        "cns02": 20.0,
+        "cns05": 30.0,
+        "cns07": 400.0,
+        "cns08": 40.0,
+        "cns09": 100.0,
+        "cns10": 50.0,
+        "cns11": 50.0
+      },
+      "expected": {
+        "commercial_intensity": 0.6,
+        "industrial_fraction": 0.1,
+        "jobs_per_resident": 0.1
+      }
+    },
+    {
+      "geoid": "37063000200",
+      "raw": {
+        "c000": 8000.0,
+        "cns01": 2000.0,
+        "cns02": 1000.0,
+        "cns05": 1000.0,
+        "cns07": 100.0,
+        "cns08": 800.0,
+        "cns09": 50.0,
+        "cns10": 25.0,
+        "cns11": 25.0
+      },
+      "expected": {
+        "commercial_intensity": 0.025,
+        "industrial_fraction": 0.6,
+        "jobs_per_resident": 0.8
+      }
+    }
+  ],
+  "edges": [
+    {
+      "endpoints": [0, 1],
+      "base_weight": 100.0,
+      "alpha": 0.5,
+      "expected_weight": 62.568233
+    }
+  ]
+}

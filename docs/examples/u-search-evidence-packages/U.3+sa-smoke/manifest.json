@@ -1,0 +1,14 @@
+{
+  "schema_version": "u3-sa-evidence-manifest v1",
+  "package_id": "U.3+sa-smoke",
+  "papers": ["U.3"],
+  "fixture_file": {
+    "path": "sa-fixtures.json",
+    "sha256": "936277c4e3487c99247e525fa8f2981b3b3c26b32e8b7322972c5cf6401e1c28",
+    "role": "simulated-annealing-seed-and-grid-fixture"
+  },
+  "verifier_path": "crates/bisect-cli/src/sa_evidence.rs",
+  "verification_commands": [
+    "cargo test -p bisect-cli u3_sa_smoke"
+  ]
+}

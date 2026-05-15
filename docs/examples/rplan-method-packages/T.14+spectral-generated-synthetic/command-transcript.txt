@@ -1,0 +1,3 @@
+cargo run -p bisect-cli --no-default-features --example spectral_path6_package
+cargo run -p rplan-cli -- verify-certificate --certificate docs/examples/rplan-method-packages/T.14+spectral-generated-synthetic/audit-certificate.json --plan docs/examples/rplan-method-packages/T.14+spectral-generated-synthetic/plan.rplan --context docs/examples/rplan-method-packages/T.14+spectral-generated-synthetic/context.rctx
+cargo run -p bisect-cli -- verify --manifest docs/examples/rplan-method-packages/T.14+spectral-generated-synthetic/manifest.json

@@ -1,0 +1,59 @@
+{
+  "rplan_version": "0.2",
+  "plan": {
+    "schema_version": "district-plan-v1",
+    "units": {
+      "unit_kind": "tract",
+      "state": "WA",
+      "year": 2020,
+      "canonical_order": "explicit-unit-ids",
+      "unit_ids": [
+        "53001000100",
+        "53001000200",
+        "53001000300",
+        "53001000400",
+        "53001000500",
+        "53001000600",
+        "53001000700",
+        "53001000800",
+        "53001000900"
+      ],
+      "unit_universe_hash": "sha256:34fb3feba8479e2f2ae5fa983de1545baec73b61361d61476609588fb4ba0010"
+    },
+    "assignment": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2
+    ],
+    "k": 3,
+    "display_labels": [
+      "1",
+      "2",
+      "3"
+    ],
+    "allow_empty_districts": false
+  },
+  "metadata": {
+    "label": "u18-local-search-generated-descendant",
+    "jurisdiction": "WA",
+    "chamber": "congressional",
+    "created_at": "2026-05-11T00:00:00Z"
+  },
+  "provenance": {
+    "producer": {
+      "crate": "bisect-local-search",
+      "method": "one-move",
+      "name": "bisect improve"
+    },
+    "source_hashes": {},
+    "conversion_lineage": []
+  },
+  "geometry": null,
+  "extensions": {}
+}

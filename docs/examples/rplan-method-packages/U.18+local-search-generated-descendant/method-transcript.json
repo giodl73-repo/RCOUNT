@@ -1,0 +1,31 @@
+{
+  "schema_version": "method-transcript-v1",
+  "package_id": "U.18+local-search-generated-descendant",
+  "package_tier": "method-produced-fixture",
+  "paper": "U.18+large-neighborhood-search",
+  "producer_crate": "bisect-local-search",
+  "method": "one-move",
+  "source_workflow": "bisect improve",
+  "status": "no-improvement",
+  "generated_at_utc": "2026-05-11T00:00:00Z",
+  "input_plan": "docs/examples/u20-plan-audit-certificates/grid3x3-valid/plan.rplan",
+  "input_context": "docs/examples/u20-plan-audit-certificates/grid3x3-valid/context.rctx",
+  "output_label": "u18-local-search-generated-descendant",
+  "tolerance_percent": 5.0,
+  "moves_evaluated": 12,
+  "moves_accepted": 0,
+  "initial_edge_cut": 6,
+  "final_edge_cut": 6,
+  "initial_population_deviation": 0.0,
+  "final_population_deviation": 0.0,
+  "parameter_hash": "sha256:7d07695c56cd4c56a3a0c8f080b736ab4abee72500a269d1981198a8162e7448",
+  "scope_note": "Real CLI-generated no-improvement package; validates packaging and lineage for a deterministic local-search run, not search-quality improvement.",
+  "producer_version": "0.1.0",
+  "seed": null,
+  "input_plan_hash": "sha256:50d18ba3c303865a4bec09f45256942d482fba6dfefbe56706964aa678864fac",
+  "output_plan_hash": "sha256:50d18ba3c303865a4bec09f45256942d482fba6dfefbe56706964aa678864fac",
+  "context_hash": "sha256:f1810fa22072ad3228677ab67cf389b9b875bb69e2dc5bbc5884c401a35de875",
+  "source_hashes": {
+    "fixture": "sha256:grid3x3"
+  }
+}

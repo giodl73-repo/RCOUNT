@@ -1,0 +1,20 @@
+[package]
+name = "rcount-district"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Optional RCOUNT district aggregation over RPLAN/RCTX assignments"
+
+[dependencies]
+rcount-core = { path = "../rcount-core" }
+rcount-io = { path = "../rcount-io" }
+rctx-core.workspace = true
+rplan-core.workspace = true
+rplan-io.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true

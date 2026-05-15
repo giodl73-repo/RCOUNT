@@ -1,0 +1,11 @@
+{
+  "schema_version": "bisect-clustering-summary-v1",
+  "method": "capacity-clustering",
+  "seed_method": "farthest",
+  "repair_method": "none",
+  "capacity_status": "valid",
+  "repair_status": "not-needed",
+  "population_deviation": 0.0,
+  "edge_cut": 1,
+  "parameter_hash": "sha256:11409d85e61ef88a5cdadfdb560e386509d78c245e5cd9b2f6e2dc82c02e6cf8"
+}

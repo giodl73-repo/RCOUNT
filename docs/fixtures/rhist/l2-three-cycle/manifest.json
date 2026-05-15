@@ -1,0 +1,13 @@
+{
+  "rhist_version": "0.1",
+  "package_id": "syn-rhist-l2-three-cycle",
+  "jurisdiction": "SYN",
+  "cycle_ids": [
+    "syn-2024-general",
+    "syn-2026-general",
+    "syn-2028-general"
+  ],
+  "producer": "rhist-fixture",
+  "created_at": "2026-05-13T00:00:00Z",
+  "package_content_hash": "sha256:2c391099d7b61ba0c27fd231376391aadec81de62a387e291a043ed18d69db0b"
+}

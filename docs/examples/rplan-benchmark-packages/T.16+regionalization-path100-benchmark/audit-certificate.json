@@ -1,0 +1,93 @@
+{
+  "schema_version": "audit-certificate-v1",
+  "certificate_id": "sha256:d6f33d6d7fc0e5265c18fe4ad9355d11b53eaf153b62bcd69c7720d65d22fa99",
+  "generated_at_utc": "2026-05-11T00:00:00Z",
+  "content_hash": "sha256:d6f33d6d7fc0e5265c18fe4ad9355d11b53eaf153b62bcd69c7720d65d22fa99",
+  "plan_hash": "sha256:9b3276432e598292a4ad32bdc460b9321582de95b3bd4ee1404fe6b53abff742",
+  "plan_schema_version": "district-plan-v1",
+  "context_hash": "sha256:a64cb4b453c84a193b33097fb59b25e13a9716daf1eade134110287cd852f9e0",
+  "legal_profile_hash": "sha256:47330820265931878d2d7feb6568710e636d0e2db9cec0fa2cb4ca40bf5e515c",
+  "legal_profile": {
+    "schema_version": "legal-profile-v1",
+    "profile_id": "US_CONGRESSIONAL_PROJECT_V1",
+    "jurisdiction": "US",
+    "chamber": "congressional",
+    "year": 2020,
+    "population_tolerance": {
+      "type": "exact-ppm",
+      "max_deviation_ppm": 5000
+    },
+    "county_split_rule": {
+      "type": "count-only"
+    },
+    "municipal_split_rule": {
+      "type": "not-evaluated"
+    },
+    "vra_policy": {
+      "type": "not-evaluated"
+    },
+    "legal_disclaimer": "Pass means the plan passes the supplied profile, not every possible legal requirement."
+  },
+  "source_hashes": {
+    "fixture": "sha256:ee700918480d0a0f9f15d9c55d95950a23167dbafb161de5f16a6b7b7b1e20c8"
+  },
+  "runtime": {
+    "binary_name": "bisect-cli-example",
+    "binary_version": "0.1.0"
+  },
+  "algorithm_lineage": {
+    "producer_crate": "bisect-clustering",
+    "producer_version": "0.1.0",
+    "method": "hierarchical-regionalization",
+    "parent_plan_hashes": [],
+    "parameters_hash": "sha256:b9655b5793b12fad92fe552c68675c7605112bda93c062908d4c1a216c4b484e",
+    "extra": {
+      "benchmark_notes_path": "benchmark-notes.json",
+      "benchmark_notes_sha256": "45222b9dbc887e8c383d9927af92b6691feee7b57a861a2ef80cd8c32c544d0a",
+      "capacity_status": "valid",
+      "edge_cut": 1,
+      "hierarchy_depth": 49,
+      "input_fixture": "path100-regionalization-synthetic",
+      "lineage_schema_version": "bisect-regionalization-summary-v1",
+      "merge_count": 98,
+      "merge_log_path": "merge-log.json",
+      "merge_log_sha256": "b54b7b6d2fde7754f01f5396c87823013ad291191937398d25705fa1650bb3f7",
+      "merge_policy": "adjacent-balanced-agglomerative",
+      "method": "regionalization",
+      "method_transcript_path": "method-transcript.json",
+      "method_transcript_sha256": "a156dfa8292814b9e082e9e45afe72bc9746a4ab538be6109924e974552b8d0d",
+      "package_id": "T.16+regionalization-path100-benchmark",
+      "parameter_hash": "sha256:c8ec9a029194ca0ce13a5b5a29a8445fdee8e54c5ab76d0f69b988522e0603f7",
+      "population_deviation": 0.0,
+      "repair_method": "none",
+      "repair_status": "not-needed",
+      "summary_path": "regionalization-summary.json",
+      "summary_sha256": "cb4f8b07ba0c6cf2e53832d5295c966a501870f9680449ba387dabb3b0ecbbb7"
+    }
+  },
+  "result": "pass",
+  "checks": [
+    {
+      "name": "plan-shape",
+      "status": "pass",
+      "severity": "info",
+      "summary": "plan shape is valid",
+      "witnesses": []
+    },
+    {
+      "name": "population",
+      "status": "pass",
+      "severity": "info",
+      "summary": "all districts pass population tolerance",
+      "witnesses": []
+    },
+    {
+      "name": "contiguity",
+      "status": "pass",
+      "severity": "info",
+      "summary": "all districts are contiguous",
+      "witnesses": []
+    }
+  ],
+  "warnings": []
+}

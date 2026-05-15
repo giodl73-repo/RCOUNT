@@ -1,0 +1,9 @@
+[
+  {
+    "source_id": "syn-precincts.csv",
+    "path": "sources/syn-precincts.csv",
+    "sha256": "sha256:253e748527f192efece9361b79250aaa1e1e00348f89d44a3e7dc3267433b3cf",
+    "media_type": "text/csv",
+    "description": "Synthetic precinct unit list"
+  }
+]

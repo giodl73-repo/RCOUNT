@@ -1,0 +1,52 @@
+{
+  "benchmark_scope": "deterministic synthetic audit verifier smoke package",
+  "bisect_verification_command": "cargo run -p bisect-cli -- verify --manifest docs/examples/rplan-benchmark-packages/U.20+audit-grid10-benchmark/manifest.json",
+  "data_requirements": "none; synthetic 10x10 rook-adjacency grid",
+  "example_id": "U.20+audit-grid10-benchmark",
+  "files": [
+    {
+      "path": "plan.rplan",
+      "role": "plan",
+      "sha256": "b31bdc77fc92a445d3d0afad583d37932f97759b9dab22c1eb57274fea65dd46"
+    },
+    {
+      "path": "context.rctx",
+      "role": "context",
+      "sha256": "4ee6ae022547921df36a78a48db79daae9bb894c2ce099c3294b620883e1ffb8"
+    },
+    {
+      "path": "audit-certificate.json",
+      "role": "certificate",
+      "sha256": "3c17a5631d278f42907ecc29fb51860a383c4630b6c8cbe98c2f8769cf0208c0"
+    },
+    {
+      "path": "audit-stress-summary.json",
+      "role": "audit-stress-summary",
+      "sha256": "c4cd29ff4e365265f5a2516b5701a7a55488cd9d8cca17708da57dbfdbba3a34"
+    },
+    {
+      "path": "method-transcript.json",
+      "role": "method-transcript",
+      "sha256": "811b1a8cbb907094daead7c8be2000b9f746d295deaece8bbfc1a02454b95bc4"
+    },
+    {
+      "path": "benchmark-notes.json",
+      "role": "benchmark-notes",
+      "sha256": "d1e2e3f3ec641023f8dc27e8649b8bb675f781c6165af70ca577777cb59cec0d"
+    },
+    {
+      "path": "command-transcript.txt",
+      "role": "command-transcript",
+      "sha256": "611131930fcb52f1abf42e1b88c60d73ebc9c41c87c3c65880e1cc90153ce668"
+    }
+  ],
+  "generated_at_utc": "2026-05-11T00:00:00Z",
+  "package_tier": "benchmark-package",
+  "paper": "U.20+plan-audit-certificates",
+  "repository_footprint": "small in-repo package",
+  "schema_version": "benchmark-rplan-package-manifest-v1",
+  "scope_note": "Generated as an audit-only RPLAN/RCTX fixed-point package for a deterministic 100-unit synthetic grid. The package proves benchmark-tier verifier packaging and certificate acceptance, not construction quality or legal sufficiency.",
+  "source_workflow": "cargo run -p bisect-cli --no-default-features --example u20_audit_grid10_benchmark_package",
+  "status": "audit-certificate-issued",
+  "verification_command": "cargo run -p rplan-cli -- verify-certificate --certificate docs/examples/rplan-benchmark-packages/U.20+audit-grid10-benchmark/audit-certificate.json --plan docs/examples/rplan-benchmark-packages/U.20+audit-grid10-benchmark/plan.rplan --context docs/examples/rplan-benchmark-packages/U.20+audit-grid10-benchmark/context.rctx"
+}

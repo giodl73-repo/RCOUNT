@@ -1,0 +1,9 @@
+{
+  "rctx_version": "synthetic-rctx v1",
+  "state": "SYN",
+  "year": "2020",
+  "unit_universe_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "adjacency_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "population_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+  "geometry_hash": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+}

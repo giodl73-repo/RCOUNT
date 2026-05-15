@@ -1,0 +1,22 @@
+{
+  "schema_version": "benchmark-timing-notes-v1",
+  "package_id": "U.18+local-search-grid10-benchmark",
+  "timing_kind": "deterministic-search-scale-smoke",
+  "parent_package": "T.14+spectral-grid10-benchmark",
+  "unit_count": 100,
+  "move_candidates_evaluated": 20,
+  "moves_accepted": 0,
+  "reference_hardware": {
+    "cpu": "not pinned",
+    "core_count": "not pinned",
+    "ram": "not pinned",
+    "os": "Windows development workstation"
+  },
+  "measurement_protocol": [
+    "cargo run -p bisect-cli -- improve --plan docs/examples/rplan-benchmark-packages/T.14+spectral-grid10-benchmark/plan.rplan --context docs/examples/rplan-benchmark-packages/T.14+spectral-grid10-benchmark/context.rctx --out-dir docs/examples/rplan-benchmark-packages/U.18+local-search-grid10-benchmark --method one-move --tolerance 2 --label U.18+local-search-grid10-benchmark --generated-at 2026-05-11T00:00:00Z",
+    "cargo run -p rplan-cli -- verify-certificate --certificate docs/examples/rplan-benchmark-packages/U.18+local-search-grid10-benchmark/audit-certificate.json --plan docs/examples/rplan-benchmark-packages/U.18+local-search-grid10-benchmark/plan.rplan --context docs/examples/rplan-benchmark-packages/U.18+local-search-grid10-benchmark/context.rctx",
+    "cargo run -p bisect-cli -- verify --manifest docs/examples/rplan-benchmark-packages/U.18+local-search-grid10-benchmark/manifest.json"
+  ],
+  "wall_clock_claim": "none",
+  "scope_note": "This benchmark-tier search package records protocol and scale metadata for a deterministic one-move local-search pass. It is a verifier-scale smoke benchmark, not a formal runtime claim."
+}

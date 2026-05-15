@@ -1,0 +1,20 @@
+{
+  "edge_count_undirected": 7,
+  "measurement_protocol": [
+    "cargo run -p bisect-cli --no-default-features --example u16_branch_cut_path8_benchmark_package",
+    "cargo run -p rplan-cli -- verify-certificate --certificate docs/examples/rplan-benchmark-packages/U.16+branch-and-cut-path8-benchmark/audit-certificate.json --plan docs/examples/rplan-benchmark-packages/U.16+branch-and-cut-path8-benchmark/plan.rplan --context docs/examples/rplan-benchmark-packages/U.16+branch-and-cut-path8-benchmark/context.rctx",
+    "cargo run -p bisect-cli -- verify --manifest docs/examples/rplan-benchmark-packages/U.16+branch-and-cut-path8-benchmark/manifest.json"
+  ],
+  "package_id": "U.16+branch-and-cut-path8-benchmark",
+  "reference_hardware": {
+    "core_count": "not pinned",
+    "cpu": "not pinned",
+    "os": "Windows development workstation",
+    "ram": "not pinned"
+  },
+  "schema_version": "benchmark-timing-notes-v1",
+  "scope_note": "This benchmark package proves exact-solver artifact packaging and verifier integration for a bounded synthetic k=2 instance. It makes no broad performance claim.",
+  "timing_kind": "deterministic-exact-solver-smoke",
+  "unit_count": 8,
+  "wall_clock_claim": "none"
+}

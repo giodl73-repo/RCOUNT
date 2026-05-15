@@ -1,0 +1,20 @@
+{
+  "edge_count_undirected": 180,
+  "measurement_protocol": [
+    "cargo run -p bisect-cli --no-default-features --example u20_audit_grid10_benchmark_package",
+    "cargo run -p rplan-cli -- verify-certificate --certificate docs/examples/rplan-benchmark-packages/U.20+audit-grid10-benchmark/audit-certificate.json --plan docs/examples/rplan-benchmark-packages/U.20+audit-grid10-benchmark/plan.rplan --context docs/examples/rplan-benchmark-packages/U.20+audit-grid10-benchmark/context.rctx",
+    "cargo run -p bisect-cli -- verify --manifest docs/examples/rplan-benchmark-packages/U.20+audit-grid10-benchmark/manifest.json"
+  ],
+  "package_id": "U.20+audit-grid10-benchmark",
+  "reference_hardware": {
+    "core_count": "not pinned",
+    "cpu": "not pinned",
+    "os": "Windows development workstation",
+    "ram": "not pinned"
+  },
+  "schema_version": "benchmark-timing-notes-v1",
+  "scope_note": "This benchmark package records verifier protocol and scale metadata. It is not a runtime benchmark claim.",
+  "timing_kind": "deterministic-audit-verifier-smoke",
+  "unit_count": 100,
+  "wall_clock_claim": "none"
+}

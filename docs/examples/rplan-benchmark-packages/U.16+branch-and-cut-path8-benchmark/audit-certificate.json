@@ -1,0 +1,95 @@
+{
+  "schema_version": "audit-certificate-v1",
+  "certificate_id": "sha256:00ff68228bc2d57ed921cb79274fc60a9144491eceeee12f637ecc4aaac81ea6",
+  "generated_at_utc": "2026-05-11T00:00:00Z",
+  "content_hash": "sha256:00ff68228bc2d57ed921cb79274fc60a9144491eceeee12f637ecc4aaac81ea6",
+  "plan_hash": "sha256:03477d525971af8c4b5e7e9872372828eb56700d155245ea53850d24e836b056",
+  "plan_schema_version": "district-plan-v1",
+  "context_hash": "sha256:19e013d1b5f0a7b2334939b2e9f4bec38484acc473bf91d5f5aa54a6b17c14a2",
+  "legal_profile_hash": "sha256:1b7864ad6721b3816528b77acbb93b3a663fa2ae508f2b634d2db4ac97e128db",
+  "legal_profile": {
+    "schema_version": "legal-profile-v1",
+    "profile_id": "U16_BRANCH_AND_CUT_SYNTHETIC_V1",
+    "jurisdiction": "WA-synthetic",
+    "chamber": "congressional",
+    "year": 2020,
+    "population_tolerance": {
+      "type": "percent",
+      "max_deviation_percent": 0.5
+    },
+    "county_split_rule": {
+      "type": "count-only"
+    },
+    "municipal_split_rule": {
+      "type": "not-evaluated"
+    },
+    "vra_policy": {
+      "type": "not-evaluated"
+    },
+    "legal_disclaimer": "Pass means the plan passes the supplied profile, not every possible legal requirement."
+  },
+  "source_hashes": {
+    "fixture": "sha256:b4252f0de0cacc89329c3bc2e3015c7daeed4b0227feae3d66932adedf0f54c4"
+  },
+  "runtime": {
+    "binary_name": "bisect-cli-example",
+    "binary_version": "0.1.0",
+    "solver": {
+      "name": "branch-and-cut",
+      "version": "0.1.0",
+      "mode": "exact-branch-and-bound-k2",
+      "optimality_gap": 0.0
+    }
+  },
+  "algorithm_lineage": {
+    "producer_crate": "bisect-ilp",
+    "producer_version": "0.1.0",
+    "method": "branch-and-cut",
+    "parent_plan_hashes": [],
+    "parameters_hash": "sha256:50663aa2951a8b1365a6f6445e858a2e57aa38068a1e15dcfcb3e2f38ddb99c3",
+    "extra": {
+      "benchmark_notes_path": "benchmark-notes.json",
+      "benchmark_notes_sha256": "b3247b0bf2b8d9e04b760db27479eef409b880e3c1a2b4b47318239b44fa9f05",
+      "input_fixture": "path8-synthetic",
+      "lineage_schema_version": "bisect-ilp-branch-and-cut-lineage-v1",
+      "method_transcript_path": "method-transcript.json",
+      "method_transcript_sha256": "d4a241c8ecd3a25396550315fe95e35dc3398d4aa1c48157da171b4a297d6fc6",
+      "model_artifact_path": "node_root.lp",
+      "model_artifact_sha256": "174ce58784730a0a0ba30a5fa3580bd0675c6719c63b376ed754c7fc4fd7bb44",
+      "optimal_edge_cut": 1,
+      "optimality_gap": 0.0,
+      "package_id": "U.16+branch-and-cut-path8-benchmark",
+      "solve_report_path": "ilp-solve-report.json",
+      "solve_report_sha256": "2a85aacd8e1602b3394d5dbd5b3e6caf56fc2c91b7c2696b8bb0eb5efc0c3b8d",
+      "solver_used": "branch_and_cut_exact_branch_and_bound",
+      "status": {
+        "status": "optimal"
+      }
+    }
+  },
+  "result": "pass",
+  "checks": [
+    {
+      "name": "plan-shape",
+      "status": "pass",
+      "severity": "info",
+      "summary": "plan shape is valid",
+      "witnesses": []
+    },
+    {
+      "name": "population",
+      "status": "pass",
+      "severity": "info",
+      "summary": "all districts pass population tolerance",
+      "witnesses": []
+    },
+    {
+      "name": "contiguity",
+      "status": "pass",
+      "severity": "info",
+      "summary": "all districts are contiguous",
+      "witnesses": []
+    }
+  ],
+  "warnings": []
+}

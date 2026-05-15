@@ -1,0 +1,68 @@
+{
+  "transcript_version": "rcount-audit-transcript-v1",
+  "verifier": "rcount-audit",
+  "status": "pass",
+  "package_content_hash": "sha256:46813b2230a414573280766ce3b52e8a5677c0d040430f63a97272548e6db0c4",
+  "manifest_content_hash": "sha256:46813b2230a414573280766ce3b52e8a5677c0d040430f63a97272548e6db0c4",
+  "checks": [
+    {
+      "equation_id": "contest_selection_sum",
+      "status": "pass",
+      "contest_id": "syn-2024-mayor",
+      "reporting_unit_id": "syn:precinct:P-001"
+    },
+    {
+      "equation_id": "contest_selection_sum",
+      "status": "pass",
+      "contest_id": "syn-2024-mayor",
+      "reporting_unit_id": "syn:precinct:P-002"
+    },
+    {
+      "equation_id": "contest_selection_sum",
+      "status": "pass",
+      "contest_id": "syn-2024-mayor",
+      "reporting_unit_id": "syn:jurisdiction:SYN"
+    },
+    {
+      "equation_id": "cvr_summary_total",
+      "status": "pass",
+      "contest_id": "syn-2024-mayor",
+      "reporting_unit_id": "syn:precinct:P-001"
+    },
+    {
+      "equation_id": "cvr_summary_total",
+      "status": "pass",
+      "contest_id": "syn-2024-mayor",
+      "reporting_unit_id": "syn:precinct:P-002"
+    },
+    {
+      "equation_id": "rla_sampler_replay",
+      "status": "pass",
+      "contest_id": "syn-2024-mayor",
+      "reporting_unit_id": "rla:syn-2024-mayor:round-1"
+    },
+    {
+      "equation_id": "rla_margin_metadata",
+      "status": "pass",
+      "contest_id": "syn-2024-mayor",
+      "reporting_unit_id": "rla:syn-2024-mayor:round-1"
+    },
+    {
+      "equation_id": "rla_stopping_rule",
+      "status": "pass",
+      "contest_id": "syn-2024-mayor",
+      "reporting_unit_id": "rla:syn-2024-mayor:round-1"
+    },
+    {
+      "equation_id": "jurisdiction_contest_total",
+      "status": "pass",
+      "contest_id": "syn-2024-mayor",
+      "reporting_unit_id": "syn:jurisdiction:SYN"
+    },
+    {
+      "equation_id": "source_hash_match",
+      "status": "pass",
+      "reporting_unit_id": "source:synthetic-summary-export"
+    }
+  ]
+}

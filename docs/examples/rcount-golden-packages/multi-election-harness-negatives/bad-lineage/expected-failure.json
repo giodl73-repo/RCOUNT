@@ -1,0 +1,4 @@
+{
+  "expected_result": "fail",
+  "failure": "core error: lineage event lineage:2028:P-002-P-003-merge references missing current reporting unit: syn:precinct:P-023-MISSING"
+}

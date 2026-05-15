@@ -1,0 +1,13 @@
+{
+  "schema_version": "k-reock-evidence-manifest v1",
+  "package_id": "K.0-K.2-K.7+exact-mbc-smoke",
+  "fixture_file": {
+    "path": "reock-fixtures.json",
+    "sha256": "e3a21b0fd5c0832e857fe6bfec1d1b5bd9e63f83f6bb0356b3f6a7c049c88dd2",
+    "role": "exact-mbc-fixtures"
+  },
+  "verifier_path": "crates/bisect-analysis/src/compactness_evidence.rs",
+  "verification_commands": [
+    "cargo test -p bisect-analysis exact_mbc_fixture_values_validate"
+  ]
+}

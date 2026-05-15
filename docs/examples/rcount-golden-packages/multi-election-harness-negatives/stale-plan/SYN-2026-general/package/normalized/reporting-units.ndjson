@@ -1,0 +1,6 @@
+{"reporting_unit_id":"syn:precinct:P-001","kind":"precinct","parent_jurisdiction":"syn-county-1","source_ids":["P-001"],"valid_from":"2024-11-05","valid_to":"2026-11-03"}
+{"reporting_unit_id":"syn:precinct:P-001A","kind":"precinct","parent_jurisdiction":"syn-county-1","source_ids":["P-001A"],"valid_from":"2026-11-03"}
+{"reporting_unit_id":"syn:precinct:P-001B","kind":"precinct","parent_jurisdiction":"syn-county-1","source_ids":["P-001B"],"valid_from":"2026-11-03"}
+{"reporting_unit_id":"syn:precinct:P-002","kind":"precinct","parent_jurisdiction":"syn-county-1","source_ids":["P-002"],"valid_from":"2024-11-05"}
+{"reporting_unit_id":"syn:precinct:P-003","kind":"precinct","parent_jurisdiction":"syn-county-1","source_ids":["P-003"],"valid_from":"2024-11-05"}
+{"reporting_unit_id":"syn:jurisdiction:SYN","kind":"jurisdiction-total","parent_jurisdiction":"syn","source_ids":["SYN"],"valid_from":"2024-11-05"}

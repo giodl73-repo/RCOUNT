@@ -1,0 +1,26 @@
+{
+  "fixture_version": "u11-resolution-smoke-fixtures v1",
+  "option_b": {
+    "paper": "U.11",
+    "plan_resolution": "tract",
+    "unit_type": "census tract",
+    "n_units": 5,
+    "multiscale_fine": "tract",
+    "multiscale_coarse": "county",
+    "fine_to_coarse_formula": "geoid_prefix[:5]",
+    "geoid_prefix_len": 5,
+    "fine_geoids": [
+      "00101000000",
+      "00101000100",
+      "00103000000",
+      "00103000100",
+      "00105000000"
+    ],
+    "fine_populations": [100, 150, 120, 130, 90],
+    "fine_adjacency": [[1], [0, 2], [1, 3], [2, 4], [3]],
+    "expected_coarse_geoids": ["00101", "00103", "00105"],
+    "expected_fine_to_coarse": [0, 0, 1, 1, 2],
+    "expected_coarse_populations": [250, 250, 90],
+    "expected_coarse_adjacency": [[1], [0, 2], [1]]
+  }
+}

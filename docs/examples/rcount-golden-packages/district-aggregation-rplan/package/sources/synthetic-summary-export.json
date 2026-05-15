@@ -1,0 +1,16 @@
+{
+  "batch_comparison_audit_count": 0,
+  "batch_count": 0,
+  "contest_count": 1,
+  "cvr_count": 0,
+  "inclusion_proof_count": 0,
+  "lineage_count": 0,
+  "manual_audit_count": 0,
+  "rctx_ref_count": 1,
+  "reporting_unit_count": 3,
+  "rhist_ref_count": 1,
+  "rla_audit_count": 0,
+  "source_format": "synthetic-summary-export-v1",
+  "status_event_count": 0,
+  "summary_count": 3
+}

@@ -1,0 +1,25 @@
+{
+  "transcript_version": "rcount-audit-transcript-v1",
+  "verifier": "rcount-audit",
+  "status": "fail",
+  "package_content_hash": "sha256:2a2c004a12de1543bdc3e9106a82f23736b42122f840b5e3021a1b4c16b1c4b1",
+  "manifest_content_hash": "sha256:2a2c004a12de1543bdc3e9106a82f23736b42122f840b5e3021a1b4c16b1c4b1",
+  "checks": [
+    {
+      "equation_id": "manual_audit_reconciliation",
+      "status": "fail",
+      "error": "manual audit manual-audit:syn-2024-mayor:P-001 declares status Pass, computed Escalate"
+    },
+    {
+      "equation_id": "jurisdiction_contest_total",
+      "status": "pass",
+      "contest_id": "syn-2024-mayor",
+      "reporting_unit_id": "syn:jurisdiction:SYN"
+    },
+    {
+      "equation_id": "source_hash_match",
+      "status": "pass",
+      "reporting_unit_id": "source:synthetic-summary-export"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[package]
+name = "rcount-io"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "RCOUNT package directory read/write helpers"
+
+[dependencies]
+rcount-core = { path = "../rcount-core" }
+csv.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true

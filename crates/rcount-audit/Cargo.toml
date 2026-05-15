@@ -1,0 +1,18 @@
+[package]
+name = "rcount-audit"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "RCOUNT package verification and audit transcripts"
+
+[dependencies]
+rcount-core = { path = "../rcount-core" }
+rcount-io = { path = "../rcount-io" }
+rcount-stats = { path = "../rcount-stats" }
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true

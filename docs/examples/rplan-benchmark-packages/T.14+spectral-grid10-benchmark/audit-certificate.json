@@ -1,0 +1,85 @@
+{
+  "schema_version": "audit-certificate-v1",
+  "certificate_id": "sha256:c53bbb4e940a2b7a47b3e7509a1d7d28e74c6cde08d0e15ac6461d69e025a61c",
+  "generated_at_utc": "2026-05-11T00:00:00Z",
+  "content_hash": "sha256:c53bbb4e940a2b7a47b3e7509a1d7d28e74c6cde08d0e15ac6461d69e025a61c",
+  "plan_hash": "sha256:6b83cae7f2a64c9943a53f75bac58e206d4b6b3dfe67b10c6912dacc49d76ef0",
+  "plan_schema_version": "district-plan-v1",
+  "context_hash": "sha256:68cfae62e887938e40248387d37e6bcce2ea67ece2970d2d901d212b07939e83",
+  "legal_profile_hash": "sha256:47330820265931878d2d7feb6568710e636d0e2db9cec0fa2cb4ca40bf5e515c",
+  "legal_profile": {
+    "schema_version": "legal-profile-v1",
+    "profile_id": "US_CONGRESSIONAL_PROJECT_V1",
+    "jurisdiction": "US",
+    "chamber": "congressional",
+    "year": 2020,
+    "population_tolerance": {
+      "type": "exact-ppm",
+      "max_deviation_ppm": 5000
+    },
+    "county_split_rule": {
+      "type": "count-only"
+    },
+    "municipal_split_rule": {
+      "type": "not-evaluated"
+    },
+    "vra_policy": {
+      "type": "not-evaluated"
+    },
+    "legal_disclaimer": "Pass means the plan passes the supplied profile, not every possible legal requirement."
+  },
+  "source_hashes": {
+    "fixture": "sha256:87950eb7311834eb7f388f7cd5bd06b849a48bca269cad354a48e291ab155529"
+  },
+  "runtime": {
+    "binary_name": "bisect-cli-example",
+    "binary_version": "0.1.0"
+  },
+  "algorithm_lineage": {
+    "producer_crate": "bisect-apportion",
+    "producer_version": "0.1.0",
+    "method": "spectral",
+    "parent_plan_hashes": [],
+    "parameters_hash": "sha256:c1c6ec21145339ce5aa43bce8207a2b9b238722fe63bc8da8077dc44d00e3dfe",
+    "extra": {
+      "benchmark_notes_path": "benchmark-notes.json",
+      "benchmark_notes_sha256": "ab838eee051ba835a0dd566d569b39d1688285d22c34bf39a77d901bfc1259e9",
+      "edge_cut": 10,
+      "input_fixture": "grid10-synthetic",
+      "lineage_schema_version": "bisect-spectral-lineage-v1",
+      "method_transcript_path": "method-transcript.json",
+      "method_transcript_sha256": "881a813239cc25d778dfc45eb15aa3f45e506145e33b54099887d3ffd80faf81",
+      "package_id": "T.14+spectral-grid10-benchmark",
+      "parameter_hash": "sha256:b677594e63a0696e5215592f410c6449ccb0eb3357d01f2cf7a763e8df7385f4",
+      "population_deviation": 0.0,
+      "status": "partitioned",
+      "summary_path": "spectral-summary.json",
+      "summary_sha256": "13f4ae6c2e44918a900c058bd4ce8880d0bc3114bf0404afdbb433b386da0c43"
+    }
+  },
+  "result": "pass",
+  "checks": [
+    {
+      "name": "plan-shape",
+      "status": "pass",
+      "severity": "info",
+      "summary": "plan shape is valid",
+      "witnesses": []
+    },
+    {
+      "name": "population",
+      "status": "pass",
+      "severity": "info",
+      "summary": "all districts pass population tolerance",
+      "witnesses": []
+    },
+    {
+      "name": "contiguity",
+      "status": "pass",
+      "severity": "info",
+      "summary": "all districts are contiguous",
+      "witnesses": []
+    }
+  ],
+  "warnings": []
+}

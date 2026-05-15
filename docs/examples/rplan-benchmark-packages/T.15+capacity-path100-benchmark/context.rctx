@@ -1,0 +1,1216 @@
+{
+  "rctx_version": "0.1",
+  "context_hash": "sha256:a60450a4271df93615ab9fa4a02304352ae1cfef970cde9f45bbbe4068ca6735",
+  "units": {
+    "unit_kind": "tract",
+    "state": "WA",
+    "year": 2020,
+    "canonical_order": "explicit-unit-ids",
+    "unit_ids": [
+      "53015000100",
+      "53015000200",
+      "53015000300",
+      "53015000400",
+      "53015000500",
+      "53015000600",
+      "53015000700",
+      "53015000800",
+      "53015000900",
+      "53015001000",
+      "53015001100",
+      "53015001200",
+      "53015001300",
+      "53015001400",
+      "53015001500",
+      "53015001600",
+      "53015001700",
+      "53015001800",
+      "53015001900",
+      "53015002000",
+      "53015002100",
+      "53015002200",
+      "53015002300",
+      "53015002400",
+      "53015002500",
+      "53015002600",
+      "53015002700",
+      "53015002800",
+      "53015002900",
+      "53015003000",
+      "53015003100",
+      "53015003200",
+      "53015003300",
+      "53015003400",
+      "53015003500",
+      "53015003600",
+      "53015003700",
+      "53015003800",
+      "53015003900",
+      "53015004000",
+      "53015004100",
+      "53015004200",
+      "53015004300",
+      "53015004400",
+      "53015004500",
+      "53015004600",
+      "53015004700",
+      "53015004800",
+      "53015004900",
+      "53015005000",
+      "53015005100",
+      "53015005200",
+      "53015005300",
+      "53015005400",
+      "53015005500",
+      "53015005600",
+      "53015005700",
+      "53015005800",
+      "53015005900",
+      "53015006000",
+      "53015006100",
+      "53015006200",
+      "53015006300",
+      "53015006400",
+      "53015006500",
+      "53015006600",
+      "53015006700",
+      "53015006800",
+      "53015006900",
+      "53015007000",
+      "53015007100",
+      "53015007200",
+      "53015007300",
+      "53015007400",
+      "53015007500",
+      "53015007600",
+      "53015007700",
+      "53015007800",
+      "53015007900",
+      "53015008000",
+      "53015008100",
+      "53015008200",
+      "53015008300",
+      "53015008400",
+      "53015008500",
+      "53015008600",
+      "53015008700",
+      "53015008800",
+      "53015008900",
+      "53015009000",
+      "53015009100",
+      "53015009200",
+      "53015009300",
+      "53015009400",
+      "53015009500",
+      "53015009600",
+      "53015009700",
+      "53015009800",
+      "53015009900",
+      "53015010000"
+    ],
+    "unit_universe_hash": "sha256:8dc3cfbc6183bf688a6d129586a42782b313d56fd0ab309d5cd82846f889b9fa",
+    "source_id": "path100-capacity-synthetic"
+  },
+  "graph": {
+    "edge_semantics": "undirected",
+    "adjacency": [
+      [
+        {
+          "to": 1,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 0,
+          "kind": "boundary"
+        },
+        {
+          "to": 2,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 1,
+          "kind": "boundary"
+        },
+        {
+          "to": 3,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 2,
+          "kind": "boundary"
+        },
+        {
+          "to": 4,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 3,
+          "kind": "boundary"
+        },
+        {
+          "to": 5,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 4,
+          "kind": "boundary"
+        },
+        {
+          "to": 6,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 5,
+          "kind": "boundary"
+        },
+        {
+          "to": 7,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 6,
+          "kind": "boundary"
+        },
+        {
+          "to": 8,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 7,
+          "kind": "boundary"
+        },
+        {
+          "to": 9,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 8,
+          "kind": "boundary"
+        },
+        {
+          "to": 10,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 9,
+          "kind": "boundary"
+        },
+        {
+          "to": 11,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 10,
+          "kind": "boundary"
+        },
+        {
+          "to": 12,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 11,
+          "kind": "boundary"
+        },
+        {
+          "to": 13,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 12,
+          "kind": "boundary"
+        },
+        {
+          "to": 14,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 13,
+          "kind": "boundary"
+        },
+        {
+          "to": 15,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 14,
+          "kind": "boundary"
+        },
+        {
+          "to": 16,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 15,
+          "kind": "boundary"
+        },
+        {
+          "to": 17,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 16,
+          "kind": "boundary"
+        },
+        {
+          "to": 18,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 17,
+          "kind": "boundary"
+        },
+        {
+          "to": 19,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 18,
+          "kind": "boundary"
+        },
+        {
+          "to": 20,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 19,
+          "kind": "boundary"
+        },
+        {
+          "to": 21,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 20,
+          "kind": "boundary"
+        },
+        {
+          "to": 22,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 21,
+          "kind": "boundary"
+        },
+        {
+          "to": 23,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 22,
+          "kind": "boundary"
+        },
+        {
+          "to": 24,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 23,
+          "kind": "boundary"
+        },
+        {
+          "to": 25,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 24,
+          "kind": "boundary"
+        },
+        {
+          "to": 26,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 25,
+          "kind": "boundary"
+        },
+        {
+          "to": 27,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 26,
+          "kind": "boundary"
+        },
+        {
+          "to": 28,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 27,
+          "kind": "boundary"
+        },
+        {
+          "to": 29,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 28,
+          "kind": "boundary"
+        },
+        {
+          "to": 30,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 29,
+          "kind": "boundary"
+        },
+        {
+          "to": 31,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 30,
+          "kind": "boundary"
+        },
+        {
+          "to": 32,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 31,
+          "kind": "boundary"
+        },
+        {
+          "to": 33,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 32,
+          "kind": "boundary"
+        },
+        {
+          "to": 34,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 33,
+          "kind": "boundary"
+        },
+        {
+          "to": 35,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 34,
+          "kind": "boundary"
+        },
+        {
+          "to": 36,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 35,
+          "kind": "boundary"
+        },
+        {
+          "to": 37,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 36,
+          "kind": "boundary"
+        },
+        {
+          "to": 38,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 37,
+          "kind": "boundary"
+        },
+        {
+          "to": 39,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 38,
+          "kind": "boundary"
+        },
+        {
+          "to": 40,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 39,
+          "kind": "boundary"
+        },
+        {
+          "to": 41,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 40,
+          "kind": "boundary"
+        },
+        {
+          "to": 42,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 41,
+          "kind": "boundary"
+        },
+        {
+          "to": 43,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 42,
+          "kind": "boundary"
+        },
+        {
+          "to": 44,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 43,
+          "kind": "boundary"
+        },
+        {
+          "to": 45,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 44,
+          "kind": "boundary"
+        },
+        {
+          "to": 46,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 45,
+          "kind": "boundary"
+        },
+        {
+          "to": 47,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 46,
+          "kind": "boundary"
+        },
+        {
+          "to": 48,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 47,
+          "kind": "boundary"
+        },
+        {
+          "to": 49,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 48,
+          "kind": "boundary"
+        },
+        {
+          "to": 50,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 49,
+          "kind": "boundary"
+        },
+        {
+          "to": 51,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 50,
+          "kind": "boundary"
+        },
+        {
+          "to": 52,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 51,
+          "kind": "boundary"
+        },
+        {
+          "to": 53,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 52,
+          "kind": "boundary"
+        },
+        {
+          "to": 54,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 53,
+          "kind": "boundary"
+        },
+        {
+          "to": 55,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 54,
+          "kind": "boundary"
+        },
+        {
+          "to": 56,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 55,
+          "kind": "boundary"
+        },
+        {
+          "to": 57,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 56,
+          "kind": "boundary"
+        },
+        {
+          "to": 58,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 57,
+          "kind": "boundary"
+        },
+        {
+          "to": 59,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 58,
+          "kind": "boundary"
+        },
+        {
+          "to": 60,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 59,
+          "kind": "boundary"
+        },
+        {
+          "to": 61,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 60,
+          "kind": "boundary"
+        },
+        {
+          "to": 62,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 61,
+          "kind": "boundary"
+        },
+        {
+          "to": 63,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 62,
+          "kind": "boundary"
+        },
+        {
+          "to": 64,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 63,
+          "kind": "boundary"
+        },
+        {
+          "to": 65,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 64,
+          "kind": "boundary"
+        },
+        {
+          "to": 66,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 65,
+          "kind": "boundary"
+        },
+        {
+          "to": 67,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 66,
+          "kind": "boundary"
+        },
+        {
+          "to": 68,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 67,
+          "kind": "boundary"
+        },
+        {
+          "to": 69,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 68,
+          "kind": "boundary"
+        },
+        {
+          "to": 70,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 69,
+          "kind": "boundary"
+        },
+        {
+          "to": 71,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 70,
+          "kind": "boundary"
+        },
+        {
+          "to": 72,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 71,
+          "kind": "boundary"
+        },
+        {
+          "to": 73,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 72,
+          "kind": "boundary"
+        },
+        {
+          "to": 74,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 73,
+          "kind": "boundary"
+        },
+        {
+          "to": 75,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 74,
+          "kind": "boundary"
+        },
+        {
+          "to": 76,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 75,
+          "kind": "boundary"
+        },
+        {
+          "to": 77,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 76,
+          "kind": "boundary"
+        },
+        {
+          "to": 78,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 77,
+          "kind": "boundary"
+        },
+        {
+          "to": 79,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 78,
+          "kind": "boundary"
+        },
+        {
+          "to": 80,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 79,
+          "kind": "boundary"
+        },
+        {
+          "to": 81,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 80,
+          "kind": "boundary"
+        },
+        {
+          "to": 82,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 81,
+          "kind": "boundary"
+        },
+        {
+          "to": 83,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 82,
+          "kind": "boundary"
+        },
+        {
+          "to": 84,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 83,
+          "kind": "boundary"
+        },
+        {
+          "to": 85,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 84,
+          "kind": "boundary"
+        },
+        {
+          "to": 86,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 85,
+          "kind": "boundary"
+        },
+        {
+          "to": 87,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 86,
+          "kind": "boundary"
+        },
+        {
+          "to": 88,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 87,
+          "kind": "boundary"
+        },
+        {
+          "to": 89,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 88,
+          "kind": "boundary"
+        },
+        {
+          "to": 90,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 89,
+          "kind": "boundary"
+        },
+        {
+          "to": 91,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 90,
+          "kind": "boundary"
+        },
+        {
+          "to": 92,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 91,
+          "kind": "boundary"
+        },
+        {
+          "to": 93,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 92,
+          "kind": "boundary"
+        },
+        {
+          "to": 94,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 93,
+          "kind": "boundary"
+        },
+        {
+          "to": 95,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 94,
+          "kind": "boundary"
+        },
+        {
+          "to": 96,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 95,
+          "kind": "boundary"
+        },
+        {
+          "to": 97,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 96,
+          "kind": "boundary"
+        },
+        {
+          "to": 98,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 97,
+          "kind": "boundary"
+        },
+        {
+          "to": 99,
+          "kind": "boundary"
+        }
+      ],
+      [
+        {
+          "to": 98,
+          "kind": "boundary"
+        }
+      ]
+    ]
+  },
+  "populations": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
+  ],
+  "source_hashes": {
+    "fixture": "sha256:997cd9765237619bd43e3e2730023a619dac616c75a2c84033c5d73af6aa989e"
+  }
+}

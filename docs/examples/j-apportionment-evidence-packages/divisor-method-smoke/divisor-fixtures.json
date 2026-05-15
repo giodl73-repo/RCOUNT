@@ -1,0 +1,49 @@
+{
+  "fixture_version": "j-divisor-smoke-fixtures v1",
+  "populations": [
+    {
+      "name": "A",
+      "population": 6000000
+    },
+    {
+      "name": "B",
+      "population": 2500000
+    },
+    {
+      "name": "C",
+      "population": 1500000
+    }
+  ],
+  "house_size": 10,
+  "expected_allocations": [
+    {
+      "method": "webster",
+      "seats": [
+        { "name": "A", "seats": 6 },
+        { "name": "B", "seats": 3 },
+        { "name": "C", "seats": 1 }
+      ]
+    },
+    {
+      "method": "adams",
+      "seats": [
+        { "name": "A", "seats": 5 },
+        { "name": "B", "seats": 3 },
+        { "name": "C", "seats": 2 }
+      ]
+    },
+    {
+      "method": "jefferson",
+      "seats": [
+        { "name": "A", "seats": 7 },
+        { "name": "B", "seats": 2 },
+        { "name": "C", "seats": 1 }
+      ]
+    }
+  ],
+  "paradox_check": {
+    "house_sizes": [3, 4, 5, 6, 7, 8, 9, 10],
+    "methods": ["huntington-hill", "webster", "adams", "jefferson"],
+    "expected_alabama_events": []
+  }
+}

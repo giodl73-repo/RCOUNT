@@ -1,0 +1,79 @@
+{
+  "adjacency": [
+    [
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      4
+    ]
+  ],
+  "assignment": [
+    0,
+    0,
+    0,
+    1,
+    1,
+    1
+  ],
+  "context_hash": "sha256:e484ba10b52a8623e3df867c4c26b6e1789e97e89978c1cbddfd5a366a1c00be",
+  "input_fixture": "path6-synthetic",
+  "method": "spectral",
+  "package_id": "T.14+spectral-generated-synthetic",
+  "package_tier": "method-produced-fixture",
+  "paper": "T.14+spectral-partitioning",
+  "plan_hash": "sha256:66fc801efe10a78e703f8513f9875b79901a4793745abde2ffa4aaecf437f5bd",
+  "populations": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
+  ],
+  "producer_crate": "bisect-apportion",
+  "producer_version": "0.1.0",
+  "schema_version": "method-transcript-v1",
+  "scope_note": "Real crate-generated spectral bisection over a deterministic six-unit path fixture; validates spectral package generation and lineage, not real-data construction quality.",
+  "seed": null,
+  "source_workflow": "cargo run -p bisect-cli --no-default-features --example spectral_path6_package",
+  "status": "partitioned",
+  "summary": {
+    "converged": true,
+    "edge_cut": 1,
+    "iterations": 43,
+    "method": "spectral",
+    "parameter_hash": "sha256:e8017a8ad898e9244e4a008ab0c328cc758cc6359546e394ea0fd0d74223aad3",
+    "population_deviation": 0.0,
+    "schema_version": "bisect-spectral-summary-v1",
+    "sweep": "population-balanced-min-cut",
+    "target_fraction": 0.5,
+    "tolerance": 0.05
+  },
+  "summary_path": "spectral-summary.json",
+  "summary_sha256": "0510a0b8ecdc3330440fc27cade2a4bdec89d50939915fa6e4b2942c81d16acc",
+  "unit_universe_hash": "sha256:db3e0f416b7b2ca5beed1cb7d60170f9d12dd14b00f35e5d7db069627ec8176d",
+  "vector": [
+    -0.5597391520075738,
+    -0.4071033201688543,
+    -0.14477212582999985,
+    0.14477212582999985,
+    0.4071033201688543,
+    0.5597391520075738
+  ]
+}

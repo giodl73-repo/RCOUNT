@@ -1,0 +1,3 @@
+cargo run -p bisect-cli --no-default-features --example u16_branch_cut_path8_benchmark_package
+cargo run -p rplan-cli -- verify-certificate --certificate docs/examples/rplan-benchmark-packages/U.16+branch-and-cut-path8-benchmark/audit-certificate.json --plan docs/examples/rplan-benchmark-packages/U.16+branch-and-cut-path8-benchmark/plan.rplan --context docs/examples/rplan-benchmark-packages/U.16+branch-and-cut-path8-benchmark/context.rctx
+cargo run -p bisect-cli -- verify --manifest docs/examples/rplan-benchmark-packages/U.16+branch-and-cut-path8-benchmark/manifest.json

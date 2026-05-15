@@ -1,0 +1,25 @@
+{
+  "transcript_version": "rcount-audit-transcript-v1",
+  "verifier": "rcount-audit",
+  "status": "fail",
+  "package_content_hash": "sha256:e8917690ca2d2c2ce9fc52b46524e682bced03407f5ccd4d16215fc82db4e696",
+  "manifest_content_hash": "sha256:e8917690ca2d2c2ce9fc52b46524e682bced03407f5ccd4d16215fc82db4e696",
+  "checks": [
+    {
+      "equation_id": "rla_jurisdiction_adapter",
+      "status": "fail",
+      "error": "RLA audit rla:syn-2024-mayor:round-1 has invalid Colorado-style public seed: 3141592653589793238X"
+    },
+    {
+      "equation_id": "jurisdiction_contest_total",
+      "status": "pass",
+      "contest_id": "syn-2024-mayor",
+      "reporting_unit_id": "syn:jurisdiction:SYN"
+    },
+    {
+      "equation_id": "source_hash_match",
+      "status": "pass",
+      "reporting_unit_id": "source:synthetic-summary-export"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "transcript_version": "rcount-audit-transcript-v1",
+  "verifier": "rcount-audit",
+  "status": "fail",
+  "package_content_hash": "sha256:867b90a9b3ee3c0d91defbb2fc1951c5de68e919bf2bb0a1cf16e18f517330a5",
+  "manifest_content_hash": "sha256:867b90a9b3ee3c0d91defbb2fc1951c5de68e919bf2bb0a1cf16e18f517330a5",
+  "checks": [
+    {
+      "equation_id": "cvr_summary_total",
+      "status": "fail",
+      "error": "CVR summary mismatch for contest syn-2024-mayor reporting unit syn:precinct:P-001 field selection:cand-a: summary 40, cvr 39"
+    },
+    {
+      "equation_id": "jurisdiction_contest_total",
+      "status": "pass",
+      "contest_id": "syn-2024-mayor",
+      "reporting_unit_id": "syn:jurisdiction:SYN"
+    },
+    {
+      "equation_id": "source_hash_match",
+      "status": "pass",
+      "reporting_unit_id": "source:synthetic-summary-export"
+    }
+  ]
+}

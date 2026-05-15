@@ -1,0 +1,44 @@
+{
+  "rplan_version": "0.2",
+  "plan": {
+    "schema_version": "district-plan-v1",
+    "units": {
+      "unit_kind": "precinct",
+      "state": "SYN",
+      "year": 2024,
+      "canonical_order": "explicit-unit-ids",
+      "unit_ids": [
+        "syn:precinct:P-001",
+        "syn:precinct:P-002",
+        "syn:precinct:P-003"
+      ],
+      "unit_universe_hash": "sha256:7945d410d6a8eecb52aebd4e1a890b25167d852d41189494ebf15f9cc8fe07ec",
+      "source_id": "rcount:synthetic-cycle-2024"
+    },
+    "assignment": [
+      0,
+      1,
+      1
+    ],
+    "k": 2,
+    "display_labels": [
+      "SYN-D1",
+      "SYN-D2"
+    ],
+    "allow_empty_districts": false
+  },
+  "metadata": {
+    "label": "synthetic-cycle-2024",
+    "jurisdiction": "SYN",
+    "chamber": "county-council",
+    "created_at": "2026-05-12T00:00:00Z",
+    "description": "Synthetic multi-election RCOUNT/RPLAN harness cycle."
+  },
+  "provenance": {
+    "producer": {},
+    "source_hashes": {},
+    "conversion_lineage": []
+  },
+  "geometry": null,
+  "extensions": {}
+}

@@ -1,0 +1,13 @@
+{
+  "rhist_version": "0.1",
+  "package_id": "real-ri-tract-unchanged",
+  "jurisdiction": "RI",
+  "cycle_ids": [
+    "ri-2000-census",
+    "ri-2010-census",
+    "ri-2020-census"
+  ],
+  "producer": "rhist-fixture",
+  "created_at": "2026-05-13T00:00:00Z",
+  "package_content_hash": "sha256:ccbddf423aa4ac08b0d45c4ac0b9db411293ea41fef3ac8fa93f9de9e85f66bb"
+}

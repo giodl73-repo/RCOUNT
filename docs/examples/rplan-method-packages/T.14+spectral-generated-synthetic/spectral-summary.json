@@ -1,0 +1,12 @@
+{
+  "schema_version": "bisect-spectral-summary-v1",
+  "method": "spectral",
+  "sweep": "population-balanced-min-cut",
+  "iterations": 43,
+  "converged": true,
+  "edge_cut": 1,
+  "population_deviation": 0.0,
+  "tolerance": 0.05,
+  "target_fraction": 0.5,
+  "parameter_hash": "sha256:e8017a8ad898e9244e4a008ab0c328cc758cc6359546e394ea0fd0d74223aad3"
+}

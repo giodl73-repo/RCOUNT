@@ -1,0 +1,9 @@
+{
+  "expected_status": "fail",
+  "expected_failure_check": "lineage_unit_refs",
+  "expected_failure_detail": "lineage:P-001-rename references missing target unit syn:precinct:P-001B",
+  "expected_io_checks": [
+    "package_content_hash"
+  ],
+  "deferred_checks": []
+}

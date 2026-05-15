@@ -1,0 +1,16 @@
+{
+  "package_id": "real-ri-tract-unchanged",
+  "proves": [
+    "the preserved source slices contain GEOID 44001030601 in 2000, 2010, and 2020",
+    "declared unchanged lineage records are internally consistent",
+    "declared source refs resolve to preserved source hashes"
+  ],
+  "does_not_prove": [
+    "complete Census tract relationship coverage",
+    "that no other Rhode Island tracts changed",
+    "vote totals or district assignments"
+  ],
+  "caveats": [
+    "This is a narrow source-pressure fixture built from local Census-derived demographic CSV slices, not an official full tract relationship file."
+  ]
+}

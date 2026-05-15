@@ -1,0 +1,10 @@
+{
+  "schema_version": "method-transcript-v1",
+  "package_id": "T.17+flow-construction",
+  "paper": "T.17+flow-based-construction",
+  "producer_crate": "bisect-flow",
+  "method": "flow-construction",
+  "status": "fixture-exported",
+  "fixture": "grid3x3-valid",
+  "scope_note": "Tiny public golden package proving RPLAN/RCTX/certificate packaging and lineage semantics; not an algorithm-performance benchmark."
+}

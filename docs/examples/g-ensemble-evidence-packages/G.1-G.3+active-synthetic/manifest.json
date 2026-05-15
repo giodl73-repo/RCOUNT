@@ -1,0 +1,64 @@
+{
+  "schema_version": "g-ensemble-evidence-manifest v1",
+  "package_id": "G.1-G.3+active-synthetic",
+  "status": "active",
+  "papers": ["G.1", "G.2", "G.3"],
+  "claims": [
+    {
+      "paper": "G.1",
+      "claim": "Synthetic compactness percentile claim is backed by external trace, BISECT plan/context, metrics, and diagnostics.",
+      "required_roles": ["external-trace", "metric-output", "bisect-plan", "rctx-context", "diagnostic"]
+    },
+    {
+      "paper": "G.2",
+      "claim": "Synthetic partisan outcome percentile claim is backed by external trace, election input, BISECT plan/context, and diagnostics.",
+      "required_roles": ["external-trace", "election-input", "bisect-plan", "rctx-context", "diagnostic"]
+    },
+    {
+      "paper": "G.3",
+      "claim": "Synthetic compactness metric distribution claim is backed by external trace, metric output, BISECT plan/context, and diagnostics.",
+      "required_roles": ["external-trace", "metric-output", "bisect-plan", "rctx-context", "diagnostic"]
+    }
+  ],
+  "files": [
+    {
+      "path": "external-trace.json",
+      "sha256": "702e19204daee1c4d8b951c3a08453a1f2ae0a4d7aa596ff3ba7e618461691a7",
+      "role": "external-trace",
+      "description": "Tiny synthetic external ensemble trace for G.1-G.3 active-package validation."
+    },
+    {
+      "path": "election-input.json",
+      "sha256": "ef92dfcf9272526c587dbea487f7ad36fbbf0e15756f652161c4e088df3b7344",
+      "role": "election-input",
+      "description": "Synthetic two-party district vote input for G.2 package validation."
+    },
+    {
+      "path": "metric-output.json",
+      "sha256": "d8e495cbcb3719308194e3e2ea0dcdc17c3784f42d5ddae76195aa8a3dee04d5",
+      "role": "metric-output",
+      "description": "Synthetic compactness and partisan percentile output for G.1-G.3 package validation."
+    },
+    {
+      "path": "diagnostics.json",
+      "sha256": "2e6d762372e437582d23802f8500573691b13c5bbdf7b3a94ee2730d8fbeb4dc",
+      "role": "diagnostic",
+      "description": "Synthetic trace diagnostic summary for package validation."
+    },
+    {
+      "path": "plan.rplan",
+      "sha256": "77bb4d32ee551c0a38a4343b67ed4716b4cb2eba2091806526530e107fd6889b",
+      "role": "bisect-plan",
+      "description": "Synthetic BISECT baseline plan placeholder for package validation."
+    },
+    {
+      "path": "context.rctx",
+      "sha256": "51ce812236db3f69bb8a59827aaeb2d0cd6a25de4113214bb81c3f06318142ea",
+      "role": "rctx-context",
+      "description": "Synthetic RCTX context placeholder for package validation."
+    }
+  ],
+  "verifier_path": "crates/bisect-ensemble/src/evidence_manifest.rs",
+  "verification_commands": ["cargo test -p bisect-ensemble active_g1_g3_package_fixture_validates"],
+  "missing_evidence": []
+}

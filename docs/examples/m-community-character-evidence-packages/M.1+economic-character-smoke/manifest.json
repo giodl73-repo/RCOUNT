@@ -1,0 +1,14 @@
+{
+  "schema_version": "m1-economic-evidence-manifest v1",
+  "package_id": "M.1+economic-character-smoke",
+  "papers": ["M.1", "M.9"],
+  "fixture_file": {
+    "path": "economic-fixtures.json",
+    "sha256": "bb89a8b3b7e3a0b0b4c1123e8efb2714a8bdfbdfe895647f5bd8fc64f6588661",
+    "role": "lodes-economic-formula-and-weight-fixture"
+  },
+  "verifier_path": "crates/bisect-cli/src/lodes_evidence.rs",
+  "verification_commands": [
+    "cargo test -p bisect-cli m1_economic_smoke"
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "fixture_version": "u-search-synthetic-fixtures v1",
+  "parameter_sweep": {
+    "paper": "U.2",
+    "design": "synthetic one-at-a-time sweep smoke fixture",
+    "baseline_run_id": "baseline",
+    "parameters": [
+      {
+        "name": "balance_tolerance",
+        "default": 0.5,
+        "grid": [0.1, 0.5, 1.0]
+      },
+      {
+        "name": "convergence_threshold",
+        "default": 600.0,
+        "grid": [200.0, 600.0, 1000.0]
+      }
+    ],
+    "runs": [
+      {
+        "run_id": "baseline",
+        "parameter": "baseline",
+        "value": 0.0,
+        "output_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+        "metrics": {
+          "mean_polsby_popper": 0.421,
+          "county_splits": 7,
+          "dem_seats": 2
+        }
+      },
+      {
+        "run_id": "balance-0.1",
+        "parameter": "balance_tolerance",
+        "value": 0.1,
+        "output_sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+        "metrics": {
+          "mean_polsby_popper": 0.409,
+          "county_splits": 8,
+          "dem_seats": 2
+        }
+      },
+      {
+        "run_id": "balance-1.0",
+        "parameter": "balance_tolerance",
+        "value": 1.0,
+        "output_sha256": "3333333333333333333333333333333333333333333333333333333333333333",
+        "metrics": {
+          "mean_polsby_popper": 0.438,
+          "county_splits": 6,
+          "dem_seats": 2
+        }
+      },
+      {
+        "run_id": "threshold-200",
+        "parameter": "convergence_threshold",
+        "value": 200.0,
+        "output_sha256": "4444444444444444444444444444444444444444444444444444444444444444",
+        "metrics": {
+          "mean_polsby_popper": 0.417,
+          "county_splits": 7,
+          "dem_seats": 2
+        }
+      },
+      {
+        "run_id": "threshold-1000",
+        "parameter": "convergence_threshold",
+        "value": 1000.0,
+        "output_sha256": "5555555555555555555555555555555555555555555555555555555555555555",
+        "metrics": {
+          "mean_polsby_popper": 0.424,
+          "county_splits": 7,
+          "dem_seats": 2
+        }
+      }
+    ]
+  },
+  "parallel_tempering": {
+    "paper": "U.4",
+    "base_seed": 314159,
+    "steps": 40,
+    "n_replicas": 3,
+    "swap_interval": 5,
+    "cold_tolerance": 0.005,
+    "hot_tolerance": 0.05,
+    "tolerance_ladder": [0.005, 0.0158113883008419, 0.05],
+    "swap_attempts": 16,
+    "swap_acceptances": 9,
+    "selected_rank": 0,
+    "cold_chain_records": 41
+  }
+}

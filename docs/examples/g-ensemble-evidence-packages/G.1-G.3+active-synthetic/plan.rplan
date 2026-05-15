@@ -1,0 +1,20 @@
+{
+  "rplan_version": "synthetic-rplan v1",
+  "plan_id": "baseline",
+  "state": "SYN",
+  "year": "2020",
+  "assignments": [
+    {
+      "unit": "u1",
+      "district": 1
+    },
+    {
+      "unit": "u2",
+      "district": 2
+    },
+    {
+      "unit": "u3",
+      "district": 3
+    }
+  ]
+}

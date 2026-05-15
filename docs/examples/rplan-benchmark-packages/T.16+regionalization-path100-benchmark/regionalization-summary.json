@@ -1,0 +1,13 @@
+{
+  "schema_version": "bisect-regionalization-summary-v1",
+  "method": "regionalization",
+  "merge_policy": "adjacent-balanced-agglomerative",
+  "repair_method": "none",
+  "capacity_status": "valid",
+  "repair_status": "not-needed",
+  "population_deviation": 0.0,
+  "edge_cut": 1,
+  "merge_count": 98,
+  "hierarchy_depth": 49,
+  "parameter_hash": "sha256:c8ec9a029194ca0ce13a5b5a29a8445fdee8e54c5ab76d0f69b988522e0603f7"
+}

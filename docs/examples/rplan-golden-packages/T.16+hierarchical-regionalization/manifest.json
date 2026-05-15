@@ -1,0 +1,28 @@
+{
+  "schema_version": "u20-public-example-manifest-v1",
+  "example_id": "T.16+hierarchical-regionalization",
+  "paper": "T.16+hierarchical-regionalization",
+  "files": [
+    {
+      "path": "plan.rplan",
+      "sha256": "354470c7a18e0407c6498a9eb6518f7369d241cdfc7754a520b968e4e7b00b27",
+      "role": "plan"
+    },
+    {
+      "path": "context.rctx",
+      "sha256": "107c60b317b24e328c90a69ab2eace24ce4e42e9122f38b3a224daef9632e2e2",
+      "role": "context"
+    },
+    {
+      "path": "audit-certificate.json",
+      "sha256": "22533ba0e1f514c536ae3f7a1f3db12878fa1e11a459025f5632a1e9ca9bc7c5",
+      "role": "certificate"
+    },
+    {
+      "path": "method-transcript.json",
+      "sha256": "6bbacb1da0102721f8fcb394eac46750861b98e91586602d54a60429a2c0ea2f",
+      "role": "method-transcript"
+    }
+  ],
+  "verification_command": "cargo run -p rplan-cli -- verify-certificate --certificate docs/examples/rplan-golden-packages/T.16+hierarchical-regionalization/audit-certificate.json --plan docs/examples/rplan-golden-packages/T.16+hierarchical-regionalization/plan.rplan --context docs/examples/rplan-golden-packages/T.16+hierarchical-regionalization/context.rctx"
+}

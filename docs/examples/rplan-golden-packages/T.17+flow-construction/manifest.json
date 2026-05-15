@@ -1,0 +1,28 @@
+{
+  "schema_version": "u20-public-example-manifest-v1",
+  "example_id": "T.17+flow-construction",
+  "paper": "T.17+flow-based-construction",
+  "files": [
+    {
+      "path": "plan.rplan",
+      "sha256": "354470c7a18e0407c6498a9eb6518f7369d241cdfc7754a520b968e4e7b00b27",
+      "role": "plan"
+    },
+    {
+      "path": "context.rctx",
+      "sha256": "107c60b317b24e328c90a69ab2eace24ce4e42e9122f38b3a224daef9632e2e2",
+      "role": "context"
+    },
+    {
+      "path": "audit-certificate.json",
+      "sha256": "502f18e384d6cd8e9092ffb96730bc5b6fd81829c35b83a914e6f9b5fac85beb",
+      "role": "certificate"
+    },
+    {
+      "path": "method-transcript.json",
+      "sha256": "ce57e1315d96faf4b75d6d5c6ebbc33edf532e5cce1ff2e4a59f4bf859393df6",
+      "role": "method-transcript"
+    }
+  ],
+  "verification_command": "cargo run -p rplan-cli -- verify-certificate --certificate docs/examples/rplan-golden-packages/T.17+flow-construction/audit-certificate.json --plan docs/examples/rplan-golden-packages/T.17+flow-construction/plan.rplan --context docs/examples/rplan-golden-packages/T.17+flow-construction/context.rctx"
+}

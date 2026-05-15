@@ -1,0 +1,11 @@
+{
+  "package_id": "syn-rhist-l1-bad-weights",
+  "proves": [
+    "negative fixture should fail exhaustive crosswalk weight validation"
+  ],
+  "does_not_prove": [
+    "official legal validity of boundary changes",
+    "vote totals or district assignments"
+  ],
+  "caveats": []
+}

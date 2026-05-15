@@ -1,0 +1,26 @@
+[package]
+name = "rcount-cli"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "RCOUNT command-line verifier"
+
+[[bin]]
+name = "rcount"
+path = "src/main.rs"
+
+[dependencies]
+rcount-audit = { path = "../rcount-audit" }
+rcount-core = { path = "../rcount-core" }
+rcount-district = { path = "../rcount-district" }
+rcount-io = { path = "../rcount-io" }
+clap.workspace = true
+serde_json.workspace = true
+anyhow.workspace = true
+
+[dev-dependencies]
+rctx-core.workspace = true
+rplan-core.workspace = true
+rplan-io.workspace = true
+tempfile.workspace = true

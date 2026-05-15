@@ -1,0 +1,10 @@
+{
+  "diagnostic_version": "g-active-synthetic-diagnostics v1",
+  "trace_count": 1,
+  "steps": 3,
+  "accepted_steps": 2,
+  "acceptance_rate": 0.6666666667,
+  "r_hat": null,
+  "ess": 2.0,
+  "notes": "Synthetic smoke diagnostics only; not evidence for a real external ensemble."
+}

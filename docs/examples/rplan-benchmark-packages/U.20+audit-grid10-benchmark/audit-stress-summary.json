@@ -1,0 +1,22 @@
+{
+  "constraints": [
+    "plan-shape",
+    "population",
+    "contiguity"
+  ],
+  "context_hash": "sha256:ca29070d867105f13d05c6c6da33b7a30c946391acf1a6188e48db8e8d6680b8",
+  "district_populations": [
+    5000,
+    5000
+  ],
+  "districts": 2,
+  "edge_count_undirected": 180,
+  "fixture": "grid10-audit-synthetic",
+  "package_id": "U.20+audit-grid10-benchmark",
+  "package_tier": "benchmark-package",
+  "plan_hash": "sha256:bc994aaaddcd3491ebcdd661bfc8649133fedee26c55c1111e4c7b7a4b88bc6b",
+  "schema_version": "u20-audit-stress-summary-v1",
+  "scope_note": "Audit-only benchmark package for U.20 verifier scale and fixed-point certificate behavior. It makes no construction, optimization, or legal sufficiency claim.",
+  "unit_count": 100,
+  "unit_universe_hash": "sha256:d0dc100e6ebbcdec5fa70e1f7ffecd367715b19475d8fa9f510235fa294e0f99"
+}

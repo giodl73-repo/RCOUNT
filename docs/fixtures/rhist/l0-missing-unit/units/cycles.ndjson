@@ -1,0 +1,2 @@
+{"cycle_id":"syn-2024-general","jurisdiction":"SYN","cycle_kind":"general-election","effective_date":"2024-11-05","context_id":"syn-2024-precinct-context","context_hash":"sha256:1111111111111111111111111111111111111111111111111111111111111111","source_refs":["syn-2024-precincts.csv"]}
+{"cycle_id":"syn-2028-general","jurisdiction":"SYN","cycle_kind":"general-election","effective_date":"2028-11-07","context_id":"syn-2028-precinct-context","context_hash":"sha256:2222222222222222222222222222222222222222222222222222222222222222","source_refs":["syn-2028-precincts.csv"]}

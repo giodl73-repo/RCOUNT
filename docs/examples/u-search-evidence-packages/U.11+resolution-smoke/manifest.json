@@ -1,0 +1,14 @@
+{
+  "schema_version": "u11-resolution-evidence-manifest v1",
+  "package_id": "U.11+resolution-smoke",
+  "papers": ["U.11"],
+  "fixture_file": {
+    "path": "resolution-fixtures.json",
+    "sha256": "c6e12fb4ef5d12f99577e4622289b8743f0ac7b10f529d80bc5db749e6ac1996",
+    "role": "resolution-geoid-mapping-fixture"
+  },
+  "verifier_path": "crates/bisect-multiscale/src/resolution_evidence.rs",
+  "verification_commands": [
+    "cargo test -p bisect-multiscale resolution_evidence"
+  ]
+}

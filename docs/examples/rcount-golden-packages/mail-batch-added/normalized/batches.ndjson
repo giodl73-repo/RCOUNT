@@ -1,0 +1,3 @@
+{"batch_id":"batch:P-001:election-day","reporting_unit_id":"syn:precinct:P-001","kind":"election-day","status":"canvassed","accepted_ballots":70,"counted_ballots":70,"rejected_ballots":0,"source_refs":["source:synthetic-summary-export"]}
+{"batch_id":"batch:P-001:late-mail","reporting_unit_id":"syn:precinct:P-001","kind":"mail","status":"canvassed","accepted_ballots":10,"counted_ballots":10,"rejected_ballots":0,"source_refs":["source:synthetic-summary-export"]}
+{"batch_id":"batch:P-002:election-day","reporting_unit_id":"syn:precinct:P-002","kind":"election-day","status":"canvassed","accepted_ballots":60,"counted_ballots":60,"rejected_ballots":0,"source_refs":["source:synthetic-summary-export"]}

@@ -1,0 +1,9 @@
+{
+  "expected_status": "fail",
+  "expected_failure_check": "crosswalk_weight_sum",
+  "expected_failure_detail": "P-004 exhaustive registered-voters weights sum to 6/5",
+  "expected_io_checks": [
+    "package_content_hash"
+  ],
+  "deferred_checks": []
+}

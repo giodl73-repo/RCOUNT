@@ -1,0 +1,23 @@
+{
+  "election_input_version": "g-active-synthetic-election v1",
+  "state": "SYN",
+  "election": "synthetic-two-party",
+  "vote_model": "district-summed-two-party-share",
+  "district_votes": [
+    {
+      "district": 1,
+      "democratic": 5200,
+      "republican": 4800
+    },
+    {
+      "district": 2,
+      "democratic": 4700,
+      "republican": 5300
+    },
+    {
+      "district": 3,
+      "democratic": 5100,
+      "republican": 4900
+    }
+  ]
+}

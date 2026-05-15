@@ -1,0 +1,14 @@
+{
+  "schema_version": "u5-adaptive-evidence-manifest v1",
+  "package_id": "U.5+adaptive-multiscale-smoke",
+  "papers": ["U.5"],
+  "fixture_file": {
+    "path": "adaptive-fixtures.json",
+    "sha256": "a057337911606053377c905d83a42bbe22cf3cf657392d455885492c5cb9e362",
+    "role": "adaptive-alpha-trace-fixture"
+  },
+  "verifier_path": "crates/bisect-multiscale/src/adaptive_evidence.rs",
+  "verification_commands": [
+    "cargo test -p bisect-multiscale adaptive_evidence"
+  ]
+}

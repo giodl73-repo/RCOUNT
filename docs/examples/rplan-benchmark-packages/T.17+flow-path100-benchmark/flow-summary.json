@@ -1,0 +1,16 @@
+{
+  "schema_version": "bisect-flow-summary-v1",
+  "method": "flow-construction",
+  "seed_method": "farthest",
+  "cost_method": "edge-cut",
+  "repair_method": "bfs",
+  "status": "valid",
+  "population_deviation": 0.0,
+  "edge_cut": 1,
+  "seeds": [
+    0,
+    99
+  ],
+  "infeasibility_witness": null,
+  "parameter_hash": "sha256:32b6ac971753d97c544bc2393139cd567fa3980cfd727c7301e49a760574e7c7"
+}

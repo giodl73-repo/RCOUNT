@@ -1,0 +1,13 @@
+{
+  "schema_version": "bisect-local-search-summary-v1",
+  "method": "one-move",
+  "status": "no-improvement",
+  "moves_evaluated": 12,
+  "moves_accepted": 0,
+  "initial_edge_cut": 6,
+  "final_edge_cut": 6,
+  "initial_population_deviation": 0.0,
+  "final_population_deviation": 0.0,
+  "tolerance": 0.05,
+  "parameter_hash": "sha256:7d07695c56cd4c56a3a0c8f080b736ab4abee72500a269d1981198a8162e7448"
+}

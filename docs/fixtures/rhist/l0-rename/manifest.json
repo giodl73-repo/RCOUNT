@@ -1,0 +1,12 @@
+{
+  "rhist_version": "0.1",
+  "package_id": "syn-rhist-l0-rename",
+  "jurisdiction": "SYN",
+  "cycle_ids": [
+    "syn-2024-general",
+    "syn-2028-general"
+  ],
+  "producer": "rhist-fixture",
+  "created_at": "2026-05-13T00:00:00Z",
+  "package_content_hash": "sha256:a99b74c591ea14198c5e0ab22b974c1e99caaea520acf1442bef9dd18c132e8e"
+}
