@@ -3,6 +3,8 @@
 **Reusable election-count package verification, audit replay, and district
 aggregation tools.**
 
+**Series:** [Election Systems](https://github.com/giodl73-repo/giodl73-repo/blob/main/series/election-systems.md).
+
 RCOUNT is the neutral home for election-count package crates that should be
 usable by BISECT and other civic evidence systems without living inside the
 BISECT application workspace.
