@@ -5,6 +5,10 @@ aggregation tools.**
 
 **Series:** [Election Systems](https://github.com/giodl73-repo/giodl73-repo/blob/main/series/election-systems.md).
 
+**Review roles:** This repo uses
+[ROLES](https://github.com/giodl73-repo/ROLES), the `.roles` convention for
+repository-local review panels.
+
 RCOUNT is the neutral home for election-count package crates that should be
 usable by BISECT and other civic evidence systems without living inside the
 BISECT application workspace.
