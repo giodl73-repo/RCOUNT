@@ -1,0 +1,32 @@
+# Local tracker repo map for generated Cargo dependency overrides.
+# Cargo does not read this file directly; run:
+#
+#   python tools\repo_map.py write-cargo-config
+#
+
+[standard]
+version = 1
+cargo_config = ".cargo/config.toml"
+
+[repos.this_repo]
+role = "current repository"
+relative = "."
+clone_url = "https://github.com/giodl73-repo/RCOUNT.git"
+
+[repos.rline]
+role = "tracker dependency for rcount"
+relative = "..\\..\\tools-infra\\rline"
+clone_url = "https://github.com/giodl73-repo/RLINE.git"
+cargo_patches = [
+  { package = "rctx-core", source = "https://github.com/giodl73-repo/RLINE.git", path = "crates/rctx-core" },
+  { package = "rhist-core", source = "https://github.com/giodl73-repo/RLINE.git", path = "crates/rhist-core" },
+]
+
+[repos.rplan]
+role = "tracker dependency for rcount"
+relative = "..\\rplan"
+clone_url = "https://github.com/giodl73-repo/RPLAN.git"
+cargo_patches = [
+  { package = "rplan-core", source = "https://github.com/giodl73-repo/RPLAN.git", path = "crates/rplan-core" },
+  { package = "rplan-io", source = "https://github.com/giodl73-repo/RPLAN.git", path = "crates/rplan-io" },
+]
