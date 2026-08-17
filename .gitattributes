@@ -1,0 +1,2 @@
+# Source bytes are hash evidence; keep them stable across host platforms.
+docs/**/sources/** text eol=lf

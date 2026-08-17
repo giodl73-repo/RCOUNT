@@ -67,6 +67,9 @@ cargo run -p rcount-cli -- --help
 
 ## Specs
 
+- [`docs\family-contract.md`](docs/family-contract.md) defines the stable
+  package, hashing, verification, audit, privacy, and migration contract used
+  by family consumers.
 - [`docs\specs\rcount-foundation.md`](docs/specs/rcount-foundation.md) records
   the extraction boundary.
 - `context\waves\` tracks implementation waves and pulse history.
