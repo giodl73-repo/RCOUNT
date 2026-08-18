@@ -53,12 +53,13 @@ graph/context kernels.
 
 ## Dependency note
 
-`rcount-district` and `rcount-rhist` use GitHub dependencies on RLINE for
-`rctx-core` and `rhist-core`. RPLAN dependencies also resolve from GitHub. For
-local peer development, copy `.cargo\config.local.example.toml` to
-`.cargo\config.toml`.
+RCOUNT's RLINE and RPLAN dependencies resolve from GitHub. For local peer
+development, copy `.cargo\config.local.example.toml` to `.cargo\config.toml`.
 
 ## Commands
+
+Active maintenance owner: `@giodl73-repo`. The dependency note above replaces
+the duplicated per-crate dependency list while preserving the local override.
 
 ```powershell
 cargo test --workspace
