@@ -1,0 +1,33 @@
+{
+  "schema": "rcount.authority-boundaries.v1",
+  "owner_repo": "RCOUNT",
+  "verification_transcript_boundary": {
+    "proves": [
+      "package_structure_validated",
+      "hashes_and_source_bytes_checked",
+      "reconciliation_equations_replayed",
+      "audit_method_boundary_replayed"
+    ],
+    "does_not_prove": [
+      "legal_election_certification",
+      "canvassing_approval",
+      "district_plan_approval",
+      "election_night_reporting",
+      "public_result_authority"
+    ]
+  },
+  "bridge_boundary": {
+    "rplan": "assignment_and_plan_hash_only",
+    "rctx": "context_and_crosswalk_hash_only",
+    "rhist": "lineage_reference_only",
+    "bisect": "consumer_application_policy_only",
+    "rcount_role": "count_package_verification_and_aggregation_transcript",
+    "forbidden_inferences": [
+      "rcount_owns_rplan_schema",
+      "rcount_owns_rline_context_schema",
+      "rcount_owns_rhist_lineage_schema",
+      "rcount_owns_bisect_redistricting_policy",
+      "green_bridge_test_replaces_bisect_migration_evidence"
+    ]
+  }
+}

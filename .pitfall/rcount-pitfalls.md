@@ -2,7 +2,7 @@
 
 ## RCOUNT-PF-01: Verification Transcript Becomes Certification Claim
 
-**Status:** OPEN
+**Status:** MITIGATED
 
 **Pattern:** A passing RCOUNT transcript is treated as legal election
 certification, canvassing approval, plan approval, or election-night reporting.
@@ -15,10 +15,16 @@ results.
 
 **Structural solution:** Keep customer-facing language scoped to evidence
 verification and route legal, canvassing, plan approval, and reporting claims to
-consumer-owned authorities.
+consumer-owned authorities. `docs/authority-boundaries.v1.json` now records
+what verification transcripts prove and the public/legal authority claims they
+do not prove.
 
 **Evidence:** `README.md`, `docs/family-contract.md`, and this PITFALL adoption
-pass; open until customer-facing adoption docs receive the same review.
+pass.
+
+**Test:** `crates/rcount-core/tests/pitfall_policy.rs` parses the authority
+boundary manifest and rejects certification, canvassing, plan-approval,
+election-night reporting, and public-result authority inferences.
 
 ## RCOUNT-PF-02: Audit Method Label Hides Replay Boundary
 
@@ -64,7 +70,7 @@ passing on 2026-08-24.
 
 ## RCOUNT-PF-04: Thin Bridge Copies Sibling Ownership
 
-**Status:** OPEN
+**Status:** MITIGATED
 
 **Pattern:** RPLAN/RCTX/RHIST integration turns into copied schemas, hidden
 product state, or BISECT-specific policy inside RCOUNT.
@@ -76,11 +82,18 @@ can look like convenience rather than contract drift.
 
 **Structural solution:** Keep bridges hash-based and role-reviewed; require
 BISECT migration evidence before replacing its embedded RCOUNT snapshot.
+`docs/authority-boundaries.v1.json` now records that RPLAN, RCTX, and RHIST
+bridges are assignment/hash/context/lineage references only, while BISECT keeps
+application policy.
 
 **Evidence:** `.roles/parliament/package-bridge-reviewer.md`,
 `docs/specs/rcount-foundation.md`, `docs/family-contract.md`, and
 `cargo run --example district_aggregation_rplan -p rcount-district` passing on
 2026-08-24.
+
+**Test:** `crates/rcount-core/tests/pitfall_policy.rs` parses the bridge
+boundary manifest and fixture claim boundary, then rejects sibling-schema,
+BISECT-policy, and green-bridge-test migration inferences.
 
 ## RCOUNT-PF-05: Negative Fixtures Treated As Optional Examples
 
