@@ -1,0 +1,3850 @@
+{
+  "source": "3849b249b6d4f3016d387faef936d82899527141",
+  "files": [
+    {
+      "path": "Cargo.toml",
+      "segment": "whole",
+      "sha256": "edd0cd5abc60a6acec61a26fd80e006f744c110a9d8a4c10075ad3e516496659"
+    },
+    {
+      "path": "Cargo.lock",
+      "segment": "whole",
+      "sha256": "cc5b1e940f1c647b1a9582cd66edfc19bf3c6a0b4cf71c908d05bb51dbc4fda3"
+    },
+    {
+      "path": "crates/rcount-core/src/lib.rs",
+      "segment": "whole",
+      "sha256": "23c3ab0252dd48f7994bf268ce02a7d73711a5e5672d3f3407430bc4193e4c48"
+    },
+    {
+      "path": "crates/rcount-stats/src/lib.rs",
+      "segment": "whole",
+      "sha256": "59258e5756c58fb5b9588b92bfbbd164c746438c5cfe5d16bc7545c9a1b8d327"
+    },
+    {
+      "path": "crates/rcount-cli/src/main.rs",
+      "segment": "whole",
+      "sha256": "6505b5e337d418a11e005c29084aa34fcc86a471548183d31db4ac69fe7bd3d3"
+    },
+    {
+      "path": "crates/rcount-io/src/lib.rs",
+      "segment": "original-test-module",
+      "sha256": "60aef55c3a05998671d2dd7f90e40a6feba5f6bf38823a7b0956a826410dcd5c"
+    },
+    {
+      "path": "crates/rcount-audit/src/lib.rs",
+      "segment": "original-test-module",
+      "sha256": "3de8e445f93b65dd6bb11710b86c59079ea852df95f550b6f4743ef5041fdd92"
+    },
+    {
+      "path": "docs/examples/g-ensemble-evidence-packages/G.1-G.3+active-synthetic/context.rctx",
+      "segment": "whole",
+      "sha256": "7d85a997585156a15e64c408d6a1255c2bf9c0ea03553767308e729e113c7288"
+    },
+    {
+      "path": "docs/examples/g-ensemble-evidence-packages/G.1-G.3+active-synthetic/diagnostics.json",
+      "segment": "whole",
+      "sha256": "e3f5bc19ad26780e1d1156e0ca2c5798928c09bb12eaf230af82175f82ee480e"
+    },
+    {
+      "path": "docs/examples/g-ensemble-evidence-packages/G.1-G.3+active-synthetic/election-input.json",
+      "segment": "whole",
+      "sha256": "bd32617eb299b37f0783cbc4116b8a7acfec2acb7daa8a298efdfe88d315b4e9"
+    },
+    {
+      "path": "docs/examples/g-ensemble-evidence-packages/G.1-G.3+active-synthetic/external-trace.json",
+      "segment": "whole",
+      "sha256": "bcc6541bd4dd98bffec315ec25123708e73004b1bd4302205d1206d6d3c928c6"
+    },
+    {
+      "path": "docs/examples/g-ensemble-evidence-packages/G.1-G.3+active-synthetic/manifest.json",
+      "segment": "whole",
+      "sha256": "734b527660eff07ebab4f292e5be1d2e4805054680c8ace0992a45406fcaa95a"
+    },
+    {
+      "path": "docs/examples/g-ensemble-evidence-packages/G.1-G.3+active-synthetic/metric-output.json",
+      "segment": "whole",
+      "sha256": "3f44def2fa34a675b336e92d34c3a37b6bb66b3488a3efce8993490a66cda656"
+    },
+    {
+      "path": "docs/examples/g-ensemble-evidence-packages/G.1-G.3+active-synthetic/plan.rplan",
+      "segment": "whole",
+      "sha256": "8e4b690b81f764b1a34b001891624c242eb56964ef52312e54a29b4fdd0f09cf"
+    },
+    {
+      "path": "docs/examples/g-ensemble-evidence-packages/G.1-G.3+missing-evidence/manifest.json",
+      "segment": "whole",
+      "sha256": "d8655a0c4a9d59dd68aecc851e46ea3a058d353587e300a54e82d163b5810e86"
+    },
+    {
+      "path": "docs/examples/g-ensemble-evidence-packages/G.1-G.3+missing-evidence/scout-summary.json",
+      "segment": "whole",
+      "sha256": "d4ff1c6816e25ee83bb72c025d797d9c0af35d8b84f04534cbff4d3962cde123"
+    },
+    {
+      "path": "docs/examples/g-ensemble-evidence-packages/G.6-G.12+short-burst-smoke/manifest.json",
+      "segment": "whole",
+      "sha256": "c94f6e5d8281fcc145d74d42e4a7c44b5988f693b27020f085c76f9f70e01cff"
+    },
+    {
+      "path": "docs/examples/g-ensemble-evidence-packages/G.6-G.12+short-burst-smoke/short-burst-fixtures.json",
+      "segment": "whole",
+      "sha256": "489e0127b1f2c719cd2ce15b4baebcc302b688894283c29365aa4aa28c44e40e"
+    },
+    {
+      "path": "docs/examples/j-apportionment-evidence-packages/2020-census-table01/apportionment-table01.json",
+      "segment": "whole",
+      "sha256": "ead4607c4b714fdc909e892d60df9e9d34ccf7e988a48085ec7fbfd21182c762"
+    },
+    {
+      "path": "docs/examples/j-apportionment-evidence-packages/2020-census-table01/manifest.json",
+      "segment": "whole",
+      "sha256": "88bbf44405e5bbab2e8fd5e87b9dffbb72b0be4cbac922d64349c918f2900aed"
+    },
+    {
+      "path": "docs/examples/j-apportionment-evidence-packages/divisor-method-smoke/divisor-fixtures.json",
+      "segment": "whole",
+      "sha256": "2da9e7e059bff9fc9c9003ca77fda989b4bfda1a08d9cd7e650112c1c41fcae3"
+    },
+    {
+      "path": "docs/examples/j-apportionment-evidence-packages/divisor-method-smoke/manifest.json",
+      "segment": "whole",
+      "sha256": "1b4152a782ccba5396a780a3647a7887c582d1541f0f04fc907f72246f13cee5"
+    },
+    {
+      "path": "docs/examples/k-reock-evidence-packages/exact-mbc-smoke/manifest.json",
+      "segment": "whole",
+      "sha256": "5d41881ccd96704fafdfed995d125b5766f900231bffd10b23f3a679f0d7eaa3"
+    },
+    {
+      "path": "docs/examples/k-reock-evidence-packages/exact-mbc-smoke/reock-fixtures.json",
+      "segment": "whole",
+      "sha256": "cb1c981ebaa5e5bb3d5c16307f31516a1292e1ca4555843c3f3882660305c4be"
+    },
+    {
+      "path": "docs/examples/m-community-character-evidence-packages/M.1+economic-character-smoke/economic-fixtures.json",
+      "segment": "whole",
+      "sha256": "ffb59b7d082a4a27a32a1f6431d134231ce1c717e515074430fdddb3c82d9949"
+    },
+    {
+      "path": "docs/examples/m-community-character-evidence-packages/M.1+economic-character-smoke/manifest.json",
+      "segment": "whole",
+      "sha256": "c00dcd78f4cb9df68de4b2f2c767ca9a9e80264fa2b1373acdda1e27aa8939ab"
+    },
+    {
+      "path": "docs/examples/m-community-character-evidence-packages/M.3+acs-housing-smoke/housing-fixtures.json",
+      "segment": "whole",
+      "sha256": "d113446f5a67dea89a5401b97b947648838f6ad05ca5de61edad4f67a132874d"
+    },
+    {
+      "path": "docs/examples/m-community-character-evidence-packages/M.3+acs-housing-smoke/manifest.json",
+      "segment": "whole",
+      "sha256": "eb1f5fa8695eb5d1a645dac1453a8c2906db57c260a953997ea75a5d511739c5"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/README.md",
+      "segment": "whole",
+      "sha256": "430981b8f2475491e8182987c7642266c3e43805c5135d5c4086b87158185d2f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-california-rla/audits/rla.ndjson",
+      "segment": "whole",
+      "sha256": "25e79f5f5dc6fc7ff96d2924530f5a1aa03cdca3b8590585e2c552331e6633c3"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-california-rla/manifest.json",
+      "segment": "whole",
+      "sha256": "8e815810469ffed8cf3eaf5dd85f9db7c81cf2e67d1a5e67dd47c3c2567170a9"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-california-rla/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-california-rla/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "2656c48354c7d6a274f219494995b194fbd4a46048fd94ff386937bb478f9812"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-california-rla/normalized/cvr.ndjson",
+      "segment": "whole",
+      "sha256": "6d47edcd4e3085d9d1b07f9764014998d928f09e0db4c98b04e68ccf3ebf0f83"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-california-rla/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-california-rla/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5b6e830d55ba4fe87ca033d85132c84b1121b76fe8dfb2befd7fde498c7d0208"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-california-rla/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "afd48bdc5982ebb1068df0f9f6cd38aa4d6f890c97bca43fb95b890e773c039f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-california-rla/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-california-rla/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "197e6d4072af604d2f224f23e15b81965d18bea927052372cd0ca2c57128b2d0"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-california-rla/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "9fc96af25d6d561814eceb9f60a0f6d361b1220d7268cfb7e05c83131c83f5ee"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-california-rla/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "62d858be2ca3a63d58c9efc28f50a90758a6c0fffc36a3b2d7c7ce5d892258e2"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-california-rla/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "8dda057accfb53ebc8350a8d3c8ad78480064245e93ee12bb08fc6f4acff6b4c"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-california-rla/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-california-rla/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "2a72c4dda5d232edc446314201dc2a0f8310024b0102f669b600de8497cc6229"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-colorado-rla/audits/rla.ndjson",
+      "segment": "whole",
+      "sha256": "8e11569acd2f70876d5db861adad894a3454b87477cb541faa3eb94e901954a9"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-colorado-rla/manifest.json",
+      "segment": "whole",
+      "sha256": "66583c8b4932c645ba985e5e0b7a4ff43da006f1273c46cd1eb8fcaaf60191dd"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-colorado-rla/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-colorado-rla/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "2656c48354c7d6a274f219494995b194fbd4a46048fd94ff386937bb478f9812"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-colorado-rla/normalized/cvr.ndjson",
+      "segment": "whole",
+      "sha256": "6d47edcd4e3085d9d1b07f9764014998d928f09e0db4c98b04e68ccf3ebf0f83"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-colorado-rla/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-colorado-rla/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5b6e830d55ba4fe87ca033d85132c84b1121b76fe8dfb2befd7fde498c7d0208"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-colorado-rla/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "afd48bdc5982ebb1068df0f9f6cd38aa4d6f890c97bca43fb95b890e773c039f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-colorado-rla/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-colorado-rla/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "1208021a017b8c468a4e8808e02b112543f505ea68ddb5a7a1fe3fede8f91cb4"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-colorado-rla/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "9fc96af25d6d561814eceb9f60a0f6d361b1220d7268cfb7e05c83131c83f5ee"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-colorado-rla/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "62d858be2ca3a63d58c9efc28f50a90758a6c0fffc36a3b2d7c7ce5d892258e2"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-colorado-rla/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "8dda057accfb53ebc8350a8d3c8ad78480064245e93ee12bb08fc6f4acff6b4c"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-colorado-rla/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-colorado-rla/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "3b934a386ea749c83e6eda4c5799af0d5073b42c7873f570095204c0d8d5a710"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-cvr-summary/manifest.json",
+      "segment": "whole",
+      "sha256": "55fea736dde689e4f58adb6e9dee7cc72278e0dda482ec4da2bafe6bd23ea2f3"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-cvr-summary/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-cvr-summary/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "2656c48354c7d6a274f219494995b194fbd4a46048fd94ff386937bb478f9812"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-cvr-summary/normalized/cvr.ndjson",
+      "segment": "whole",
+      "sha256": "05276a34aad93db7e55c3399407f2184ef9ac7c13f7c6e414d6779ef16a8e4ac"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-cvr-summary/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-cvr-summary/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5b6e830d55ba4fe87ca033d85132c84b1121b76fe8dfb2befd7fde498c7d0208"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-cvr-summary/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "afd48bdc5982ebb1068df0f9f6cd38aa4d6f890c97bca43fb95b890e773c039f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-cvr-summary/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-cvr-summary/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "a2d987abee6437d6501918928c37a8a2693af5c53507e904cefbd7699e8a4a8e"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-cvr-summary/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "7370b12baa3424f20f630a5fade54a2fa08c51c1b79296f570f8e886cb9262c9"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-cvr-summary/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "6c20e29e70d227e17fdeb6de6b0e424400eff5353852b2a87af4ddb4b68d0706"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-cvr-summary/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "94241742f521feb19f707be1ace6efc9f4f413c18ebfdcf37d8e1928933fa66c"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-cvr-summary/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-cvr-summary/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "0c4984b4ff79df40af4307531b1d50f2bb6ffe53dd2dce2420212cb92469478e"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-lineage/manifest.json",
+      "segment": "whole",
+      "sha256": "632673802dea31e59b0ca3c878ba9a7b7885b0caea25eb139a8ecaa71fb26fd5"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-lineage/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-lineage/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "2656c48354c7d6a274f219494995b194fbd4a46048fd94ff386937bb478f9812"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-lineage/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "6d5b952727886a6f48ac4f288c2bbc18d2842b41c05f2b0da75ecf43798d0736"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-lineage/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "aa852ba05fd5a439ff160fa8817f3624271b830c6b355a400a13c119fb0825c4"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-lineage/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "afd48bdc5982ebb1068df0f9f6cd38aa4d6f890c97bca43fb95b890e773c039f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-lineage/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-lineage/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "40de4be95155538465d979a4a931d3d90e44471f85662657a771f8156c6fe568"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-lineage/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "38303e938c3c6639fd3f9d85089211a81b4d9cd85956a8ddf5e545074d521b85"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-lineage/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "662ee43334f0c8d35f49c853f2221fff489cc60fba4acbf16c34ba3e65894a45"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-lineage/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "0062cf8912a9c998206d9a336bfd2ec84287f33c5a94b382e1b46f1f4bfb4343"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-lineage/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-lineage/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "354eb790ffc00777e705aca8197886f1951ca2f9a3b54b897cdef63a9cdf23e0"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-manual-audit/audits/manual.ndjson",
+      "segment": "whole",
+      "sha256": "13b32ff8eb4490263e3c104814af9bdf3de5aa436fda534116c6c7f2465609b0"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-manual-audit/audits/rla.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-manual-audit/manifest.json",
+      "segment": "whole",
+      "sha256": "18b19a7d57453941766a189a63a4bc263c7371a9dd6fc2b117a2dfe01fdc89f1"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-manual-audit/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-manual-audit/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "2656c48354c7d6a274f219494995b194fbd4a46048fd94ff386937bb478f9812"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-manual-audit/normalized/cvr.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-manual-audit/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-manual-audit/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5b6e830d55ba4fe87ca033d85132c84b1121b76fe8dfb2befd7fde498c7d0208"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-manual-audit/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "afd48bdc5982ebb1068df0f9f6cd38aa4d6f890c97bca43fb95b890e773c039f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-manual-audit/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-manual-audit/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "921ec51c5972dc34407fbe54e3b21e98008efdcac3aea3395562e5c8515fff54"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-manual-audit/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "e0e2ef22cbad5559b119df2be889e6bb1ba1e6f087d114dd5b23654b575de243"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-manual-audit/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "74902ffc912bed0f534afae51b1eeeec4d8b84bf9e057c768e9f336f79abd77e"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-manual-audit/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "08b77fd995f1ed6d76e0dd8dfbad781cfdc4ab4e86573d95919d983e3e10a6ec"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-manual-audit/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-manual-audit/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "20d8fe40c0004b4f12d19bbf335b3e78cfab5b038c4ac424f04dab4a8bb45029"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-discrepancy/audits/rla.ndjson",
+      "segment": "whole",
+      "sha256": "826bde4017a28f777ed7be08718901bf3b4f60f22d1cbbe29e8ca8f644c92dee"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-discrepancy/manifest.json",
+      "segment": "whole",
+      "sha256": "fb51b5f158fdc1c3adc349bbf8ffede1f59156f45882568b93f4cb2c69196260"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-discrepancy/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-discrepancy/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "2656c48354c7d6a274f219494995b194fbd4a46048fd94ff386937bb478f9812"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-discrepancy/normalized/cvr.ndjson",
+      "segment": "whole",
+      "sha256": "6d47edcd4e3085d9d1b07f9764014998d928f09e0db4c98b04e68ccf3ebf0f83"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-discrepancy/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-discrepancy/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5b6e830d55ba4fe87ca033d85132c84b1121b76fe8dfb2befd7fde498c7d0208"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-discrepancy/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "afd48bdc5982ebb1068df0f9f6cd38aa4d6f890c97bca43fb95b890e773c039f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-discrepancy/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-discrepancy/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "47833664efa71e1efb341bfe7608cd47996144283f0e6146b77fc3df6c5257f8"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-discrepancy/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "33ae18f392bb59e79a081171d3358ca2b39d2a9b129492aaecb51a242d219f9b"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-discrepancy/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "62d858be2ca3a63d58c9efc28f50a90758a6c0fffc36a3b2d7c7ce5d892258e2"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-discrepancy/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "8dda057accfb53ebc8350a8d3c8ad78480064245e93ee12bb08fc6f4acff6b4c"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-discrepancy/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-discrepancy/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "ff553a30ed6fd3f2e593eb81a55b674a755996cfc44abd20f6d26164b26dfbed"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-margin/audits/rla.ndjson",
+      "segment": "whole",
+      "sha256": "5082057321e3c13d163f6e13d95534578a9d9b4acfc1817e7dd7c7bba69e252f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-margin/manifest.json",
+      "segment": "whole",
+      "sha256": "4648932a52820e04ad8b6fbd5f366f93fce18ca009325369b4bf98a1d9f2ac74"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-margin/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-margin/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "2656c48354c7d6a274f219494995b194fbd4a46048fd94ff386937bb478f9812"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-margin/normalized/cvr.ndjson",
+      "segment": "whole",
+      "sha256": "6d47edcd4e3085d9d1b07f9764014998d928f09e0db4c98b04e68ccf3ebf0f83"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-margin/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-margin/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5b6e830d55ba4fe87ca033d85132c84b1121b76fe8dfb2befd7fde498c7d0208"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-margin/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "afd48bdc5982ebb1068df0f9f6cd38aa4d6f890c97bca43fb95b890e773c039f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-margin/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-margin/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "e36c85d1cad7652c76c85617c424d8853e08f852294ab1c4491719fd5a49d46b"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-margin/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "9fc96af25d6d561814eceb9f60a0f6d361b1220d7268cfb7e05c83131c83f5ee"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-margin/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "62d858be2ca3a63d58c9efc28f50a90758a6c0fffc36a3b2d7c7ce5d892258e2"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-margin/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "8dda057accfb53ebc8350a8d3c8ad78480064245e93ee12bb08fc6f4acff6b4c"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-margin/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-margin/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "0ed64f09b31edd11e8e4a3a64c9eb45674ea965f2aa08893a03c2bfc00dfe12e"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-replay/audits/rla.ndjson",
+      "segment": "whole",
+      "sha256": "9d4dfb8418376cff5f831b2bed0d7f5b316192df480c3971fadd30ccd75f949c"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-replay/manifest.json",
+      "segment": "whole",
+      "sha256": "d0db45720433aa8f13a9cf8d3e72a997aa8583a5380af01e5e31bdc23e828539"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-replay/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-replay/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "2656c48354c7d6a274f219494995b194fbd4a46048fd94ff386937bb478f9812"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-replay/normalized/cvr.ndjson",
+      "segment": "whole",
+      "sha256": "6d47edcd4e3085d9d1b07f9764014998d928f09e0db4c98b04e68ccf3ebf0f83"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-replay/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-replay/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5b6e830d55ba4fe87ca033d85132c84b1121b76fe8dfb2befd7fde498c7d0208"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-replay/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "afd48bdc5982ebb1068df0f9f6cd38aa4d6f890c97bca43fb95b890e773c039f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-replay/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-replay/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "464789218e4b28a810d301e7c5a255063ab1b734d68c1663aa2517089773e877"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-replay/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "6d1f8f01bdd54fdadf117b67b757acbadd4a144c88d2fe8bf2586b377737d831"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-replay/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "62d858be2ca3a63d58c9efc28f50a90758a6c0fffc36a3b2d7c7ce5d892258e2"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-replay/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "8dda057accfb53ebc8350a8d3c8ad78480064245e93ee12bb08fc6f4acff6b4c"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-replay/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-replay/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "210ad9cf69e405325f343861f7b3e6bb73f83529cf0c78c85adb19ec8a061313"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-statistical/audits/rla.ndjson",
+      "segment": "whole",
+      "sha256": "d75b6d4f8762ed8979e12dea87547ed7dfcdbce90364f73baa0a445dc672d66b"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-statistical/manifest.json",
+      "segment": "whole",
+      "sha256": "51a9d70805c14452158fdf1cf2894627489905757217c119192e3d1a4cb93df1"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-statistical/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-statistical/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "2656c48354c7d6a274f219494995b194fbd4a46048fd94ff386937bb478f9812"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-statistical/normalized/cvr.ndjson",
+      "segment": "whole",
+      "sha256": "6d47edcd4e3085d9d1b07f9764014998d928f09e0db4c98b04e68ccf3ebf0f83"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-statistical/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-statistical/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5b6e830d55ba4fe87ca033d85132c84b1121b76fe8dfb2befd7fde498c7d0208"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-statistical/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "afd48bdc5982ebb1068df0f9f6cd38aa4d6f890c97bca43fb95b890e773c039f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-statistical/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-statistical/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "047873e36cf6a7dd7890cf83d65210480de4f8a7e4ecea4ab776a5e4435c4baf"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-statistical/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "9fc96af25d6d561814eceb9f60a0f6d361b1220d7268cfb7e05c83131c83f5ee"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-statistical/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "62d858be2ca3a63d58c9efc28f50a90758a6c0fffc36a3b2d7c7ce5d892258e2"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-statistical/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "8dda057accfb53ebc8350a8d3c8ad78480064245e93ee12bb08fc6f4acff6b4c"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-statistical/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-statistical/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "9677ce259267ee26195f5f3b9801392949c1f04172c46ecd8db088a3c84b619c"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-stopping/audits/rla.ndjson",
+      "segment": "whole",
+      "sha256": "7c3e10f96a0e878dab63f477c7ae0c573f86a20d4524ea9f548fc11bfc0eb170"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-stopping/manifest.json",
+      "segment": "whole",
+      "sha256": "bc30f05385e3ddad07a32e90ae8d3815405b944de94ee54dc9f6014eb9f09461"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-stopping/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-stopping/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "2656c48354c7d6a274f219494995b194fbd4a46048fd94ff386937bb478f9812"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-stopping/normalized/cvr.ndjson",
+      "segment": "whole",
+      "sha256": "6d47edcd4e3085d9d1b07f9764014998d928f09e0db4c98b04e68ccf3ebf0f83"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-stopping/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-stopping/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5b6e830d55ba4fe87ca033d85132c84b1121b76fe8dfb2befd7fde498c7d0208"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-stopping/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "afd48bdc5982ebb1068df0f9f6cd38aa4d6f890c97bca43fb95b890e773c039f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-stopping/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-stopping/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "dbd6ec6cac3c2786787d3e77812f895efaaa88baae95b010c525e13bc24f3379"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-stopping/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "33ae18f392bb59e79a081171d3358ca2b39d2a9b129492aaecb51a242d219f9b"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-stopping/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "62d858be2ca3a63d58c9efc28f50a90758a6c0fffc36a3b2d7c7ce5d892258e2"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-stopping/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "8dda057accfb53ebc8350a8d3c8ad78480064245e93ee12bb08fc6f4acff6b4c"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-stopping/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-rla-stopping/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "ae794c4a64061fe5da187cf4936ca7aa190427dc2051da4c187608ab40957057"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-selection-sum/manifest.json",
+      "segment": "whole",
+      "sha256": "376b33cd049234708fcf8a755612931dcb9b4897a605cbe0a83bed8bef1f4eb9"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-selection-sum/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-selection-sum/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "2656c48354c7d6a274f219494995b194fbd4a46048fd94ff386937bb478f9812"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-selection-sum/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-selection-sum/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5b6e830d55ba4fe87ca033d85132c84b1121b76fe8dfb2befd7fde498c7d0208"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-selection-sum/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "205332424369e6f00e027c98ba4a8342e06f211b38d3b04b1e7acbbf56b222e6"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-selection-sum/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-selection-sum/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "0b90cb87e835223c63b7129fef3aeb50f1c30dc9bf028ba8b6080ce233077c03"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-selection-sum/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "38303e938c3c6639fd3f9d85089211a81b4d9cd85956a8ddf5e545074d521b85"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-selection-sum/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "27547b6410f739fd0ffa0af501b62fa33ce08a70729dd819b887919a8bc382d8"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-selection-sum/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "f4b2877b749951c101001e18123f94abca4ced3020aaeb8a2913d66e15e7257b"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-selection-sum/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/bad-selection-sum/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "18ecac1f429c1340ac763b18d17d69d1543f54ed6a235b0a190962faea029ba9"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/california-rla/audits/rla.ndjson",
+      "segment": "whole",
+      "sha256": "5ea2805a85ad2991e64018a620b8bea697fcadd2cdbcbea79e3348484c20c5db"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/california-rla/manifest.json",
+      "segment": "whole",
+      "sha256": "2c63a839cb7bc35a428819122265e2bdf30527591126af9f4b1b905409306bc3"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/california-rla/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/california-rla/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "2656c48354c7d6a274f219494995b194fbd4a46048fd94ff386937bb478f9812"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/california-rla/normalized/cvr.ndjson",
+      "segment": "whole",
+      "sha256": "6d47edcd4e3085d9d1b07f9764014998d928f09e0db4c98b04e68ccf3ebf0f83"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/california-rla/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/california-rla/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5b6e830d55ba4fe87ca033d85132c84b1121b76fe8dfb2befd7fde498c7d0208"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/california-rla/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "afd48bdc5982ebb1068df0f9f6cd38aa4d6f890c97bca43fb95b890e773c039f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/california-rla/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/california-rla/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "e1c266a7672756e2f14112215431bebc94eb037261316ff959656f8c5b8d5177"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/california-rla/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "9fc96af25d6d561814eceb9f60a0f6d361b1220d7268cfb7e05c83131c83f5ee"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/california-rla/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "62d858be2ca3a63d58c9efc28f50a90758a6c0fffc36a3b2d7c7ce5d892258e2"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/california-rla/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "8dda057accfb53ebc8350a8d3c8ad78480064245e93ee12bb08fc6f4acff6b4c"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/california-rla/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/california-rla/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "61fb22f69c1d07f5bbe637f98f44fca92618985baf6f1e95292d5641b546e035"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/canvass-correction/manifest.json",
+      "segment": "whole",
+      "sha256": "3ff47085e155f7f0aca8ddc9014d6e77e30b8cb78ff7ff3cd7cd32282e7e079a"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/canvass-correction/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/canvass-correction/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "2656c48354c7d6a274f219494995b194fbd4a46048fd94ff386937bb478f9812"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/canvass-correction/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/canvass-correction/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5b6e830d55ba4fe87ca033d85132c84b1121b76fe8dfb2befd7fde498c7d0208"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/canvass-correction/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "cb169fc6082575001ea22341ca5484c17365c4adcd6fa221692548377a020db1"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/canvass-correction/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/canvass-correction/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "0a67ce6b65a7e9a520a5e4286523d87e7969703bb40220c96306d9e0a173fdca"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/canvass-correction/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "38303e938c3c6639fd3f9d85089211a81b4d9cd85956a8ddf5e545074d521b85"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/canvass-correction/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "0a6103bffd46dfa03c064b10c4e6696c7435355e96ec88e577726159ad1697eb"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/canvass-correction/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "1d6d0df248fe1231c4b90900fc43d46ecc9ee1eaee7225f6e53a8d1c95dc7988"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/canvass-correction/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "14348fa3af57e4b94629b4b4d62fb21ac6a323ee6b4b7de101d565c4bf1440ff"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/canvass-correction/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "8b24bc898c655285f147b3b64153f50c24b99e5e54dfbc533fda99888b4d512f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/choice-bearing-proof/manifest.json",
+      "segment": "whole",
+      "sha256": "8ba95c94d461071182e566092b16f775bbe0bb6285f19f7579a3e6559de253ce"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/choice-bearing-proof/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/choice-bearing-proof/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "2656c48354c7d6a274f219494995b194fbd4a46048fd94ff386937bb478f9812"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/choice-bearing-proof/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/choice-bearing-proof/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5b6e830d55ba4fe87ca033d85132c84b1121b76fe8dfb2befd7fde498c7d0208"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/choice-bearing-proof/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "afd48bdc5982ebb1068df0f9f6cd38aa4d6f890c97bca43fb95b890e773c039f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/choice-bearing-proof/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "2e7f02925997e9e8b3f92e59ae31c271a9afa08e58453b0f2580f8b762f2bb12"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/choice-bearing-proof/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "23e1f993b87701c5cce1a832bee0f69391c5af17a2318eb808369e4de759a56e"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/choice-bearing-proof/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "38303e938c3c6639fd3f9d85089211a81b4d9cd85956a8ddf5e545074d521b85"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/choice-bearing-proof/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "e48e86f7f5fa29cc461f7126d36546ac5d3a7668038edcc800b29e7781b450eb"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/choice-bearing-proof/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "21223c6b23403a503f9b3c25cf0a697a962a6e5b419c7443c4e9f3cdc1592bc7"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/choice-bearing-proof/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/choice-bearing-proof/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "dbe34e727498801912b931adb9269c3ae5d29b855a6b38a78c541a7ea133f4fe"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/colorado-rla/audits/rla.ndjson",
+      "segment": "whole",
+      "sha256": "1f26da4532d2c4d42d0e17b5c28aeaab9fbbab95cad62884ef25ad3177820f38"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/colorado-rla/manifest.json",
+      "segment": "whole",
+      "sha256": "c207bd49ddd561da25d273c78e1863dae9778d57ff68db6a9c44239afd87c53f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/colorado-rla/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/colorado-rla/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "2656c48354c7d6a274f219494995b194fbd4a46048fd94ff386937bb478f9812"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/colorado-rla/normalized/cvr.ndjson",
+      "segment": "whole",
+      "sha256": "6d47edcd4e3085d9d1b07f9764014998d928f09e0db4c98b04e68ccf3ebf0f83"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/colorado-rla/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/colorado-rla/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5b6e830d55ba4fe87ca033d85132c84b1121b76fe8dfb2befd7fde498c7d0208"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/colorado-rla/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "afd48bdc5982ebb1068df0f9f6cd38aa4d6f890c97bca43fb95b890e773c039f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/colorado-rla/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/colorado-rla/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "ac89a03d4ce63d066cbe648ddd3054e4c93ad70afc0bbbf584346d20078e17aa"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/colorado-rla/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "9fc96af25d6d561814eceb9f60a0f6d361b1220d7268cfb7e05c83131c83f5ee"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/colorado-rla/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "62d858be2ca3a63d58c9efc28f50a90758a6c0fffc36a3b2d7c7ce5d892258e2"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/colorado-rla/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "8dda057accfb53ebc8350a8d3c8ad78480064245e93ee12bb08fc6f4acff6b4c"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/colorado-rla/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/colorado-rla/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "77b0f9107754b61c190941c75f716e89f8540272360c113bb779531c4a7deabc"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/cvr-summary/manifest.json",
+      "segment": "whole",
+      "sha256": "d7ce1b6e9060ee7ef3b245f3d59f3c156c3927afae96d36f6447046b476373e8"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/cvr-summary/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/cvr-summary/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "2656c48354c7d6a274f219494995b194fbd4a46048fd94ff386937bb478f9812"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/cvr-summary/normalized/cvr.ndjson",
+      "segment": "whole",
+      "sha256": "6d47edcd4e3085d9d1b07f9764014998d928f09e0db4c98b04e68ccf3ebf0f83"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/cvr-summary/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/cvr-summary/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5b6e830d55ba4fe87ca033d85132c84b1121b76fe8dfb2befd7fde498c7d0208"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/cvr-summary/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "afd48bdc5982ebb1068df0f9f6cd38aa4d6f890c97bca43fb95b890e773c039f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/cvr-summary/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/cvr-summary/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "9002d6fc89b8fd6a06000cf15d575ab7982a2acdf6433d5f15a050016cd23cc3"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/cvr-summary/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "7370b12baa3424f20f630a5fade54a2fa08c51c1b79296f570f8e886cb9262c9"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/cvr-summary/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "6c20e29e70d227e17fdeb6de6b0e424400eff5353852b2a87af4ddb4b68d0706"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/cvr-summary/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "94241742f521feb19f707be1ace6efc9f4f413c18ebfdcf37d8e1928933fa66c"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/cvr-summary/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/cvr-summary/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "569c64eb86fe70c89135a503c8ced6d684942368846a128ce926fbdc4c3adb6f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/district-aggregation-rplan/context.rctx",
+      "segment": "whole",
+      "sha256": "dbf0d5af67bde253bed7e59e92043efd27da72f5312ee58dde8bd764cedbaaa0"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/district-aggregation-rplan/crosswalks.ndjson",
+      "segment": "whole",
+      "sha256": "d906ba0e15055f53e6857207cf339177a29575273236000ce95b358d5d1e13aa"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/district-aggregation-rplan/district-aggregation-transcript.json",
+      "segment": "whole",
+      "sha256": "63e74df0f3dfdb82ad7af6d8c840e49b420d89047ccc1b21927aab5959dd86a6"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/district-aggregation-rplan/package/audits/algorithm-runs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/district-aggregation-rplan/package/audits/batch-comparison.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/district-aggregation-rplan/package/audits/manual.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/district-aggregation-rplan/package/audits/rla.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/district-aggregation-rplan/package/manifest.json",
+      "segment": "whole",
+      "sha256": "b9d70369ba765d0311531f92c880a8c6d91978d834788711952ab88173e2cc5d"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/district-aggregation-rplan/package/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/district-aggregation-rplan/package/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "2656c48354c7d6a274f219494995b194fbd4a46048fd94ff386937bb478f9812"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/district-aggregation-rplan/package/normalized/cvr.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/district-aggregation-rplan/package/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/district-aggregation-rplan/package/normalized/rctx-refs.ndjson",
+      "segment": "whole",
+      "sha256": "c9238c619fee36a4fdda651eb81f252c9481d43da6d83ef2f54f7876fbf90ecb"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/district-aggregation-rplan/package/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5b6e830d55ba4fe87ca033d85132c84b1121b76fe8dfb2befd7fde498c7d0208"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/district-aggregation-rplan/package/normalized/rhist-refs.ndjson",
+      "segment": "whole",
+      "sha256": "98998036dc9541f31c82ac31820390e91658973fa8a4a123d61acf15a04a1662"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/district-aggregation-rplan/package/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "afd48bdc5982ebb1068df0f9f6cd38aa4d6f890c97bca43fb95b890e773c039f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/district-aggregation-rplan/package/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/district-aggregation-rplan/package/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "7ae5a1edc2da44bc53738a4855c071f152ddb6c0876e711435a68801b1439bdf"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/district-aggregation-rplan/package/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "60786b53ffe4a4f6c2029f05bba43531860e99cb617c88190ad1d321fc3d9f57"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/district-aggregation-rplan/package/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "42dc311356c79a91823af54a79490dfad99951c047c188bba3b39ccfb2c64c55"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/district-aggregation-rplan/package/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "052d5daaa6032c1e8f1b440707672a2874c623d12bb7c596819c8b9c35eb5887"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/district-aggregation-rplan/package/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/district-aggregation-rplan/package/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "e8aff208cdb92c607bd29bd24514de0b1e2712bcbf138cfef8cb8be1f1429d02"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/district-aggregation-rplan/plan.rplan.json",
+      "segment": "whole",
+      "sha256": "81c48a48d217c6cc05999e1bf163849f5522c4c87a0fe3751c4711ba68819ba9"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/mail-batch-added/manifest.json",
+      "segment": "whole",
+      "sha256": "e065385f4e698628fb10135eb82577d105bfe842a2cb8ce3d710ad3cda5a7302"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/mail-batch-added/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "87c645a0ec55e66b39c543aba199ebef89a68fed7473a71869b89a24720723b0"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/mail-batch-added/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "2656c48354c7d6a274f219494995b194fbd4a46048fd94ff386937bb478f9812"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/mail-batch-added/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/mail-batch-added/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5b6e830d55ba4fe87ca033d85132c84b1121b76fe8dfb2befd7fde498c7d0208"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/mail-batch-added/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "c9ccbcf38bc717ad44bd9bcccfccef73263d8ae1cfc9b1d69cc12e23fd8057a8"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/mail-batch-added/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/mail-batch-added/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "29508ee4b35fad9ad6b98d790ebfb1fb4b5b6e5eb45144a980da27b7b176ad0b"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/mail-batch-added/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "38303e938c3c6639fd3f9d85089211a81b4d9cd85956a8ddf5e545074d521b85"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/mail-batch-added/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "4b119bf35c41a3495124d7ca38e421139acb6f52f6f220eeaa791a1d18e51589"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/mail-batch-added/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "c726b97fb4baa7591aa6efb004023158e0aa120322feb10fe65858bd3ba4a92f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/mail-batch-added/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "cdf8de05b7527a968d56cf07b7ddf85446b3df88fd70d2df92c334447c06aa41"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/mail-batch-added/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "391a65bab432aeb3851625adbca77b43e4ba93a2ac5543c5c6936b496f1c187f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/manual-audit/audits/manual.ndjson",
+      "segment": "whole",
+      "sha256": "69a9c884e86eee9c55e0fc941123a4cf3578215274731da6da8e0b9d69690957"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/manual-audit/audits/rla.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/manual-audit/manifest.json",
+      "segment": "whole",
+      "sha256": "283c55abf485d3ca27f080c6160cfd5c080082a32a84d88d85a9f37bf938add2"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/manual-audit/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/manual-audit/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "2656c48354c7d6a274f219494995b194fbd4a46048fd94ff386937bb478f9812"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/manual-audit/normalized/cvr.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/manual-audit/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/manual-audit/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5b6e830d55ba4fe87ca033d85132c84b1121b76fe8dfb2befd7fde498c7d0208"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/manual-audit/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "afd48bdc5982ebb1068df0f9f6cd38aa4d6f890c97bca43fb95b890e773c039f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/manual-audit/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/manual-audit/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "9576f9c172ac8c2fbccab308b8809a1851f330b30fb7cb06ae0b9a42f5ade7ab"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/manual-audit/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "e0e2ef22cbad5559b119df2be889e6bb1ba1e6f087d114dd5b23654b575de243"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/manual-audit/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "74902ffc912bed0f534afae51b1eeeec4d8b84bf9e057c768e9f336f79abd77e"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/manual-audit/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "08b77fd995f1ed6d76e0dd8dfbad781cfdc4ab4e86573d95919d983e3e10a6ec"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/manual-audit/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/manual-audit/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "77a32bfabbdff6b8278d3793d5d207fd90b46c57b66a22aa5974d5adc2c7f692"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/missing-batch/manifest.json",
+      "segment": "whole",
+      "sha256": "d211f8fd1adf98e05a32fe5deb851de18bd45dd9ec476076672b0125e2b9b596"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/missing-batch/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "b476ab2ab3ca4bfe6e83d71e25840d5885161859f98c5ea7067fc20c74cc33b9"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/missing-batch/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "2656c48354c7d6a274f219494995b194fbd4a46048fd94ff386937bb478f9812"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/missing-batch/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/missing-batch/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5b6e830d55ba4fe87ca033d85132c84b1121b76fe8dfb2befd7fde498c7d0208"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/missing-batch/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "c9ccbcf38bc717ad44bd9bcccfccef73263d8ae1cfc9b1d69cc12e23fd8057a8"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/missing-batch/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/missing-batch/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "c8c49c7b40cad61fa0fd08ca200c60fa7470143896d8c4b2c5e41fe2b794edfd"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/missing-batch/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "38303e938c3c6639fd3f9d85089211a81b4d9cd85956a8ddf5e545074d521b85"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/missing-batch/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "2580d1fd13027b2e86fed67ec807c2513a48d326fcbfac56bd0131d25256f449"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/missing-batch/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "65d785b46915b4ede4fb5af9c7107fdc340b937f45c36a7fb23156998d6f7f96"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/missing-batch/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "cdf8de05b7527a968d56cf07b7ddf85446b3df88fd70d2df92c334447c06aa41"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/missing-batch/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "65d79266bfeaf4f95f99acc276240dea3aebff8d2bd75e5b75bd38ef218cbcf2"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/missing-source-hash/manifest.json",
+      "segment": "whole",
+      "sha256": "8cf3acccd0a643c95dd499db01f0f9334732e6cfa4076d99360dcb2c17165ffb"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/missing-source-hash/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/missing-source-hash/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "2656c48354c7d6a274f219494995b194fbd4a46048fd94ff386937bb478f9812"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/missing-source-hash/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/missing-source-hash/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5b6e830d55ba4fe87ca033d85132c84b1121b76fe8dfb2befd7fde498c7d0208"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/missing-source-hash/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "afd48bdc5982ebb1068df0f9f6cd38aa4d6f890c97bca43fb95b890e773c039f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/missing-source-hash/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/missing-source-hash/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "72d4bc85bb4f404692c59bfa2dbb525efceeccc6061492408b1b590b94f972c4"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/missing-source-hash/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "38303e938c3c6639fd3f9d85089211a81b4d9cd85956a8ddf5e545074d521b85"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/missing-source-hash/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "4e60a0deda7ee9d829904e581ebb31ee4b4a9ae1797281044a27ed0f698a9420"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/missing-source-hash/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "f4b2877b749951c101001e18123f94abca4ced3020aaeb8a2913d66e15e7257b"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/missing-source-hash/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/missing-source-hash/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "eff8408e29254312a49996710eacf92e8535f017b2ab8c8dc5e3eb2c6aa88470"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2024-general/package/manifest.json",
+      "segment": "whole",
+      "sha256": "44c7af8eb9a9d34ba056ee772f74e28d258bc4aa762aec74f3135a27a3f32fec"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2024-general/package/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2024-general/package/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "1b78d769aca541137c2c0d3dac1d1f661b0465b3e69d742913b56c535956f171"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2024-general/package/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2024-general/package/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "c1efd7dd66dcb294c8abfbccf5124f557beff0ea90377c2e9c15659f7baf9818"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2024-general/package/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "2b0ecedd61c0fb542348c4350007cc94fa87f12b01f96b4eac5054f27dcd0b33"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2024-general/package/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2024-general/package/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "896c93dd8b02b5cbde12a69b4317f4bf62a0b7dde4a971143b593d16c0497ad1"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2024-general/package/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "38303e938c3c6639fd3f9d85089211a81b4d9cd85956a8ddf5e545074d521b85"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2024-general/package/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "97c728ab713a9bd6ff26b36920e53a12bf28a4a48e7a708678e971cf29447797"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2024-general/package/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "e9de45381b871476ea85129c09e2b58a5ef5b806807d111c399362176e89eab1"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2024-general/package/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2024-general/package/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "e8aff208cdb92c607bd29bd24514de0b1e2712bcbf138cfef8cb8be1f1429d02"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2024-general/plan.rplan.json",
+      "segment": "whole",
+      "sha256": "e43984a8000073957e015204fdb63ac8985e3483d275e152aa0b24e29d45b41d"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2026-general/package/manifest.json",
+      "segment": "whole",
+      "sha256": "d59c7a1a037559727ba8ca6a912cc9eb6c2035ec5f9d86ec0eea17c50a99783d"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2026-general/package/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2026-general/package/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "1b78d769aca541137c2c0d3dac1d1f661b0465b3e69d742913b56c535956f171"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2026-general/package/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "9606642e101adeb3c26bace576743d5d74256bcdce15377ba9ab0d084280ed90"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2026-general/package/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5caa675ae1f785b07f9f3fc793a07d34334c58756aa650e2733308a2cad0554e"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2026-general/package/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "3e6bdf7456bdb210e426b3de0cd413a44b6ce7925943619bdf5103eb44ca5f33"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2026-general/package/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2026-general/package/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "dc1611615e0cda05855c427d1b6d2021f0b54d1a06cf2c963ae382e5c1432570"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2026-general/package/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "38303e938c3c6639fd3f9d85089211a81b4d9cd85956a8ddf5e545074d521b85"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2026-general/package/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "e88be3327623ab0cc68bc41ff8ed97b02f85e406d77f1ad8b6c2ca8ac6163324"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2026-general/package/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "31d7aed7a6a393d89cf24da972ac16fbb61fe3592795b9e9e93894eb32bec9b3"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2026-general/package/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2026-general/package/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "e8aff208cdb92c607bd29bd24514de0b1e2712bcbf138cfef8cb8be1f1429d02"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2026-general/plan.rplan.json",
+      "segment": "whole",
+      "sha256": "9703e40a7f899462ae6dc78bf1104398849cf04bfae142e2171b2b6931ea26db"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2028-general/package/manifest.json",
+      "segment": "whole",
+      "sha256": "f5fbe37a1d352c2eaa2ebbdc6f7aa5802625d5af0d52bf8e15784d1c1f4e2891"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2028-general/package/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2028-general/package/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "1b78d769aca541137c2c0d3dac1d1f661b0465b3e69d742913b56c535956f171"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2028-general/package/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "f738e27593d5a4efc4f9b217926e19af3b9d218f83d7d3128448386c1ad6d37f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2028-general/package/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "10b3859c073ff040b895cac8465f96b51e13df0026891545c03594a21e34408c"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2028-general/package/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "39aeb4f8b34a44dc8f1ee68884522293ec15f8b35fa3fa13ca787e2f278f767c"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2028-general/package/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2028-general/package/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "5bd633f7c43a433b85adf33857f921e387aca171e00f308487603c65fb48f4d1"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2028-general/package/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "38303e938c3c6639fd3f9d85089211a81b4d9cd85956a8ddf5e545074d521b85"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2028-general/package/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "53e7fbd9782a68c8549e32a62ba715c338f887a63644b6ab57638ac3f8a244b2"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2028-general/package/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "fee2773322a2e2a31d6497d22439ea46dd6b8df9c5d5ef063439dc05aea4594c"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2028-general/package/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2028-general/package/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "e8aff208cdb92c607bd29bd24514de0b1e2712bcbf138cfef8cb8be1f1429d02"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2028-general/plan.rplan.json",
+      "segment": "whole",
+      "sha256": "006a4eaf5ffda30b02055dc0b23f750740946e9f4e13a0049da72becde9c45ab"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/expected-failure.json",
+      "segment": "whole",
+      "sha256": "e878a5432a40ad927d82fee54fa8a82234d6873ba245c1b28647c23dd486f1f3"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2024-general/package/manifest.json",
+      "segment": "whole",
+      "sha256": "44c7af8eb9a9d34ba056ee772f74e28d258bc4aa762aec74f3135a27a3f32fec"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2024-general/package/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2024-general/package/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "1b78d769aca541137c2c0d3dac1d1f661b0465b3e69d742913b56c535956f171"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2024-general/package/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2024-general/package/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "c1efd7dd66dcb294c8abfbccf5124f557beff0ea90377c2e9c15659f7baf9818"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2024-general/package/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "2b0ecedd61c0fb542348c4350007cc94fa87f12b01f96b4eac5054f27dcd0b33"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2024-general/package/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2024-general/package/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "896c93dd8b02b5cbde12a69b4317f4bf62a0b7dde4a971143b593d16c0497ad1"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2024-general/package/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "38303e938c3c6639fd3f9d85089211a81b4d9cd85956a8ddf5e545074d521b85"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2024-general/package/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "97c728ab713a9bd6ff26b36920e53a12bf28a4a48e7a708678e971cf29447797"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2024-general/package/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "e9de45381b871476ea85129c09e2b58a5ef5b806807d111c399362176e89eab1"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2024-general/package/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2024-general/package/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "e8aff208cdb92c607bd29bd24514de0b1e2712bcbf138cfef8cb8be1f1429d02"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2024-general/plan.rplan.json",
+      "segment": "whole",
+      "sha256": "e43984a8000073957e015204fdb63ac8985e3483d275e152aa0b24e29d45b41d"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2026-general/package/manifest.json",
+      "segment": "whole",
+      "sha256": "d59c7a1a037559727ba8ca6a912cc9eb6c2035ec5f9d86ec0eea17c50a99783d"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2026-general/package/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2026-general/package/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "1b78d769aca541137c2c0d3dac1d1f661b0465b3e69d742913b56c535956f171"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2026-general/package/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "9606642e101adeb3c26bace576743d5d74256bcdce15377ba9ab0d084280ed90"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2026-general/package/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5caa675ae1f785b07f9f3fc793a07d34334c58756aa650e2733308a2cad0554e"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2026-general/package/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "3e6bdf7456bdb210e426b3de0cd413a44b6ce7925943619bdf5103eb44ca5f33"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2026-general/package/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2026-general/package/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "dc1611615e0cda05855c427d1b6d2021f0b54d1a06cf2c963ae382e5c1432570"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2026-general/package/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "38303e938c3c6639fd3f9d85089211a81b4d9cd85956a8ddf5e545074d521b85"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2026-general/package/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "e88be3327623ab0cc68bc41ff8ed97b02f85e406d77f1ad8b6c2ca8ac6163324"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2026-general/package/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "31d7aed7a6a393d89cf24da972ac16fbb61fe3592795b9e9e93894eb32bec9b3"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2026-general/package/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2026-general/package/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "e8aff208cdb92c607bd29bd24514de0b1e2712bcbf138cfef8cb8be1f1429d02"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2026-general/plan.rplan.json",
+      "segment": "whole",
+      "sha256": "9703e40a7f899462ae6dc78bf1104398849cf04bfae142e2171b2b6931ea26db"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2028-general/package/manifest.json",
+      "segment": "whole",
+      "sha256": "f82d632cc9f166df14ece25e774aa6ff1d2fc3090ef8619bf66e960a091801bf"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2028-general/package/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2028-general/package/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "1b78d769aca541137c2c0d3dac1d1f661b0465b3e69d742913b56c535956f171"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2028-general/package/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "3f2220d1759ec90415cfd32cf5d8a0cbbc7cb2d56388eb4a93361254936212ce"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2028-general/package/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "10b3859c073ff040b895cac8465f96b51e13df0026891545c03594a21e34408c"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2028-general/package/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "39aeb4f8b34a44dc8f1ee68884522293ec15f8b35fa3fa13ca787e2f278f767c"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2028-general/package/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2028-general/package/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "e4324a3c6e47f856fe991b60d1a050d7794ea9a00f08e455f8036c73e9c25d6e"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2028-general/package/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "38303e938c3c6639fd3f9d85089211a81b4d9cd85956a8ddf5e545074d521b85"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2028-general/package/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "53e7fbd9782a68c8549e32a62ba715c338f887a63644b6ab57638ac3f8a244b2"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2028-general/package/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "fee2773322a2e2a31d6497d22439ea46dd6b8df9c5d5ef063439dc05aea4594c"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2028-general/package/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2028-general/package/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "e8aff208cdb92c607bd29bd24514de0b1e2712bcbf138cfef8cb8be1f1429d02"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2028-general/plan.rplan.json",
+      "segment": "whole",
+      "sha256": "0ba9ffeb7f6651888ac8fdc4fbe30dc011c3c39c9da58f879fb634549df35b24"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/expected-failure.json",
+      "segment": "whole",
+      "sha256": "cffc38165566cee6f5460b4c94f534c087fedf0943513384478206cbe9aadad0"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2024-general/package/manifest.json",
+      "segment": "whole",
+      "sha256": "44c7af8eb9a9d34ba056ee772f74e28d258bc4aa762aec74f3135a27a3f32fec"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2024-general/package/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2024-general/package/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "1b78d769aca541137c2c0d3dac1d1f661b0465b3e69d742913b56c535956f171"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2024-general/package/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2024-general/package/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "c1efd7dd66dcb294c8abfbccf5124f557beff0ea90377c2e9c15659f7baf9818"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2024-general/package/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "2b0ecedd61c0fb542348c4350007cc94fa87f12b01f96b4eac5054f27dcd0b33"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2024-general/package/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2024-general/package/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "896c93dd8b02b5cbde12a69b4317f4bf62a0b7dde4a971143b593d16c0497ad1"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2024-general/package/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "38303e938c3c6639fd3f9d85089211a81b4d9cd85956a8ddf5e545074d521b85"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2024-general/package/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "97c728ab713a9bd6ff26b36920e53a12bf28a4a48e7a708678e971cf29447797"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2024-general/package/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "e9de45381b871476ea85129c09e2b58a5ef5b806807d111c399362176e89eab1"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2024-general/package/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2024-general/package/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "e8aff208cdb92c607bd29bd24514de0b1e2712bcbf138cfef8cb8be1f1429d02"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2024-general/plan.rplan.json",
+      "segment": "whole",
+      "sha256": "e43984a8000073957e015204fdb63ac8985e3483d275e152aa0b24e29d45b41d"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2026-general/package/manifest.json",
+      "segment": "whole",
+      "sha256": "d59c7a1a037559727ba8ca6a912cc9eb6c2035ec5f9d86ec0eea17c50a99783d"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2026-general/package/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2026-general/package/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "1b78d769aca541137c2c0d3dac1d1f661b0465b3e69d742913b56c535956f171"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2026-general/package/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "9606642e101adeb3c26bace576743d5d74256bcdce15377ba9ab0d084280ed90"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2026-general/package/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5caa675ae1f785b07f9f3fc793a07d34334c58756aa650e2733308a2cad0554e"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2026-general/package/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "3e6bdf7456bdb210e426b3de0cd413a44b6ce7925943619bdf5103eb44ca5f33"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2026-general/package/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2026-general/package/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "dc1611615e0cda05855c427d1b6d2021f0b54d1a06cf2c963ae382e5c1432570"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2026-general/package/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "38303e938c3c6639fd3f9d85089211a81b4d9cd85956a8ddf5e545074d521b85"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2026-general/package/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "e88be3327623ab0cc68bc41ff8ed97b02f85e406d77f1ad8b6c2ca8ac6163324"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2026-general/package/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "31d7aed7a6a393d89cf24da972ac16fbb61fe3592795b9e9e93894eb32bec9b3"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2026-general/package/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2026-general/package/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "e8aff208cdb92c607bd29bd24514de0b1e2712bcbf138cfef8cb8be1f1429d02"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2026-general/plan.rplan.json",
+      "segment": "whole",
+      "sha256": "9703e40a7f899462ae6dc78bf1104398849cf04bfae142e2171b2b6931ea26db"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2028-general/package/manifest.json",
+      "segment": "whole",
+      "sha256": "f82d632cc9f166df14ece25e774aa6ff1d2fc3090ef8619bf66e960a091801bf"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2028-general/package/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2028-general/package/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "1b78d769aca541137c2c0d3dac1d1f661b0465b3e69d742913b56c535956f171"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2028-general/package/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "3f2220d1759ec90415cfd32cf5d8a0cbbc7cb2d56388eb4a93361254936212ce"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2028-general/package/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "10b3859c073ff040b895cac8465f96b51e13df0026891545c03594a21e34408c"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2028-general/package/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "39aeb4f8b34a44dc8f1ee68884522293ec15f8b35fa3fa13ca787e2f278f767c"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2028-general/package/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2028-general/package/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "e4324a3c6e47f856fe991b60d1a050d7794ea9a00f08e455f8036c73e9c25d6e"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2028-general/package/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "38303e938c3c6639fd3f9d85089211a81b4d9cd85956a8ddf5e545074d521b85"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2028-general/package/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "53e7fbd9782a68c8549e32a62ba715c338f887a63644b6ab57638ac3f8a244b2"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2028-general/package/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "94c09080b629d72e04a6ae19317d3b38934fbb9c52bafe76e9986a26f4c544b5"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2028-general/package/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2028-general/package/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "e8aff208cdb92c607bd29bd24514de0b1e2712bcbf138cfef8cb8be1f1429d02"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2028-general/plan.rplan.json",
+      "segment": "whole",
+      "sha256": "006a4eaf5ffda30b02055dc0b23f750740946e9f4e13a0049da72becde9c45ab"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/expected-failure.json",
+      "segment": "whole",
+      "sha256": "5f3841105ab9a955d4db65a211d564440647445abcd827efea126891667debbc"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2024-general/package/manifest.json",
+      "segment": "whole",
+      "sha256": "44c7af8eb9a9d34ba056ee772f74e28d258bc4aa762aec74f3135a27a3f32fec"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2024-general/package/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2024-general/package/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "1b78d769aca541137c2c0d3dac1d1f661b0465b3e69d742913b56c535956f171"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2024-general/package/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2024-general/package/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "c1efd7dd66dcb294c8abfbccf5124f557beff0ea90377c2e9c15659f7baf9818"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2024-general/package/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "2b0ecedd61c0fb542348c4350007cc94fa87f12b01f96b4eac5054f27dcd0b33"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2024-general/package/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2024-general/package/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "896c93dd8b02b5cbde12a69b4317f4bf62a0b7dde4a971143b593d16c0497ad1"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2024-general/package/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "38303e938c3c6639fd3f9d85089211a81b4d9cd85956a8ddf5e545074d521b85"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2024-general/package/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "97c728ab713a9bd6ff26b36920e53a12bf28a4a48e7a708678e971cf29447797"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2024-general/package/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "e9de45381b871476ea85129c09e2b58a5ef5b806807d111c399362176e89eab1"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2024-general/package/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2024-general/package/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "e8aff208cdb92c607bd29bd24514de0b1e2712bcbf138cfef8cb8be1f1429d02"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2024-general/plan.rplan.json",
+      "segment": "whole",
+      "sha256": "e43984a8000073957e015204fdb63ac8985e3483d275e152aa0b24e29d45b41d"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2026-general/package/manifest.json",
+      "segment": "whole",
+      "sha256": "d59c7a1a037559727ba8ca6a912cc9eb6c2035ec5f9d86ec0eea17c50a99783d"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2026-general/package/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2026-general/package/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "1b78d769aca541137c2c0d3dac1d1f661b0465b3e69d742913b56c535956f171"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2026-general/package/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "9606642e101adeb3c26bace576743d5d74256bcdce15377ba9ab0d084280ed90"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2026-general/package/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5caa675ae1f785b07f9f3fc793a07d34334c58756aa650e2733308a2cad0554e"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2026-general/package/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "3e6bdf7456bdb210e426b3de0cd413a44b6ce7925943619bdf5103eb44ca5f33"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2026-general/package/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2026-general/package/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "dc1611615e0cda05855c427d1b6d2021f0b54d1a06cf2c963ae382e5c1432570"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2026-general/package/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "38303e938c3c6639fd3f9d85089211a81b4d9cd85956a8ddf5e545074d521b85"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2026-general/package/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "e88be3327623ab0cc68bc41ff8ed97b02f85e406d77f1ad8b6c2ca8ac6163324"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2026-general/package/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "31d7aed7a6a393d89cf24da972ac16fbb61fe3592795b9e9e93894eb32bec9b3"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2026-general/package/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2026-general/package/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "e8aff208cdb92c607bd29bd24514de0b1e2712bcbf138cfef8cb8be1f1429d02"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2026-general/plan.rplan.json",
+      "segment": "whole",
+      "sha256": "9703e40a7f899462ae6dc78bf1104398849cf04bfae142e2171b2b6931ea26db"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2028-general/package/manifest.json",
+      "segment": "whole",
+      "sha256": "f82d632cc9f166df14ece25e774aa6ff1d2fc3090ef8619bf66e960a091801bf"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2028-general/package/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2028-general/package/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "1b78d769aca541137c2c0d3dac1d1f661b0465b3e69d742913b56c535956f171"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2028-general/package/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "3f2220d1759ec90415cfd32cf5d8a0cbbc7cb2d56388eb4a93361254936212ce"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2028-general/package/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "10b3859c073ff040b895cac8465f96b51e13df0026891545c03594a21e34408c"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2028-general/package/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "39aeb4f8b34a44dc8f1ee68884522293ec15f8b35fa3fa13ca787e2f278f767c"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2028-general/package/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2028-general/package/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "e4324a3c6e47f856fe991b60d1a050d7794ea9a00f08e455f8036c73e9c25d6e"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2028-general/package/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "38303e938c3c6639fd3f9d85089211a81b4d9cd85956a8ddf5e545074d521b85"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2028-general/package/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "53e7fbd9782a68c8549e32a62ba715c338f887a63644b6ab57638ac3f8a244b2"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2028-general/package/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "fee2773322a2e2a31d6497d22439ea46dd6b8df9c5d5ef063439dc05aea4594c"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2028-general/package/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2028-general/package/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "e8aff208cdb92c607bd29bd24514de0b1e2712bcbf138cfef8cb8be1f1429d02"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2028-general/plan.rplan.json",
+      "segment": "whole",
+      "sha256": "006a4eaf5ffda30b02055dc0b23f750740946e9f4e13a0049da72becde9c45ab"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/multi-election-harness/multi-election-transcript.json",
+      "segment": "whole",
+      "sha256": "1a052fb91f034eebb724a2dfd8ad83b27e1b38fb4e982dc965eb724a04a7d971"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/precinct-split-lineage/manifest.json",
+      "segment": "whole",
+      "sha256": "b1b840a36c6724c47769513d14e38edfeedd1f9d84b4f0ecb83fd5ed7b0da068"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/precinct-split-lineage/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/precinct-split-lineage/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "2656c48354c7d6a274f219494995b194fbd4a46048fd94ff386937bb478f9812"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/precinct-split-lineage/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "56e890793b6d1194583865012ad4231729eb50a5b508911c3ef697caea4e71d3"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/precinct-split-lineage/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "aa852ba05fd5a439ff160fa8817f3624271b830c6b355a400a13c119fb0825c4"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/precinct-split-lineage/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "afd48bdc5982ebb1068df0f9f6cd38aa4d6f890c97bca43fb95b890e773c039f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/precinct-split-lineage/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/precinct-split-lineage/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "1cd394e58e7e7bfe7d4eceae1dae972932be4c8599c124946f599a916fd4c8d4"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/precinct-split-lineage/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "38303e938c3c6639fd3f9d85089211a81b4d9cd85956a8ddf5e545074d521b85"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/precinct-split-lineage/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "662ee43334f0c8d35f49c853f2221fff489cc60fba4acbf16c34ba3e65894a45"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/precinct-split-lineage/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "0062cf8912a9c998206d9a336bfd2ec84287f33c5a94b382e1b46f1f4bfb4343"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/precinct-split-lineage/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/precinct-split-lineage/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "223a1ab72f8bc71f1a6ca6a1b38ab3c9421ace4c59fab4adf832ba60fdf9d3d0"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/privacy-inclusion-sketch/manifest.json",
+      "segment": "whole",
+      "sha256": "023e78547a5efb0597f88bbc09542f5ead014af1aaed2c42947b46b6eefa1852"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/privacy-inclusion-sketch/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/privacy-inclusion-sketch/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "2656c48354c7d6a274f219494995b194fbd4a46048fd94ff386937bb478f9812"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/privacy-inclusion-sketch/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/privacy-inclusion-sketch/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5b6e830d55ba4fe87ca033d85132c84b1121b76fe8dfb2befd7fde498c7d0208"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/privacy-inclusion-sketch/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "afd48bdc5982ebb1068df0f9f6cd38aa4d6f890c97bca43fb95b890e773c039f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/privacy-inclusion-sketch/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e2c33b03d784698b8ea2acd9dac25e67c03846c5796c31d1dc8a96288b6fb383"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/privacy-inclusion-sketch/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "5f937f909f64ec718b157e5cd7be49835070ed0b9fca57b9b0fe733e77ca326e"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/privacy-inclusion-sketch/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "38303e938c3c6639fd3f9d85089211a81b4d9cd85956a8ddf5e545074d521b85"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/privacy-inclusion-sketch/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "e48e86f7f5fa29cc461f7126d36546ac5d3a7668038edcc800b29e7781b450eb"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/privacy-inclusion-sketch/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "21223c6b23403a503f9b3c25cf0a697a962a6e5b419c7443c4e9f3cdc1592bc7"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/privacy-inclusion-sketch/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/privacy-inclusion-sketch/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "99f08a9fce9797f14354e4fdce7ea4c0f37e641631bf21acdb8c3c3915838263"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-discrepancy/audits/rla.ndjson",
+      "segment": "whole",
+      "sha256": "aabaf7e5c57ba0740653815bc09ee8936922607f048803b82fd80b87d9f4aae0"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-discrepancy/manifest.json",
+      "segment": "whole",
+      "sha256": "27ec3f025b6dcf54376e31206534d15a1cf8626d44310d5fd25e412bec40a5ef"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-discrepancy/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-discrepancy/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "2656c48354c7d6a274f219494995b194fbd4a46048fd94ff386937bb478f9812"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-discrepancy/normalized/cvr.ndjson",
+      "segment": "whole",
+      "sha256": "6d47edcd4e3085d9d1b07f9764014998d928f09e0db4c98b04e68ccf3ebf0f83"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-discrepancy/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-discrepancy/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5b6e830d55ba4fe87ca033d85132c84b1121b76fe8dfb2befd7fde498c7d0208"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-discrepancy/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "afd48bdc5982ebb1068df0f9f6cd38aa4d6f890c97bca43fb95b890e773c039f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-discrepancy/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-discrepancy/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "417f78c6e3a93f446417a5430ada5626baadca7a308e8e65c9ae5fd13cf2e79b"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-discrepancy/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "33ae18f392bb59e79a081171d3358ca2b39d2a9b129492aaecb51a242d219f9b"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-discrepancy/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "62d858be2ca3a63d58c9efc28f50a90758a6c0fffc36a3b2d7c7ce5d892258e2"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-discrepancy/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "8dda057accfb53ebc8350a8d3c8ad78480064245e93ee12bb08fc6f4acff6b4c"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-discrepancy/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-discrepancy/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "194fca7dae1d4136040e1f49b7db50822250825a2274bec4a77256443d3d0a17"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-margin/audits/rla.ndjson",
+      "segment": "whole",
+      "sha256": "f3fe3506df2d9429bdba5c63076b861895fe961089d1f73e5131fc3abcfcdf0e"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-margin/manifest.json",
+      "segment": "whole",
+      "sha256": "ab69fc8bfe8d383f838b097794dbf32703076e57b1a8a370f5c9463e62b88f64"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-margin/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-margin/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "2656c48354c7d6a274f219494995b194fbd4a46048fd94ff386937bb478f9812"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-margin/normalized/cvr.ndjson",
+      "segment": "whole",
+      "sha256": "6d47edcd4e3085d9d1b07f9764014998d928f09e0db4c98b04e68ccf3ebf0f83"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-margin/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-margin/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5b6e830d55ba4fe87ca033d85132c84b1121b76fe8dfb2befd7fde498c7d0208"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-margin/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "afd48bdc5982ebb1068df0f9f6cd38aa4d6f890c97bca43fb95b890e773c039f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-margin/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-margin/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "81105fe36fe2f3e260d189676c251b66a1bbc0ec5157d0b274e2026e53a2d939"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-margin/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "9fc96af25d6d561814eceb9f60a0f6d361b1220d7268cfb7e05c83131c83f5ee"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-margin/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "62d858be2ca3a63d58c9efc28f50a90758a6c0fffc36a3b2d7c7ce5d892258e2"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-margin/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "8dda057accfb53ebc8350a8d3c8ad78480064245e93ee12bb08fc6f4acff6b4c"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-margin/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-margin/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "654bd85d0e8e4a7434fa41ca0c484fea3331e41750478ede3c0746d1671d52d0"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-replay/audits/rla.ndjson",
+      "segment": "whole",
+      "sha256": "65587b6b026a3d58e34fd6fd9de2674318cfced41f8b7ef58640c6ef4e97dd1c"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-replay/manifest.json",
+      "segment": "whole",
+      "sha256": "06f1723133c8ed5fab2323321e343d7b0f618f9d150288a61eba052f80a28686"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-replay/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-replay/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "2656c48354c7d6a274f219494995b194fbd4a46048fd94ff386937bb478f9812"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-replay/normalized/cvr.ndjson",
+      "segment": "whole",
+      "sha256": "6d47edcd4e3085d9d1b07f9764014998d928f09e0db4c98b04e68ccf3ebf0f83"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-replay/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-replay/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5b6e830d55ba4fe87ca033d85132c84b1121b76fe8dfb2befd7fde498c7d0208"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-replay/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "afd48bdc5982ebb1068df0f9f6cd38aa4d6f890c97bca43fb95b890e773c039f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-replay/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-replay/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "a90bb8ee15fe9bc6445ebe720f97e4ab71bff57339fa05929c0d4003f5950254"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-replay/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "6d1f8f01bdd54fdadf117b67b757acbadd4a144c88d2fe8bf2586b377737d831"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-replay/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "62d858be2ca3a63d58c9efc28f50a90758a6c0fffc36a3b2d7c7ce5d892258e2"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-replay/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "8dda057accfb53ebc8350a8d3c8ad78480064245e93ee12bb08fc6f4acff6b4c"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-replay/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-replay/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "a6f339ef5b59a065c488edbcf676677f84f5ad81a68225064f30cdefd7f6288a"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-statistical/audits/rla.ndjson",
+      "segment": "whole",
+      "sha256": "166b402deae46e74b21c0095054c3b43353483a575dddc57d81247c02926e47f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-statistical/manifest.json",
+      "segment": "whole",
+      "sha256": "6bb4c9f9046e0b22f3f4eabf104ad51b534dc993daac8c66fbd452ebcceae72e"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-statistical/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-statistical/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "2656c48354c7d6a274f219494995b194fbd4a46048fd94ff386937bb478f9812"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-statistical/normalized/cvr.ndjson",
+      "segment": "whole",
+      "sha256": "6d47edcd4e3085d9d1b07f9764014998d928f09e0db4c98b04e68ccf3ebf0f83"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-statistical/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-statistical/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5b6e830d55ba4fe87ca033d85132c84b1121b76fe8dfb2befd7fde498c7d0208"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-statistical/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "afd48bdc5982ebb1068df0f9f6cd38aa4d6f890c97bca43fb95b890e773c039f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-statistical/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-statistical/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "9c99d54edf2c98289e80709025900277610bc8fe64dfaa70258b75ec1f11614f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-statistical/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "9fc96af25d6d561814eceb9f60a0f6d361b1220d7268cfb7e05c83131c83f5ee"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-statistical/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "62d858be2ca3a63d58c9efc28f50a90758a6c0fffc36a3b2d7c7ce5d892258e2"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-statistical/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "8dda057accfb53ebc8350a8d3c8ad78480064245e93ee12bb08fc6f4acff6b4c"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-statistical/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-statistical/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "d3d5f45a95c35ea534fa956f242e9477d8eb7179d51ba2b9bb60df5775c6e66d"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-stopping/audits/rla.ndjson",
+      "segment": "whole",
+      "sha256": "066cbb38a8d9834665ed6654dc85e755853861f3bdc52004d323e3d8bd972b8c"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-stopping/manifest.json",
+      "segment": "whole",
+      "sha256": "e8946741ca69887c0552201501b4646cc22282b14afaf22f2caa7ecd3f534922"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-stopping/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-stopping/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "2656c48354c7d6a274f219494995b194fbd4a46048fd94ff386937bb478f9812"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-stopping/normalized/cvr.ndjson",
+      "segment": "whole",
+      "sha256": "6d47edcd4e3085d9d1b07f9764014998d928f09e0db4c98b04e68ccf3ebf0f83"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-stopping/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-stopping/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5b6e830d55ba4fe87ca033d85132c84b1121b76fe8dfb2befd7fde498c7d0208"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-stopping/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "afd48bdc5982ebb1068df0f9f6cd38aa4d6f890c97bca43fb95b890e773c039f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-stopping/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-stopping/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "967a9ab875adf4bb6fd2910b7f5786ae3fbde4e3b9a86a03156f1ef2ed33cf5d"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-stopping/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "33ae18f392bb59e79a081171d3358ca2b39d2a9b129492aaecb51a242d219f9b"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-stopping/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "62d858be2ca3a63d58c9efc28f50a90758a6c0fffc36a3b2d7c7ce5d892258e2"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-stopping/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "8dda057accfb53ebc8350a8d3c8ad78480064245e93ee12bb08fc6f4acff6b4c"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-stopping/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/rla-stopping/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "7eeb8794f890c3903faa1348186e024bcb218b7045b7207aef89fafe9292d2ff"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/summary-basic/manifest.json",
+      "segment": "whole",
+      "sha256": "8cf3acccd0a643c95dd499db01f0f9334732e6cfa4076d99360dcb2c17165ffb"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/summary-basic/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/summary-basic/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "2656c48354c7d6a274f219494995b194fbd4a46048fd94ff386937bb478f9812"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/summary-basic/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/summary-basic/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5b6e830d55ba4fe87ca033d85132c84b1121b76fe8dfb2befd7fde498c7d0208"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/summary-basic/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "afd48bdc5982ebb1068df0f9f6cd38aa4d6f890c97bca43fb95b890e773c039f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/summary-basic/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/summary-basic/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "72d4bc85bb4f404692c59bfa2dbb525efceeccc6061492408b1b590b94f972c4"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/summary-basic/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "38303e938c3c6639fd3f9d85089211a81b4d9cd85956a8ddf5e545074d521b85"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/summary-basic/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "27547b6410f739fd0ffa0af501b62fa33ce08a70729dd819b887919a8bc382d8"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/summary-basic/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "f4b2877b749951c101001e18123f94abca4ced3020aaeb8a2913d66e15e7257b"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/summary-basic/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/summary-basic/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "72f7090d8f92c876ab3082c27d4c77780ece0b16e96d2514b946d5a30c57d5d2"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/tampered-source/manifest.json",
+      "segment": "whole",
+      "sha256": "8cf3acccd0a643c95dd499db01f0f9334732e6cfa4076d99360dcb2c17165ffb"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/tampered-source/normalized/batches.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/tampered-source/normalized/contests.ndjson",
+      "segment": "whole",
+      "sha256": "2656c48354c7d6a274f219494995b194fbd4a46048fd94ff386937bb478f9812"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/tampered-source/normalized/lineage.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/tampered-source/normalized/reporting-units.ndjson",
+      "segment": "whole",
+      "sha256": "5b6e830d55ba4fe87ca033d85132c84b1121b76fe8dfb2befd7fde498c7d0208"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/tampered-source/normalized/summaries.ndjson",
+      "segment": "whole",
+      "sha256": "afd48bdc5982ebb1068df0f9f6cd38aa4d6f890c97bca43fb95b890e773c039f"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/tampered-source/proofs/inclusion-proofs.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/tampered-source/proofs/package-hashes.json",
+      "segment": "whole",
+      "sha256": "72d4bc85bb4f404692c59bfa2dbb525efceeccc6061492408b1b590b94f972c4"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/tampered-source/reconciliation/equations.ndjson",
+      "segment": "whole",
+      "sha256": "38303e938c3c6639fd3f9d85089211a81b4d9cd85956a8ddf5e545074d521b85"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/tampered-source/sources/source-index.json",
+      "segment": "whole",
+      "sha256": "27547b6410f739fd0ffa0af501b62fa33ce08a70729dd819b887919a8bc382d8"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/tampered-source/sources/synthetic-summary-export.json",
+      "segment": "whole",
+      "sha256": "94c09080b629d72e04a6ae19317d3b38934fbb9c52bafe76e9986a26f4c544b5"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/tampered-source/status/events.ndjson",
+      "segment": "whole",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/examples/rcount-golden-packages/tampered-source/transcripts/verify-transcript.json",
+      "segment": "whole",
+      "sha256": "f78684e5a499862bc7d88d68564eb065d1bb00a686c8070c64c502470d964778"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/README.md",
+      "segment": "whole",
+      "sha256": "a17dc5da5cb5ced1efc54a7b3da2e6f495cb2986740cd60718b2971f904f6aac"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.14+spectral-grid10-benchmark/audit-certificate.json",
+      "segment": "whole",
+      "sha256": "e3fb2f86a225c7f4d55db98c7faa3dd4eb5a6044a5633b8715791457f016a653"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.14+spectral-grid10-benchmark/benchmark-notes.json",
+      "segment": "whole",
+      "sha256": "ab838eee051ba835a0dd566d569b39d1688285d22c34bf39a77d901bfc1259e9"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.14+spectral-grid10-benchmark/command-transcript.txt",
+      "segment": "whole",
+      "sha256": "b3f39bb144538b657bcaa1e803c04b6e14678d875a7ec5b4c86e0a2529d8b3a6"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.14+spectral-grid10-benchmark/context.rctx",
+      "segment": "whole",
+      "sha256": "dddca32b14af3f1490fbded8aaba3fd9abfec85eb309fb26686407a8ef3fa01f"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.14+spectral-grid10-benchmark/manifest.json",
+      "segment": "whole",
+      "sha256": "5b500531e124837529371538e115dc3e38ab07a0cfb76835f80c9e6b3addfc23"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.14+spectral-grid10-benchmark/method-transcript.json",
+      "segment": "whole",
+      "sha256": "881a813239cc25d778dfc45eb15aa3f45e506145e33b54099887d3ffd80faf81"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.14+spectral-grid10-benchmark/plan.rplan",
+      "segment": "whole",
+      "sha256": "98dd85b51234b254f1d26602945955653ce38e0d7ec2e087a26be67be3c22547"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.14+spectral-grid10-benchmark/spectral-summary.json",
+      "segment": "whole",
+      "sha256": "13f4ae6c2e44918a900c058bd4ce8880d0bc3114bf0404afdbb433b386da0c43"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.15+capacity-path100-benchmark/audit-certificate.json",
+      "segment": "whole",
+      "sha256": "0a70d6d3dbedb44a666d4e557c05120d6b120d2f89d9c83af893852494670640"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.15+capacity-path100-benchmark/benchmark-notes.json",
+      "segment": "whole",
+      "sha256": "eadd0b5d8335e4c57b4a338bd517ba4400586ac3a2b78a9339cacb2c95fe41c4"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.15+capacity-path100-benchmark/capacity-summary.json",
+      "segment": "whole",
+      "sha256": "2b21ec1a57b9ae7b1a549ffb9ff97c7abc7c93636ad5081608e449ee4be16a5b"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.15+capacity-path100-benchmark/command-transcript.txt",
+      "segment": "whole",
+      "sha256": "d7fc2901e8342cb240939d57c1c7dc8b47117f331e5ac25df6927a13c661d4d7"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.15+capacity-path100-benchmark/context.rctx",
+      "segment": "whole",
+      "sha256": "840c4ed93032cc9a4ee980fc148afaaf2d83040c29fac1e7728dfd201418ea63"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.15+capacity-path100-benchmark/manifest.json",
+      "segment": "whole",
+      "sha256": "11a05f27f41d029e45313cd9d26b36bc19fd04a91fe53a00ce0079321b4ea3b0"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.15+capacity-path100-benchmark/method-transcript.json",
+      "segment": "whole",
+      "sha256": "b15f78b3ced5403843e99a9780099d03fdfe5766cb1d8afa0c2394ad4c8578f3"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.15+capacity-path100-benchmark/plan.rplan",
+      "segment": "whole",
+      "sha256": "e6d499693af79939f0ce2152268fa9f6fd2a636fc965d6d4ed3694192116b466"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.16+regionalization-path100-benchmark/audit-certificate.json",
+      "segment": "whole",
+      "sha256": "794e28749b1cec075dc27ed42f1d09afb424fb285534e824940a2e20b02f7a39"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.16+regionalization-path100-benchmark/benchmark-notes.json",
+      "segment": "whole",
+      "sha256": "45222b9dbc887e8c383d9927af92b6691feee7b57a861a2ef80cd8c32c544d0a"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.16+regionalization-path100-benchmark/command-transcript.txt",
+      "segment": "whole",
+      "sha256": "4b18685d2e96de5ff9950399ca7b9710f0b2b369c56d16b4be8b8cb4b11ca5a1"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.16+regionalization-path100-benchmark/context.rctx",
+      "segment": "whole",
+      "sha256": "be10c3eff7be33efd7ef82ab1a57ab70ffab3cac4d1dae850db499ec92eddf2c"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.16+regionalization-path100-benchmark/manifest.json",
+      "segment": "whole",
+      "sha256": "e210dd1c01f6935c5a80f9ebc30902608cddc1ae8fc97c4df86e4e1bb6b9d4d3"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.16+regionalization-path100-benchmark/merge-log.json",
+      "segment": "whole",
+      "sha256": "b54b7b6d2fde7754f01f5396c87823013ad291191937398d25705fa1650bb3f7"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.16+regionalization-path100-benchmark/method-transcript.json",
+      "segment": "whole",
+      "sha256": "a156dfa8292814b9e082e9e45afe72bc9746a4ab538be6109924e974552b8d0d"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.16+regionalization-path100-benchmark/plan.rplan",
+      "segment": "whole",
+      "sha256": "085b3f158598778d834f74d206122044c1ed28e1a474d09e81e2299d256decd7"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.16+regionalization-path100-benchmark/regionalization-summary.json",
+      "segment": "whole",
+      "sha256": "cb4f8b07ba0c6cf2e53832d5295c966a501870f9680449ba387dabb3b0ecbbb7"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.17+flow-path100-benchmark/audit-certificate.json",
+      "segment": "whole",
+      "sha256": "16a2b303373944961083e1df6ced7b64a773081f2ab5335c264f97526330c219"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.17+flow-path100-benchmark/benchmark-notes.json",
+      "segment": "whole",
+      "sha256": "9e5627baa3543226e693a54c79ef7cf355b3eaa4364d5ef1815ae8c35c3aeec8"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.17+flow-path100-benchmark/command-transcript.txt",
+      "segment": "whole",
+      "sha256": "31193a35b25b4307c3bedaa73fde56d655ab9d1edab1df647960eb829e30ed03"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.17+flow-path100-benchmark/context.rctx",
+      "segment": "whole",
+      "sha256": "e63c430400253148d1d55e0262be0c031e05bebb970b28fd1433069f5143a790"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.17+flow-path100-benchmark/flow-summary.json",
+      "segment": "whole",
+      "sha256": "2c8a6776f17dbe3fd91c354f01904edd762df939c04543568c636264fd4c7ad9"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.17+flow-path100-benchmark/manifest.json",
+      "segment": "whole",
+      "sha256": "105864f2e04c930cbda7f5a0e6c2ec0fe0d002bb24cb132d92e52a3df6a06c0c"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.17+flow-path100-benchmark/method-transcript.json",
+      "segment": "whole",
+      "sha256": "6d740de0e95db7cde4a8cddad49ceb094c76c786478421dd97f2c04ec340d4c9"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/T.17+flow-path100-benchmark/plan.rplan",
+      "segment": "whole",
+      "sha256": "ece34032da9916b355bd82dca885b2bea223050be5cedc5dfef0941377c2f6f5"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/U.16+branch-and-cut-path8-benchmark/audit-certificate.json",
+      "segment": "whole",
+      "sha256": "3e15a63baaa763779f0abb36b5a5e05dbc2d75238c716e815b64860da9744f25"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/U.16+branch-and-cut-path8-benchmark/benchmark-notes.json",
+      "segment": "whole",
+      "sha256": "b3247b0bf2b8d9e04b760db27479eef409b880e3c1a2b4b47318239b44fa9f05"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/U.16+branch-and-cut-path8-benchmark/command-transcript.txt",
+      "segment": "whole",
+      "sha256": "10a4b9e49b81f4965d91aa4bb81e2bc4e19c1ac9d3f2fc03afdf1d17e3e4baf4"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/U.16+branch-and-cut-path8-benchmark/context.rctx",
+      "segment": "whole",
+      "sha256": "5dea3e130523c39b9f9b92ee0616fad320e8f609d02d4dfce0aa882bc6cc2c98"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/U.16+branch-and-cut-path8-benchmark/ilp-solve-report.json",
+      "segment": "whole",
+      "sha256": "2a85aacd8e1602b3394d5dbd5b3e6caf56fc2c91b7c2696b8bb0eb5efc0c3b8d"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/U.16+branch-and-cut-path8-benchmark/manifest.json",
+      "segment": "whole",
+      "sha256": "586151c104e0f9ed6f07a9bac0e66812e72ebd8023f093085c02b6dbdf2905c5"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/U.16+branch-and-cut-path8-benchmark/method-transcript.json",
+      "segment": "whole",
+      "sha256": "d4a241c8ecd3a25396550315fe95e35dc3398d4aa1c48157da171b4a297d6fc6"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/U.16+branch-and-cut-path8-benchmark/node_root.lp",
+      "segment": "whole",
+      "sha256": "174ce58784730a0a0ba30a5fa3580bd0675c6719c63b376ed754c7fc4fd7bb44"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/U.16+branch-and-cut-path8-benchmark/plan.rplan",
+      "segment": "whole",
+      "sha256": "21a87a463599908ffc93ef074d5d2fb077af50e7be94ecb18427215c02d080d6"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/U.18+local-search-grid10-benchmark/audit-certificate.json",
+      "segment": "whole",
+      "sha256": "ec939e02252bff794eeb115dacc5ca18c01405a51d6067f39d25975fd1800af3"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/U.18+local-search-grid10-benchmark/benchmark-notes.json",
+      "segment": "whole",
+      "sha256": "1a92505b85ca2d5079eb63696ffd68912e0726ee226ecf4e5ca846f6d12c16dc"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/U.18+local-search-grid10-benchmark/bisect-run-manifest.json",
+      "segment": "whole",
+      "sha256": "a5d459812e0b7cd1df50c2e7e815b88a514095587bf2b5a1497abae7596a8029"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/U.18+local-search-grid10-benchmark/command-transcript.txt",
+      "segment": "whole",
+      "sha256": "49ec61fdc675f6921df32e2c577497254539d5c39d51cd62193675012627b0fa"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/U.18+local-search-grid10-benchmark/context.rctx",
+      "segment": "whole",
+      "sha256": "dddca32b14af3f1490fbded8aaba3fd9abfec85eb309fb26686407a8ef3fa01f"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/U.18+local-search-grid10-benchmark/local-search-summary.json",
+      "segment": "whole",
+      "sha256": "ec5380749ead647e7331dcaff0f9e3bf88374d8dbeb29f568dc4998b0fd62ec7"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/U.18+local-search-grid10-benchmark/manifest.json",
+      "segment": "whole",
+      "sha256": "b8c285f53510159acab1855ebce04569781e881040f949e7c33a5a2074a23113"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/U.18+local-search-grid10-benchmark/method-transcript.json",
+      "segment": "whole",
+      "sha256": "64a97a00c688f17da222ff876bcaea1e0b874552c5070c3f70e2d4daf763a183"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/U.18+local-search-grid10-benchmark/plan.rplan",
+      "segment": "whole",
+      "sha256": "dcde53b567b92af7b17b1ab4573cb3196df6576eb6e2340a4295737517eb29e9"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/U.20+audit-grid10-benchmark/audit-certificate.json",
+      "segment": "whole",
+      "sha256": "3c17a5631d278f42907ecc29fb51860a383c4630b6c8cbe98c2f8769cf0208c0"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/U.20+audit-grid10-benchmark/audit-stress-summary.json",
+      "segment": "whole",
+      "sha256": "c4cd29ff4e365265f5a2516b5701a7a55488cd9d8cca17708da57dbfdbba3a34"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/U.20+audit-grid10-benchmark/benchmark-notes.json",
+      "segment": "whole",
+      "sha256": "d1e2e3f3ec641023f8dc27e8649b8bb675f781c6165af70ca577777cb59cec0d"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/U.20+audit-grid10-benchmark/command-transcript.txt",
+      "segment": "whole",
+      "sha256": "611131930fcb52f1abf42e1b88c60d73ebc9c41c87c3c65880e1cc90153ce668"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/U.20+audit-grid10-benchmark/context.rctx",
+      "segment": "whole",
+      "sha256": "4ee6ae022547921df36a78a48db79daae9bb894c2ce099c3294b620883e1ffb8"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/U.20+audit-grid10-benchmark/manifest.json",
+      "segment": "whole",
+      "sha256": "c78a63d7d414a6e8ac7b961754a498751d42e6ef194578f64fe0a684959a45fb"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/U.20+audit-grid10-benchmark/method-transcript.json",
+      "segment": "whole",
+      "sha256": "811b1a8cbb907094daead7c8be2000b9f746d295deaece8bbfc1a02454b95bc4"
+    },
+    {
+      "path": "docs/examples/rplan-benchmark-packages/U.20+audit-grid10-benchmark/plan.rplan",
+      "segment": "whole",
+      "sha256": "b31bdc77fc92a445d3d0afad583d37932f97759b9dab22c1eb57274fea65dd46"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/README.md",
+      "segment": "whole",
+      "sha256": "65a4b2f0003e4a1eddc638d3a9754f1142e32d213c286af2e51765368a9b0bef"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/T.14+spectral-partitioning/audit-certificate.json",
+      "segment": "whole",
+      "sha256": "e0a33c3f58a5705740ac6b4efa2deb69941dd05ee5d724ef76f45b275e67976e"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/T.14+spectral-partitioning/context.rctx",
+      "segment": "whole",
+      "sha256": "107c60b317b24e328c90a69ab2eace24ce4e42e9122f38b3a224daef9632e2e2"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/T.14+spectral-partitioning/manifest.json",
+      "segment": "whole",
+      "sha256": "99811a21b06bce8c04d3e630e77ddd7333793091c7866c282203b7c8f673c218"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/T.14+spectral-partitioning/method-transcript.json",
+      "segment": "whole",
+      "sha256": "5d64fc8003808e444059696b573687d601ed36b1c02ccfc3c93f9363a065a700"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/T.14+spectral-partitioning/plan.rplan",
+      "segment": "whole",
+      "sha256": "354470c7a18e0407c6498a9eb6518f7369d241cdfc7754a520b968e4e7b00b27"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/T.15+capacity-constrained-clustering/audit-certificate.json",
+      "segment": "whole",
+      "sha256": "242309cd41e6fb520fe06f330e15a3425a3bd9c256e3d2c8ca4d9c5c3a6416e0"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/T.15+capacity-constrained-clustering/context.rctx",
+      "segment": "whole",
+      "sha256": "107c60b317b24e328c90a69ab2eace24ce4e42e9122f38b3a224daef9632e2e2"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/T.15+capacity-constrained-clustering/manifest.json",
+      "segment": "whole",
+      "sha256": "097121a630e8f7e589c4eccfba5616df784ecfc1b6ad4da5d1ffbadb53728dc5"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/T.15+capacity-constrained-clustering/method-transcript.json",
+      "segment": "whole",
+      "sha256": "2f83703ee31f3d1df47088ec89ef909da7a67077e1f66b5cb3cb2bef8e6c79b5"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/T.15+capacity-constrained-clustering/plan.rplan",
+      "segment": "whole",
+      "sha256": "354470c7a18e0407c6498a9eb6518f7369d241cdfc7754a520b968e4e7b00b27"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/T.16+hierarchical-regionalization/audit-certificate.json",
+      "segment": "whole",
+      "sha256": "b79198127aa686cfb31f74e9ca42b0133fa2e1e4f8b2268c49076657ce7885ba"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/T.16+hierarchical-regionalization/context.rctx",
+      "segment": "whole",
+      "sha256": "107c60b317b24e328c90a69ab2eace24ce4e42e9122f38b3a224daef9632e2e2"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/T.16+hierarchical-regionalization/manifest.json",
+      "segment": "whole",
+      "sha256": "453cf47ff6cd04e54ceee76ec6ecf1f832429844bb445c2842d8a5af69efa5eb"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/T.16+hierarchical-regionalization/method-transcript.json",
+      "segment": "whole",
+      "sha256": "de1abc0774de3dfcd3ac48abc3ffa6967db7c667d9a9540d1cb38e51fd7932bb"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/T.16+hierarchical-regionalization/plan.rplan",
+      "segment": "whole",
+      "sha256": "354470c7a18e0407c6498a9eb6518f7369d241cdfc7754a520b968e4e7b00b27"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/T.17+flow-construction/audit-certificate.json",
+      "segment": "whole",
+      "sha256": "ce7f853d87eea4dce86168248375eea5239febe0415441dd5ec60ac03af9a9e9"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/T.17+flow-construction/context.rctx",
+      "segment": "whole",
+      "sha256": "107c60b317b24e328c90a69ab2eace24ce4e42e9122f38b3a224daef9632e2e2"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/T.17+flow-construction/manifest.json",
+      "segment": "whole",
+      "sha256": "59fb21957ee9ece2af8ff5068bac5ceeb86cb9db6976548afb4561499e002c68"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/T.17+flow-construction/method-transcript.json",
+      "segment": "whole",
+      "sha256": "c2440fca781bdf07d74ce591c71f614349c2363d79ffb0342e51fa8c8afcb6ba"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/T.17+flow-construction/plan.rplan",
+      "segment": "whole",
+      "sha256": "354470c7a18e0407c6498a9eb6518f7369d241cdfc7754a520b968e4e7b00b27"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/U.16+branch-and-cut/audit-certificate.json",
+      "segment": "whole",
+      "sha256": "3d885936cf8f5d55b37749b930574d683c4ed01b5494d122c5cc07bbe5596f10"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/U.16+branch-and-cut/context.rctx",
+      "segment": "whole",
+      "sha256": "107c60b317b24e328c90a69ab2eace24ce4e42e9122f38b3a224daef9632e2e2"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/U.16+branch-and-cut/manifest.json",
+      "segment": "whole",
+      "sha256": "7d2d398c2e2b78e6b2dce02b777080efffbff84d3b32043f147f19ef438e00cc"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/U.16+branch-and-cut/method-transcript.json",
+      "segment": "whole",
+      "sha256": "f167398d18b454a0a91f6da0c2e73114cf61aaae00ba6a9f72b2132f099d8998"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/U.16+branch-and-cut/plan.rplan",
+      "segment": "whole",
+      "sha256": "354470c7a18e0407c6498a9eb6518f7369d241cdfc7754a520b968e4e7b00b27"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/U.17+branch-and-price/audit-certificate.json",
+      "segment": "whole",
+      "sha256": "f1a99a8f160a787e4e4e3825bae8b143340bbabb506d8bd85322f8e1ecf8e0ba"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/U.17+branch-and-price/context.rctx",
+      "segment": "whole",
+      "sha256": "107c60b317b24e328c90a69ab2eace24ce4e42e9122f38b3a224daef9632e2e2"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/U.17+branch-and-price/manifest.json",
+      "segment": "whole",
+      "sha256": "943eac9203b8c86363f6a23c164dd7bf2c3aeb994feec24f6624bc930f68a813"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/U.17+branch-and-price/method-transcript.json",
+      "segment": "whole",
+      "sha256": "81f29fc3619b4fa974106dc23dbf744bb370ec066212a218ef77de313575ae52"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/U.17+branch-and-price/plan.rplan",
+      "segment": "whole",
+      "sha256": "354470c7a18e0407c6498a9eb6518f7369d241cdfc7754a520b968e4e7b00b27"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/U.18+local-search-improvement/audit-certificate.json",
+      "segment": "whole",
+      "sha256": "f255d7ca129ee9e11a2b5532bee047689bbe97fc008bb81461d0b949aa872d09"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/U.18+local-search-improvement/context.rctx",
+      "segment": "whole",
+      "sha256": "107c60b317b24e328c90a69ab2eace24ce4e42e9122f38b3a224daef9632e2e2"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/U.18+local-search-improvement/manifest.json",
+      "segment": "whole",
+      "sha256": "2273288e07e8cbfbadcc86f3751a457b84b10eddf878b514884f04ca50fae5b2"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/U.18+local-search-improvement/method-transcript.json",
+      "segment": "whole",
+      "sha256": "945336597bbed6e452081772a1e118d7bf9cb80f3f8c9613346f8cc1abfcbbcb"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/U.18+local-search-improvement/plan.rplan",
+      "segment": "whole",
+      "sha256": "354470c7a18e0407c6498a9eb6518f7369d241cdfc7754a520b968e4e7b00b27"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/U.19+selected-frontier/audit-certificate.json",
+      "segment": "whole",
+      "sha256": "e1f2fbc5b57516d6344ae4e2a5b6bd7c1de13e65bee7b554a5bbe17b8b0f2f80"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/U.19+selected-frontier/context.rctx",
+      "segment": "whole",
+      "sha256": "107c60b317b24e328c90a69ab2eace24ce4e42e9122f38b3a224daef9632e2e2"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/U.19+selected-frontier/manifest.json",
+      "segment": "whole",
+      "sha256": "0600857f657910ab8b15bd3b124fc64cecb2501d903515074b4356b282019162"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/U.19+selected-frontier/method-transcript.json",
+      "segment": "whole",
+      "sha256": "e6edf949bd39218b4c34b04c38bfd930d03e67c749942e9806b814a6ee180726"
+    },
+    {
+      "path": "docs/examples/rplan-golden-packages/U.19+selected-frontier/plan.rplan",
+      "segment": "whole",
+      "sha256": "354470c7a18e0407c6498a9eb6518f7369d241cdfc7754a520b968e4e7b00b27"
+    },
+    {
+      "path": "docs/examples/rplan-method-packages/README.md",
+      "segment": "whole",
+      "sha256": "00f313665bfd0f3b3ae89ec465c27041b72badabd5e2fcf216aed473cc78d5fc"
+    },
+    {
+      "path": "docs/examples/rplan-method-packages/T.14+spectral-generated-synthetic/audit-certificate.json",
+      "segment": "whole",
+      "sha256": "3e8afd4790439c20d5a895e6ebaf9d56359db286544987f8ad36a772c904fb52"
+    },
+    {
+      "path": "docs/examples/rplan-method-packages/T.14+spectral-generated-synthetic/command-transcript.txt",
+      "segment": "whole",
+      "sha256": "d003104dbb090eb46af69c396a7c58ff61b56f0904a2e1e07d6c649864db827e"
+    },
+    {
+      "path": "docs/examples/rplan-method-packages/T.14+spectral-generated-synthetic/context.rctx",
+      "segment": "whole",
+      "sha256": "1dcf5731eac596c3ae62ac837f5fa632916efe2cc337357319914799c43ba8cf"
+    },
+    {
+      "path": "docs/examples/rplan-method-packages/T.14+spectral-generated-synthetic/manifest.json",
+      "segment": "whole",
+      "sha256": "4fdbf53d30f7d3b7c2450e3bb39b2a247d53344027aaed4466b5ca1e80dcb1bd"
+    },
+    {
+      "path": "docs/examples/rplan-method-packages/T.14+spectral-generated-synthetic/method-transcript.json",
+      "segment": "whole",
+      "sha256": "2bcbb690777ef6de0d8b400264997f5a140cce4595a04a2bf4fdd06c93006707"
+    },
+    {
+      "path": "docs/examples/rplan-method-packages/T.14+spectral-generated-synthetic/plan.rplan",
+      "segment": "whole",
+      "sha256": "e2f1900909aa7b3493eba6fa913f92099483ae79c65036091ea321633c78343b"
+    },
+    {
+      "path": "docs/examples/rplan-method-packages/T.14+spectral-generated-synthetic/spectral-summary.json",
+      "segment": "whole",
+      "sha256": "0510a0b8ecdc3330440fc27cade2a4bdec89d50939915fa6e4b2942c81d16acc"
+    },
+    {
+      "path": "docs/examples/rplan-method-packages/U.18+local-search-generated-descendant/audit-certificate.json",
+      "segment": "whole",
+      "sha256": "9273da50fd5a47396d2a958c108b9fa7a6c5271bdec4adc8736a1ef7c2ef9e0c"
+    },
+    {
+      "path": "docs/examples/rplan-method-packages/U.18+local-search-generated-descendant/bisect-run-manifest.json",
+      "segment": "whole",
+      "sha256": "e879a25610dc5499229a5a25a40f944728b21dc698b5bfdb6f10d67ba11717a0"
+    },
+    {
+      "path": "docs/examples/rplan-method-packages/U.18+local-search-generated-descendant/command-transcript.txt",
+      "segment": "whole",
+      "sha256": "274f180e18dfdb7e7ceb43129a9652f0a12639c2c97613e13aeabd5262e0da78"
+    },
+    {
+      "path": "docs/examples/rplan-method-packages/U.18+local-search-generated-descendant/context.rctx",
+      "segment": "whole",
+      "sha256": "f5bae12ca2a2c730de2f807113c36d5f7c2f56009fad0b589f3d5e44fa255e85"
+    },
+    {
+      "path": "docs/examples/rplan-method-packages/U.18+local-search-generated-descendant/local-search-summary.json",
+      "segment": "whole",
+      "sha256": "a582a2c072016c6b8fba437784f6ad01a6d5c690248470c8d00377b4011a063f"
+    },
+    {
+      "path": "docs/examples/rplan-method-packages/U.18+local-search-generated-descendant/manifest.json",
+      "segment": "whole",
+      "sha256": "61071116a58ed127cdf6d8bed29c572a82aa34ed5da74aee778108fd04ab87da"
+    },
+    {
+      "path": "docs/examples/rplan-method-packages/U.18+local-search-generated-descendant/method-transcript.json",
+      "segment": "whole",
+      "sha256": "a949a35290ddadbeeb66db3d9be835eacd247b208c17b24d3ae7d8c506e84573"
+    },
+    {
+      "path": "docs/examples/rplan-method-packages/U.18+local-search-generated-descendant/plan.rplan",
+      "segment": "whole",
+      "sha256": "473e4c8972180596e1d600c36e7f0b79a9a2f2552a154d24a3b6b7dd1ca3d3ea"
+    },
+    {
+      "path": "docs/examples/u-search-evidence-packages/U.11+resolution-smoke/manifest.json",
+      "segment": "whole",
+      "sha256": "4f1b833da1aa0de3039fc2df31fba1bef7d504985eb810865b8dbce0763405fb"
+    },
+    {
+      "path": "docs/examples/u-search-evidence-packages/U.11+resolution-smoke/resolution-fixtures.json",
+      "segment": "whole",
+      "sha256": "a5d6ea394e578d0772ccea39cf8e97fc5681c77d2a2b538addc7025bfc6cf34f"
+    },
+    {
+      "path": "docs/examples/u-search-evidence-packages/U.3+sa-smoke/manifest.json",
+      "segment": "whole",
+      "sha256": "2d05b899d0b06fd0e8afa04a1128485d301b83d723387836f192e0d3bf7c6e06"
+    },
+    {
+      "path": "docs/examples/u-search-evidence-packages/U.3+sa-smoke/sa-fixtures.json",
+      "segment": "whole",
+      "sha256": "7a8417e442f668d50bdb1fc3db646fbb096ddd28a2cf9f08084dfa4b787c193f"
+    },
+    {
+      "path": "docs/examples/u-search-evidence-packages/U.5+adaptive-multiscale-smoke/adaptive-fixtures.json",
+      "segment": "whole",
+      "sha256": "1c370eeccd5ee89e2ecc99bd72d8e6c733047c6774662d5b8f2c86a52ecb6ba0"
+    },
+    {
+      "path": "docs/examples/u-search-evidence-packages/U.5+adaptive-multiscale-smoke/manifest.json",
+      "segment": "whole",
+      "sha256": "b88353941092847b450aad2cfd3f7e7457c9691a87f07a65f0030890d7d83ccd"
+    },
+    {
+      "path": "docs/examples/u-search-evidence-packages/synthetic-sweep-and-pt/manifest.json",
+      "segment": "whole",
+      "sha256": "b2fd19fdf2226de48a2b230e65e15fd6f99dd93e896978cbb5530671881dfae1"
+    },
+    {
+      "path": "docs/examples/u-search-evidence-packages/synthetic-sweep-and-pt/search-fixtures.json",
+      "segment": "whole",
+      "sha256": "6568b2320a7bef108db137663d4174c55c2004aedb33393fd9b0ec6700fc7ea4"
+    },
+    {
+      "path": "docs/examples/u20-plan-audit-certificates/NEGATIVE-FIXTURES.md",
+      "segment": "whole",
+      "sha256": "c44f70ba051c7bd20e8afb95eef119bbe497d2dddfbc78d978d372bb77bd1113"
+    },
+    {
+      "path": "docs/examples/u20-plan-audit-certificates/README.md",
+      "segment": "whole",
+      "sha256": "5aad04b4477c996c5bdbdf15e343f1298c70f01077c84ce78edf2612281187f4"
+    },
+    {
+      "path": "docs/examples/u20-plan-audit-certificates/grid3x3-valid/audit-certificate.json",
+      "segment": "whole",
+      "sha256": "3544c40ff67229b66557bc7a4164350339d01e191da4d401bb89c5ab0993ae0f"
+    },
+    {
+      "path": "docs/examples/u20-plan-audit-certificates/grid3x3-valid/context.rctx",
+      "segment": "whole",
+      "sha256": "107c60b317b24e328c90a69ab2eace24ce4e42e9122f38b3a224daef9632e2e2"
+    },
+    {
+      "path": "docs/examples/u20-plan-audit-certificates/grid3x3-valid/manifest.json",
+      "segment": "whole",
+      "sha256": "14e9f40b3b4a19b7c857b30b75f301f7650bd89e2cae0feee66e4802bad5fd00"
+    },
+    {
+      "path": "docs/examples/u20-plan-audit-certificates/grid3x3-valid/plan.rplan",
+      "segment": "whole",
+      "sha256": "354470c7a18e0407c6498a9eb6518f7369d241cdfc7754a520b968e4e7b00b27"
+    }
+  ]
+}

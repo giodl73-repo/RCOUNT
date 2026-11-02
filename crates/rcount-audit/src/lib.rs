@@ -7,7 +7,10 @@ use rcount_core::{
     KAPLAN_MARKOV_COMPARISON_METHOD_ID, MINERVA_BALLOT_POLLING_METHOD_ID, RAIRE_IRV_METHOD_ID,
     SOBA_OBSERVABLE_BALLOT_AUDIT_METHOD_ID, STRATIFIED_HYBRID_RLA_METHOD_ID,
 };
-use rcount_io::{read_package_dir, verify_source_index, RcountIoError, RcountManifest};
+use rcount_io::{
+    read_package_with_reader, verify_source_index_with_reader, FileSystemReader, PackageReader,
+    RcountIoError, RcountManifest,
+};
 use rcount_stats::{
     replay_bravo_ballot_polling, replay_fixed_bet_bounded_mean_martingale,
     replay_kaplan_markov_macro_bound, replay_kaplan_markov_taint_product,
@@ -135,8 +138,16 @@ pub fn replay_audit_algorithm_statistics(run: &AuditAlgorithmRun) -> AlgorithmRe
 }
 
 pub fn verify_package_dir(dir: &Path) -> VerificationTranscript {
-    match read_package_dir(dir) {
-        Ok((manifest, package)) => verify_loaded_package(dir, &manifest, &package),
+    verify_package_with_reader(&FileSystemReader, dir)
+}
+
+/// Run the unchanged package checks against a read-only storage backend.
+pub fn verify_package_with_reader(
+    reader: &impl PackageReader,
+    dir: &Path,
+) -> VerificationTranscript {
+    match read_package_with_reader(reader, dir) {
+        Ok((manifest, package)) => verify_loaded_package(reader, dir, &manifest, &package),
         Err(err) => VerificationTranscript {
             transcript_version: RCOUNT_AUDIT_TRANSCRIPT_VERSION.to_string(),
             verifier: "rcount-audit".to_string(),
@@ -645,6 +656,7 @@ pub fn verify_and_write_transcript(dir: &Path) -> Result<VerificationTranscript,
 }
 
 fn verify_loaded_package(
+    reader: &impl PackageReader,
     dir: &Path,
     manifest: &RcountManifest,
     package: &RcountPackage,
@@ -707,7 +719,7 @@ fn verify_loaded_package(
         }
     }
 
-    match verify_source_index(dir) {
+    match verify_source_index_with_reader(reader, dir) {
         Ok(source_checks) => {
             checks.extend(source_checks.into_iter().map(|source| CheckResult {
                 equation_id: "source_hash_match".to_string(),
