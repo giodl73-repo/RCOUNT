@@ -1,0 +1,594 @@
+{
+  "source": "3849b249b6d4f3016d387faef936d82899527141",
+  "binary_sha256": "ff63952ad26dfe94f5859a4ad5e05a6e1b50a42fc40d79a93595fe2683545c3d",
+  "controls": [
+    {
+      "package": "docs/examples/rcount-golden-packages/bad-california-rla",
+      "command": "verify",
+      "exit": 1,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"fail\",\"package_content_hash\":\"sha256:ba86438b71266fcd53be3ef0014d003efb87ec94897ed05c85fca84374464bd6\",\"manifest_content_hash\":\"sha256:ba86438b71266fcd53be3ef0014d003efb87ec94897ed05c85fca84374464bd6\",\"checks\":[{\"equation_id\":\"rla_jurisdiction_adapter\",\"status\":\"fail\",\"error\":\"RLA audit rla:syn-2024-mayor:round-1 has invalid public audit software source URL: synthetic-election-audit/rcount-open-rla-synthetic-v1\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/bad-california-rla",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/bad-colorado-rla",
+      "command": "verify",
+      "exit": 1,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"fail\",\"package_content_hash\":\"sha256:e8917690ca2d2c2ce9fc52b46524e682bced03407f5ccd4d16215fc82db4e696\",\"manifest_content_hash\":\"sha256:e8917690ca2d2c2ce9fc52b46524e682bced03407f5ccd4d16215fc82db4e696\",\"checks\":[{\"equation_id\":\"rla_jurisdiction_adapter\",\"status\":\"fail\",\"error\":\"RLA audit rla:syn-2024-mayor:round-1 has invalid Colorado-style public seed: 3141592653589793238X\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/bad-colorado-rla",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/bad-cvr-summary",
+      "command": "verify",
+      "exit": 1,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"fail\",\"package_content_hash\":\"sha256:867b90a9b3ee3c0d91defbb2fc1951c5de68e919bf2bb0a1cf16e18f517330a5\",\"manifest_content_hash\":\"sha256:867b90a9b3ee3c0d91defbb2fc1951c5de68e919bf2bb0a1cf16e18f517330a5\",\"checks\":[{\"equation_id\":\"cvr_summary_total\",\"status\":\"fail\",\"error\":\"CVR summary mismatch for contest syn-2024-mayor reporting unit syn:precinct:P-001 field selection:cand-a: summary 40, cvr 39\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/bad-cvr-summary",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/bad-lineage",
+      "command": "verify",
+      "exit": 1,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"fail\",\"package_content_hash\":\"sha256:edf4c7d4950b0aec7f8e071dbce9ed67603bcc526cc6a0545b02ffe76a827785\",\"manifest_content_hash\":\"sha256:edf4c7d4950b0aec7f8e071dbce9ed67603bcc526cc6a0545b02ffe76a827785\",\"checks\":[{\"equation_id\":\"lineage_conservation\",\"status\":\"fail\",\"error\":\"lineage event lineage:P-004-split references missing current reporting unit: syn:precinct:P-004C\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/bad-lineage",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/bad-manual-audit",
+      "command": "verify",
+      "exit": 1,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"fail\",\"package_content_hash\":\"sha256:2a2c004a12de1543bdc3e9106a82f23736b42122f840b5e3021a1b4c16b1c4b1\",\"manifest_content_hash\":\"sha256:2a2c004a12de1543bdc3e9106a82f23736b42122f840b5e3021a1b4c16b1c4b1\",\"checks\":[{\"equation_id\":\"manual_audit_reconciliation\",\"status\":\"fail\",\"error\":\"manual audit manual-audit:syn-2024-mayor:P-001 declares status Pass, computed Escalate\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/bad-manual-audit",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/bad-rla-discrepancy",
+      "command": "verify",
+      "exit": 1,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"fail\",\"package_content_hash\":\"sha256:c7e8275667233f24855a30eba7cfd41590628b4d1a2c5969f839c9f4d7ff2896\",\"manifest_content_hash\":\"sha256:c7e8275667233f24855a30eba7cfd41590628b4d1a2c5969f839c9f4d7ff2896\",\"checks\":[{\"equation_id\":\"rla_stopping_rule\",\"status\":\"fail\",\"error\":\"RLA audit rla:syn-2024-mayor:round-1 discrepancy mismatch at draw 0: declared ResidualMismatch, computed SelectionMismatch\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/bad-rla-discrepancy",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/bad-rla-margin",
+      "command": "verify",
+      "exit": 1,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"fail\",\"package_content_hash\":\"sha256:b1e42fe66b7ecbe7173c5f046c227256ded63fb73aafc596b51541af7a9a8a95\",\"manifest_content_hash\":\"sha256:b1e42fe66b7ecbe7173c5f046c227256ded63fb73aafc596b51541af7a9a8a95\",\"checks\":[{\"equation_id\":\"rla_margin_metadata\",\"status\":\"fail\",\"error\":\"RLA audit rla:syn-2024-mayor:round-1 reported margin mismatch: declared 65, summary 64\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/bad-rla-margin",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/bad-rla-replay",
+      "command": "verify",
+      "exit": 1,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"fail\",\"package_content_hash\":\"sha256:a58713680047d37030c3640907b8359a0fc0ec5fb114b5a789f6965000edaab4\",\"manifest_content_hash\":\"sha256:a58713680047d37030c3640907b8359a0fc0ec5fb114b5a789f6965000edaab4\",\"checks\":[{\"equation_id\":\"rla_sampler_replay\",\"status\":\"fail\",\"error\":\"RLA audit rla:syn-2024-mayor:round-1 sample mismatch at draw 0: declared cvr:P-999:999, computed cvr:P-001:022\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/bad-rla-replay",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/bad-rla-statistical",
+      "command": "verify",
+      "exit": 1,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"fail\",\"package_content_hash\":\"sha256:76e8843038e6c05d5311c6dfb0dde78e976f889cf13e39a608d8f8d6539b51b2\",\"manifest_content_hash\":\"sha256:76e8843038e6c05d5311c6dfb0dde78e976f889cf13e39a608d8f8d6539b51b2\",\"checks\":[{\"equation_id\":\"rla_stopping_rule\",\"status\":\"fail\",\"error\":\"RLA audit rla:syn-2024-mayor:round-1 risk estimate mismatch: declared 1304 ppm, computed 1303 ppm\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/bad-rla-statistical",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/bad-rla-stopping",
+      "command": "verify",
+      "exit": 1,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"fail\",\"package_content_hash\":\"sha256:f30dad5ff1c768898f8e3098193bc7e72539e34ee37bc2418d4ca0add7e7983c\",\"manifest_content_hash\":\"sha256:f30dad5ff1c768898f8e3098193bc7e72539e34ee37bc2418d4ca0add7e7983c\",\"checks\":[{\"equation_id\":\"rla_stopping_rule\",\"status\":\"fail\",\"error\":\"RLA audit rla:syn-2024-mayor:round-1 declares status Pass, computed Escalate\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/bad-rla-stopping",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/bad-selection-sum",
+      "command": "verify",
+      "exit": 1,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"fail\",\"package_content_hash\":\"sha256:39eefe649224ab21e1dcc83cbbed7959834248feab22f5fe3dc4e1a355f1a71b\",\"manifest_content_hash\":\"sha256:39eefe649224ab21e1dcc83cbbed7959834248feab22f5fe3dc4e1a355f1a71b\",\"checks\":[{\"equation_id\":\"contest_selection_sum\",\"status\":\"fail\",\"error\":\"contest selection sum mismatch for contest syn-2024-mayor reporting unit syn:precinct:P-001: declared 81, computed 80\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"fail\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\",\"error\":\"jurisdiction residual mismatch for contest syn-2024-mayor field counted_ballots: declared 140, computed 141\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/bad-selection-sum",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/california-rla",
+      "command": "verify",
+      "exit": 0,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"pass\",\"package_content_hash\":\"sha256:5b1597e4e2414cebb10a29da2b741e003337226c39ebd6484d82225162975e60\",\"manifest_content_hash\":\"sha256:5b1597e4e2414cebb10a29da2b741e003337226c39ebd6484d82225162975e60\",\"checks\":[{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"cvr_summary_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"cvr_summary_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"rla_sampler_replay\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"rla:syn-2024-mayor:round-1\"},{\"equation_id\":\"rla_margin_metadata\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"rla:syn-2024-mayor:round-1\"},{\"equation_id\":\"rla_stopping_rule\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"rla:syn-2024-mayor:round-1\"},{\"equation_id\":\"rla_jurisdiction_adapter\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"rla:syn-2024-mayor:round-1\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/california-rla",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/canvass-correction",
+      "command": "verify",
+      "exit": 0,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"pass\",\"package_content_hash\":\"sha256:bbf12f948536644f26131234a969905ded25cef42eadfbd9ed3da280bfb51781\",\"manifest_content_hash\":\"sha256:bbf12f948536644f26131234a969905ded25cef42eadfbd9ed3da280bfb51781\",\"checks\":[{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"status_event_declared\",\"status\":\"pass\",\"contest_id\":\"*\",\"reporting_unit_id\":\"event-0001\"},{\"equation_id\":\"status_event_declared\",\"status\":\"pass\",\"contest_id\":\"*\",\"reporting_unit_id\":\"event-0002\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"canvass_correction_event\",\"status\":\"pass\",\"contest_id\":\"*\",\"reporting_unit_id\":\"*\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/canvass-correction",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/choice-bearing-proof",
+      "command": "verify",
+      "exit": 1,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"fail\",\"package_content_hash\":\"sha256:6fd00b8fc4485239e5aa80d98b000903de706bef586a13ae9b7e40044eedfd2e\",\"manifest_content_hash\":\"sha256:6fd00b8fc4485239e5aa80d98b000903de706bef586a13ae9b7e40044eedfd2e\",\"checks\":[{\"equation_id\":\"proof_privacy_gate\",\"status\":\"fail\",\"error\":\"proof proof:accepted-token-001 exposes candidate selections\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/choice-bearing-proof",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/colorado-rla",
+      "command": "verify",
+      "exit": 0,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"pass\",\"package_content_hash\":\"sha256:fd65d6825e9fb024d756eddf05a9b560426961a2f8c6488ec3c709e1b344c545\",\"manifest_content_hash\":\"sha256:fd65d6825e9fb024d756eddf05a9b560426961a2f8c6488ec3c709e1b344c545\",\"checks\":[{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"cvr_summary_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"cvr_summary_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"rla_sampler_replay\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"rla:syn-2024-mayor:round-1\"},{\"equation_id\":\"rla_margin_metadata\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"rla:syn-2024-mayor:round-1\"},{\"equation_id\":\"rla_stopping_rule\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"rla:syn-2024-mayor:round-1\"},{\"equation_id\":\"rla_jurisdiction_adapter\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"rla:syn-2024-mayor:round-1\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/colorado-rla",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/cvr-summary",
+      "command": "verify",
+      "exit": 0,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"pass\",\"package_content_hash\":\"sha256:cf530b9ab7ba114b5b476aef8aa5b3da4c8ea03d8438fbe83420dbe2af1e15c6\",\"manifest_content_hash\":\"sha256:cf530b9ab7ba114b5b476aef8aa5b3da4c8ea03d8438fbe83420dbe2af1e15c6\",\"checks\":[{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"cvr_summary_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"cvr_summary_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/cvr-summary",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/district-aggregation-rplan/package",
+      "command": "verify",
+      "exit": 0,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"pass\",\"package_content_hash\":\"sha256:acdc48a4cf60ec1df93f624dec19b85856dca7930f1dde35291126f9facfe621\",\"manifest_content_hash\":\"sha256:acdc48a4cf60ec1df93f624dec19b85856dca7930f1dde35291126f9facfe621\",\"checks\":[{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"rhist_reference_declared\",\"status\":\"pass\",\"contest_id\":\"*\",\"reporting_unit_id\":\"rhist:syn-l2-three-cycle\"},{\"equation_id\":\"rctx_reference_declared\",\"status\":\"pass\",\"contest_id\":\"*\",\"reporting_unit_id\":\"rctx:syn-l0-shared-context\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/district-aggregation-rplan/package",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/mail-batch-added",
+      "command": "verify",
+      "exit": 0,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"pass\",\"package_content_hash\":\"sha256:3d21f49789aa887ac49d12b7090ac8339a42cd3a0c26727b9b00e256313adf12\",\"manifest_content_hash\":\"sha256:3d21f49789aa887ac49d12b7090ac8339a42cd3a0c26727b9b00e256313adf12\",\"checks\":[{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"status_event_declared\",\"status\":\"pass\",\"contest_id\":\"*\",\"reporting_unit_id\":\"event-0003\"},{\"equation_id\":\"accepted_ballots\",\"status\":\"pass\",\"contest_id\":\"*\",\"reporting_unit_id\":\"batch:P-001:election-day\"},{\"equation_id\":\"accepted_ballots\",\"status\":\"pass\",\"contest_id\":\"*\",\"reporting_unit_id\":\"batch:P-001:late-mail\"},{\"equation_id\":\"accepted_ballots\",\"status\":\"pass\",\"contest_id\":\"*\",\"reporting_unit_id\":\"batch:P-002:election-day\"},{\"equation_id\":\"batch_summary_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"batch:P-001:election-day\"},{\"equation_id\":\"batch_summary_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"batch:P-001:late-mail\"},{\"equation_id\":\"batch_summary_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"batch:P-002:election-day\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/mail-batch-added",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/manual-audit",
+      "command": "verify",
+      "exit": 0,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"pass\",\"package_content_hash\":\"sha256:139493f950b679c37d4c01ea79e533d89ccb296f4c67c623194f0a6f4ce20410\",\"manifest_content_hash\":\"sha256:139493f950b679c37d4c01ea79e533d89ccb296f4c67c623194f0a6f4ce20410\",\"checks\":[{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"manual_audit_reconciliation\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/manual-audit",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/missing-batch",
+      "command": "verify",
+      "exit": 1,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"fail\",\"package_content_hash\":\"sha256:40a0acf83062862ef2401000558b469e3e751b8d3883d166ce224944f647c20e\",\"manifest_content_hash\":\"sha256:40a0acf83062862ef2401000558b469e3e751b8d3883d166ce224944f647c20e\",\"checks\":[{\"equation_id\":\"batch_summary_total\",\"status\":\"fail\",\"error\":\"summary for contest syn-2024-mayor reporting unit syn:precinct:P-001 references missing batch id: batch:P-001:late-mail\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/missing-batch",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/missing-source-hash",
+      "command": "verify",
+      "exit": 1,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"fail\",\"package_content_hash\":\"sha256:2e8876b13333c5e2b11e1febe81850d9f310452c9b619132901a12c2a493f0e6\",\"manifest_content_hash\":\"sha256:2e8876b13333c5e2b11e1febe81850d9f310452c9b619132901a12c2a493f0e6\",\"checks\":[{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"fail\",\"error\":\"source index is empty\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/missing-source-hash",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2024-general/package",
+      "command": "verify",
+      "exit": 0,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"pass\",\"package_content_hash\":\"sha256:c4d3c9b40fc04a8278e1bf8dd3b1760245ba40f0d10ca6005885888b7d44a3f5\",\"manifest_content_hash\":\"sha256:c4d3c9b40fc04a8278e1bf8dd3b1760245ba40f0d10ca6005885888b7d44a3f5\",\"checks\":[{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-003\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2024-general/package",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2026-general/package",
+      "command": "verify",
+      "exit": 0,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"pass\",\"package_content_hash\":\"sha256:ce6ebef12085668fd49d54013afd29a91c0f5626fbd5c0ba4b71baa17e2f3ff4\",\"manifest_content_hash\":\"sha256:ce6ebef12085668fd49d54013afd29a91c0f5626fbd5c0ba4b71baa17e2f3ff4\",\"checks\":[{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001A\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001B\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-003\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"lineage_conservation\",\"status\":\"pass\",\"contest_id\":\"*\",\"reporting_unit_id\":\"lineage:2026:P-001-split\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2026-general/package",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2028-general/package",
+      "command": "verify",
+      "exit": 0,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"pass\",\"package_content_hash\":\"sha256:32f7cb5f86a435e7d77dd97767ea7f961657445512f8746a79a11c50f050ca2b\",\"manifest_content_hash\":\"sha256:32f7cb5f86a435e7d77dd97767ea7f961657445512f8746a79a11c50f050ca2b\",\"checks\":[{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001A\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001B\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-023\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"lineage_conservation\",\"status\":\"pass\",\"contest_id\":\"*\",\"reporting_unit_id\":\"lineage:2028:P-002-P-003-merge\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/multi-election-harness/SYN-2028-general/package",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2024-general/package",
+      "command": "verify",
+      "exit": 0,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"pass\",\"package_content_hash\":\"sha256:c4d3c9b40fc04a8278e1bf8dd3b1760245ba40f0d10ca6005885888b7d44a3f5\",\"manifest_content_hash\":\"sha256:c4d3c9b40fc04a8278e1bf8dd3b1760245ba40f0d10ca6005885888b7d44a3f5\",\"checks\":[{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-003\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2024-general/package",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2026-general/package",
+      "command": "verify",
+      "exit": 0,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"pass\",\"package_content_hash\":\"sha256:ce6ebef12085668fd49d54013afd29a91c0f5626fbd5c0ba4b71baa17e2f3ff4\",\"manifest_content_hash\":\"sha256:ce6ebef12085668fd49d54013afd29a91c0f5626fbd5c0ba4b71baa17e2f3ff4\",\"checks\":[{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001A\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001B\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-003\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"lineage_conservation\",\"status\":\"pass\",\"contest_id\":\"*\",\"reporting_unit_id\":\"lineage:2026:P-001-split\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2026-general/package",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2028-general/package",
+      "command": "verify",
+      "exit": 1,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"fail\",\"package_content_hash\":\"sha256:1e2204310017d3dcb6396763cb40c031b68504b9ee54a2ab2db59ce55bce7817\",\"manifest_content_hash\":\"sha256:1e2204310017d3dcb6396763cb40c031b68504b9ee54a2ab2db59ce55bce7817\",\"checks\":[{\"equation_id\":\"lineage_conservation\",\"status\":\"fail\",\"error\":\"lineage event lineage:2028:P-002-P-003-merge references missing current reporting unit: syn:precinct:P-023-MISSING\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/bad-lineage/SYN-2028-general/package",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2024-general/package",
+      "command": "verify",
+      "exit": 0,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"pass\",\"package_content_hash\":\"sha256:c4d3c9b40fc04a8278e1bf8dd3b1760245ba40f0d10ca6005885888b7d44a3f5\",\"manifest_content_hash\":\"sha256:c4d3c9b40fc04a8278e1bf8dd3b1760245ba40f0d10ca6005885888b7d44a3f5\",\"checks\":[{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-003\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2024-general/package",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2026-general/package",
+      "command": "verify",
+      "exit": 0,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"pass\",\"package_content_hash\":\"sha256:ce6ebef12085668fd49d54013afd29a91c0f5626fbd5c0ba4b71baa17e2f3ff4\",\"manifest_content_hash\":\"sha256:ce6ebef12085668fd49d54013afd29a91c0f5626fbd5c0ba4b71baa17e2f3ff4\",\"checks\":[{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001A\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001B\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-003\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"lineage_conservation\",\"status\":\"pass\",\"contest_id\":\"*\",\"reporting_unit_id\":\"lineage:2026:P-001-split\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2026-general/package",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2028-general/package",
+      "command": "verify",
+      "exit": 0,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"pass\",\"package_content_hash\":\"sha256:32f7cb5f86a435e7d77dd97767ea7f961657445512f8746a79a11c50f050ca2b\",\"manifest_content_hash\":\"sha256:32f7cb5f86a435e7d77dd97767ea7f961657445512f8746a79a11c50f050ca2b\",\"checks\":[{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001A\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001B\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-023\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"lineage_conservation\",\"status\":\"pass\",\"contest_id\":\"*\",\"reporting_unit_id\":\"lineage:2028:P-002-P-003-merge\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/stale-plan/SYN-2028-general/package",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2024-general/package",
+      "command": "verify",
+      "exit": 0,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"pass\",\"package_content_hash\":\"sha256:c4d3c9b40fc04a8278e1bf8dd3b1760245ba40f0d10ca6005885888b7d44a3f5\",\"manifest_content_hash\":\"sha256:c4d3c9b40fc04a8278e1bf8dd3b1760245ba40f0d10ca6005885888b7d44a3f5\",\"checks\":[{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-003\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2024-general/package",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2026-general/package",
+      "command": "verify",
+      "exit": 0,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"pass\",\"package_content_hash\":\"sha256:ce6ebef12085668fd49d54013afd29a91c0f5626fbd5c0ba4b71baa17e2f3ff4\",\"manifest_content_hash\":\"sha256:ce6ebef12085668fd49d54013afd29a91c0f5626fbd5c0ba4b71baa17e2f3ff4\",\"checks\":[{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001A\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001B\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-003\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"lineage_conservation\",\"status\":\"pass\",\"contest_id\":\"*\",\"reporting_unit_id\":\"lineage:2026:P-001-split\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2026-general/package",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2028-general/package",
+      "command": "verify",
+      "exit": 1,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"fail\",\"package_content_hash\":\"sha256:32f7cb5f86a435e7d77dd97767ea7f961657445512f8746a79a11c50f050ca2b\",\"manifest_content_hash\":\"sha256:32f7cb5f86a435e7d77dd97767ea7f961657445512f8746a79a11c50f050ca2b\",\"checks\":[{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001A\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001B\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:precinct:P-023\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"lineage_conservation\",\"status\":\"pass\",\"contest_id\":\"*\",\"reporting_unit_id\":\"lineage:2028:P-002-P-003-merge\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-cycle-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"fail\",\"error\":\"source hash mismatch for source:synthetic-summary-export: declared sha256:730931bf457be9b5ef004806c4b1e563316df7214cc1a4b0cf2d356ecc905520, computed sha256:9411c155d1350de00f41c5f73e9115ac9242c6644483ef8f9162e38cbfb9bf03\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/multi-election-harness-negatives/tampered-2028-source/SYN-2028-general/package",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/precinct-split-lineage",
+      "command": "verify",
+      "exit": 0,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"pass\",\"package_content_hash\":\"sha256:40c6a92edfe98b3964ffeb28f026bcd8c20b5c239ea0cd64001216bf00ae5c78\",\"manifest_content_hash\":\"sha256:40c6a92edfe98b3964ffeb28f026bcd8c20b5c239ea0cd64001216bf00ae5c78\",\"checks\":[{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"lineage_conservation\",\"status\":\"pass\",\"contest_id\":\"*\",\"reporting_unit_id\":\"lineage:P-004-split\"},{\"equation_id\":\"lineage_conservation\",\"status\":\"pass\",\"contest_id\":\"*\",\"reporting_unit_id\":\"lineage:P-007-P-008-merge\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/precinct-split-lineage",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/privacy-inclusion-sketch",
+      "command": "verify",
+      "exit": 0,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"pass\",\"package_content_hash\":\"sha256:f93ae8aa4b9e17b73db3062df51a101b79d85dc04303f831398485de72c4a455\",\"manifest_content_hash\":\"sha256:f93ae8aa4b9e17b73db3062df51a101b79d85dc04303f831398485de72c4a455\",\"checks\":[{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"proof_privacy_gate\",\"status\":\"pass\",\"contest_id\":\"*\",\"reporting_unit_id\":\"proof:accepted-token-001\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/privacy-inclusion-sketch",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/rla-discrepancy",
+      "command": "verify",
+      "exit": 0,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"pass\",\"package_content_hash\":\"sha256:484b026c491233c171e5012e715153423d688715ab7d4576b5a03c7adbca0162\",\"manifest_content_hash\":\"sha256:484b026c491233c171e5012e715153423d688715ab7d4576b5a03c7adbca0162\",\"checks\":[{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"cvr_summary_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"cvr_summary_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"rla_sampler_replay\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"rla:syn-2024-mayor:round-1\"},{\"equation_id\":\"rla_stopping_rule\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"rla:syn-2024-mayor:round-1\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/rla-discrepancy",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/rla-margin",
+      "command": "verify",
+      "exit": 0,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"pass\",\"package_content_hash\":\"sha256:46813b2230a414573280766ce3b52e8a5677c0d040430f63a97272548e6db0c4\",\"manifest_content_hash\":\"sha256:46813b2230a414573280766ce3b52e8a5677c0d040430f63a97272548e6db0c4\",\"checks\":[{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"cvr_summary_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"cvr_summary_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"rla_sampler_replay\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"rla:syn-2024-mayor:round-1\"},{\"equation_id\":\"rla_margin_metadata\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"rla:syn-2024-mayor:round-1\"},{\"equation_id\":\"rla_stopping_rule\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"rla:syn-2024-mayor:round-1\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/rla-margin",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/rla-replay",
+      "command": "verify",
+      "exit": 0,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"pass\",\"package_content_hash\":\"sha256:504193af28e1f19b98382da0f8f6f6597f208a65217978b9451bdf90368ad555\",\"manifest_content_hash\":\"sha256:504193af28e1f19b98382da0f8f6f6597f208a65217978b9451bdf90368ad555\",\"checks\":[{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"cvr_summary_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"cvr_summary_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"rla_sampler_replay\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"rla:syn-2024-mayor:round-1\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/rla-replay",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/rla-statistical",
+      "command": "verify",
+      "exit": 0,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"pass\",\"package_content_hash\":\"sha256:c5f330f1935f7c17ab9e8864a47cc07adf42a2cf2825d9e15b8511fc20c4c2db\",\"manifest_content_hash\":\"sha256:c5f330f1935f7c17ab9e8864a47cc07adf42a2cf2825d9e15b8511fc20c4c2db\",\"checks\":[{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"cvr_summary_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"cvr_summary_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"rla_sampler_replay\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"rla:syn-2024-mayor:round-1\"},{\"equation_id\":\"rla_margin_metadata\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"rla:syn-2024-mayor:round-1\"},{\"equation_id\":\"rla_stopping_rule\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"rla:syn-2024-mayor:round-1\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/rla-statistical",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/rla-stopping",
+      "command": "verify",
+      "exit": 0,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"pass\",\"package_content_hash\":\"sha256:ebe914ff7d5d4484fbb9cdbc29088ebbcfce24c1fa150b2f2d3ec6a71b81092a\",\"manifest_content_hash\":\"sha256:ebe914ff7d5d4484fbb9cdbc29088ebbcfce24c1fa150b2f2d3ec6a71b81092a\",\"checks\":[{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"cvr_summary_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"cvr_summary_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"rla_sampler_replay\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"rla:syn-2024-mayor:round-1\"},{\"equation_id\":\"rla_stopping_rule\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"rla:syn-2024-mayor:round-1\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/rla-stopping",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/summary-basic",
+      "command": "verify",
+      "exit": 0,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"pass\",\"package_content_hash\":\"sha256:2e8876b13333c5e2b11e1febe81850d9f310452c9b619132901a12c2a493f0e6\",\"manifest_content_hash\":\"sha256:2e8876b13333c5e2b11e1febe81850d9f310452c9b619132901a12c2a493f0e6\",\"checks\":[{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"pass\",\"reporting_unit_id\":\"source:synthetic-summary-export\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/summary-basic",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/tampered-source",
+      "command": "verify",
+      "exit": 1,
+      "stdout": "{\"transcript_version\":\"rcount-audit-transcript-v1\",\"verifier\":\"rcount-audit\",\"status\":\"fail\",\"package_content_hash\":\"sha256:2e8876b13333c5e2b11e1febe81850d9f310452c9b619132901a12c2a493f0e6\",\"manifest_content_hash\":\"sha256:2e8876b13333c5e2b11e1febe81850d9f310452c9b619132901a12c2a493f0e6\",\"checks\":[{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-001\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:precinct:P-002\"},{\"equation_id\":\"contest_selection_sum\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"jurisdiction_contest_total\",\"status\":\"pass\",\"contest_id\":\"syn-2024-mayor\",\"reporting_unit_id\":\"syn:jurisdiction:SYN\"},{\"equation_id\":\"source_hash_match\",\"status\":\"fail\",\"error\":\"source hash mismatch for source:synthetic-summary-export: declared sha256:f1fd704068782957d450a6a097e7bf9421cc8b929242320c7314d872a808ee8a, computed sha256:9411c155d1350de00f41c5f73e9115ac9242c6644483ef8f9162e38cbfb9bf03\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "package": "docs/examples/rcount-golden-packages/tampered-source",
+      "command": "replay-audit-algorithms",
+      "exit": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    }
+  ]
+}

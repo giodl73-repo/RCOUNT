@@ -1,5 +1,13 @@
 # RCOUNT
 
+[Open the Rust-powered package workbench](https://giodl73-repo.github.io/RCOUNT/)
+to check a synthetic or small local election-count package, inspect reconciliation,
+source-hash and privacy findings, replay supported audit statistics, and download
+the native transcripts. Inputs stay in the browser. Boundary methods remain
+explicitly unreplayed; passing consistency checks do not certify an election.
+See the [build guide](browser/package-workbench/BUILD.md) and
+[semantics and limits](browser/package-workbench/MODEL.md).
+
 **Reusable election-count package verification, audit replay, and district
 aggregation tools.**
 

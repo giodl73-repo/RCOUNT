@@ -304,33 +304,99 @@ pub fn write_package_dir(
     Ok(())
 }
 
+/// Read-only package storage. Implementations must return original file bytes.
+/// Path interpretation belongs to the backend; browser adapters should admit only
+/// canonical package-relative paths before calling the verifier.
+pub trait PackageReader {
+    fn exists(&self, path: &Path) -> bool;
+    fn open(&self, path: &Path) -> std::io::Result<Box<dyn BufRead + '_>>;
+
+    fn read_bytes(&self, path: &Path) -> std::io::Result<Vec<u8>> {
+        let mut bytes = Vec::new();
+        self.open(path)?.read_to_end(&mut bytes)?;
+        Ok(bytes)
+    }
+}
+
+/// Native filesystem backend used by the existing directory APIs.
+pub struct FileSystemReader;
+
+impl PackageReader for FileSystemReader {
+    fn exists(&self, path: &Path) -> bool {
+        path.exists()
+    }
+
+    fn open(&self, path: &Path) -> std::io::Result<Box<dyn BufRead + '_>> {
+        Ok(Box::new(BufReader::new(File::open(path)?)))
+    }
+
+    fn read_bytes(&self, path: &Path) -> std::io::Result<Vec<u8>> {
+        fs::read(path)
+    }
+}
+
 pub fn read_package_dir(dir: &Path) -> Result<(RcountManifest, RcountPackage), RcountIoError> {
-    let manifest: RcountManifest = read_json(&dir.join("manifest.json"))?;
+    read_package_with_reader(&FileSystemReader, dir)
+}
+
+/// Read and hash a complete package through a supplied storage backend.
+pub fn read_package_with_reader(
+    reader: &impl PackageReader,
+    dir: &Path,
+) -> Result<(RcountManifest, RcountPackage), RcountIoError> {
+    let manifest: RcountManifest = read_json_with_reader(reader, &dir.join("manifest.json"))?;
     if manifest.rcount_version != RCOUNT_VERSION {
         return Err(RcountIoError::UnsupportedVersion(manifest.rcount_version));
     }
     let package = RcountPackage {
         rcount_version: manifest.rcount_version.clone(),
-        contests: read_ndjson(&dir.join("normalized").join("contests.ndjson"))?,
-        reporting_units: read_ndjson(&dir.join("normalized").join("reporting-units.ndjson"))?,
-        batches: read_optional_ndjson(&dir.join("normalized").join("batches.ndjson"))?,
-        lineage: read_optional_ndjson(&dir.join("normalized").join("lineage.ndjson"))?,
-        rhist_refs: read_optional_ndjson(&dir.join("normalized").join("rhist-refs.ndjson"))?,
-        rctx_refs: read_optional_ndjson(&dir.join("normalized").join("rctx-refs.ndjson"))?,
-        inclusion_proofs: read_optional_ndjson(
+        contests: read_ndjson_with_reader(reader, &dir.join("normalized").join("contests.ndjson"))?,
+        reporting_units: read_ndjson_with_reader(
+            reader,
+            &dir.join("normalized").join("reporting-units.ndjson"),
+        )?,
+        batches: read_optional_ndjson_with_reader(
+            reader,
+            &dir.join("normalized").join("batches.ndjson"),
+        )?,
+        lineage: read_optional_ndjson_with_reader(
+            reader,
+            &dir.join("normalized").join("lineage.ndjson"),
+        )?,
+        rhist_refs: read_optional_ndjson_with_reader(
+            reader,
+            &dir.join("normalized").join("rhist-refs.ndjson"),
+        )?,
+        rctx_refs: read_optional_ndjson_with_reader(
+            reader,
+            &dir.join("normalized").join("rctx-refs.ndjson"),
+        )?,
+        inclusion_proofs: read_optional_ndjson_with_reader(
+            reader,
             &dir.join("proofs").join("inclusion-proofs.ndjson"),
         )?,
-        cvr: read_optional_ndjson(&dir.join("normalized").join("cvr.ndjson"))?,
-        audit_algorithm_runs: read_optional_ndjson(
+        cvr: read_optional_ndjson_with_reader(reader, &dir.join("normalized").join("cvr.ndjson"))?,
+        audit_algorithm_runs: read_optional_ndjson_with_reader(
+            reader,
             &dir.join("audits").join("algorithm-runs.ndjson"),
         )?,
-        rla_audits: read_optional_ndjson(&dir.join("audits").join("rla.ndjson"))?,
-        manual_audits: read_optional_ndjson(&dir.join("audits").join("manual.ndjson"))?,
-        batch_comparison_audits: read_optional_ndjson(
+        rla_audits: read_optional_ndjson_with_reader(
+            reader,
+            &dir.join("audits").join("rla.ndjson"),
+        )?,
+        manual_audits: read_optional_ndjson_with_reader(
+            reader,
+            &dir.join("audits").join("manual.ndjson"),
+        )?,
+        batch_comparison_audits: read_optional_ndjson_with_reader(
+            reader,
             &dir.join("audits").join("batch-comparison.ndjson"),
         )?,
-        summaries: read_ndjson(&dir.join("normalized").join("summaries.ndjson"))?,
-        status_events: read_ndjson(&dir.join("status").join("events.ndjson"))?,
+        summaries: read_ndjson_with_reader(
+            reader,
+            &dir.join("normalized").join("summaries.ndjson"),
+        )?,
+        status_events: read_ndjson_with_reader(reader, &dir.join("status").join("events.ndjson"))?,
     };
     let computed = package_content_hash(&package)?;
     if manifest.content_hash != computed {
@@ -343,11 +409,25 @@ pub fn read_package_dir(dir: &Path) -> Result<(RcountManifest, RcountPackage), R
 }
 
 pub fn read_source_index(dir: &Path) -> Result<SourceIndex, RcountIoError> {
-    read_json(&dir.join("sources").join("source-index.json"))
+    read_source_index_with_reader(&FileSystemReader, dir)
+}
+
+pub fn read_source_index_with_reader(
+    reader: &impl PackageReader,
+    dir: &Path,
+) -> Result<SourceIndex, RcountIoError> {
+    read_json_with_reader(reader, &dir.join("sources").join("source-index.json"))
 }
 
 pub fn verify_source_index(dir: &Path) -> Result<Vec<SourceCheck>, RcountIoError> {
-    let index = read_source_index(dir)?;
+    verify_source_index_with_reader(&FileSystemReader, dir)
+}
+
+pub fn verify_source_index_with_reader(
+    reader: &impl PackageReader,
+    dir: &Path,
+) -> Result<Vec<SourceCheck>, RcountIoError> {
+    let index = read_source_index_with_reader(reader, dir)?;
     if index.sources.is_empty() {
         return Err(RcountIoError::EmptySourceIndex);
     }
@@ -356,12 +436,12 @@ pub fn verify_source_index(dir: &Path) -> Result<Vec<SourceCheck>, RcountIoError
     for source in index.sources {
         let path = package_relative_source_path(&source.path)?;
         let full_path = dir.join(&path);
-        if !full_path.exists() {
+        if !reader.exists(&full_path) {
             return Err(RcountIoError::MissingSourceFile {
                 path: source.path.clone(),
             });
         }
-        let computed = source_file_hash(&full_path)?;
+        let computed = source_bytes_hash(&reader.read_bytes(&full_path)?);
         if computed != source.sha256 {
             return Err(RcountIoError::SourceHashMismatch {
                 source_id: source.source_id,
@@ -1997,8 +2077,16 @@ fn package_relative_source_path(path: &str) -> Result<PathBuf, RcountIoError> {
     Ok(candidate.to_path_buf())
 }
 
+#[cfg(test)]
 fn read_json<T: for<'de> Deserialize<'de>>(path: &Path) -> Result<T, RcountIoError> {
     Ok(serde_json::from_slice(&fs::read(path)?)?)
+}
+
+fn read_json_with_reader<T: for<'de> Deserialize<'de>>(
+    reader: &impl PackageReader,
+    path: &Path,
+) -> Result<T, RcountIoError> {
+    Ok(serde_json::from_slice(&reader.read_bytes(path)?)?)
 }
 
 fn write_ndjson<T: Serialize>(path: &Path, records: &[T]) -> Result<(), RcountIoError> {
@@ -2010,9 +2098,11 @@ fn write_ndjson<T: Serialize>(path: &Path, records: &[T]) -> Result<(), RcountIo
     Ok(())
 }
 
-fn read_ndjson<T: for<'de> Deserialize<'de>>(path: &Path) -> Result<Vec<T>, RcountIoError> {
-    let file = File::open(path)?;
-    let reader = BufReader::new(file);
+fn read_ndjson_with_reader<T: for<'de> Deserialize<'de>>(
+    storage: &impl PackageReader,
+    path: &Path,
+) -> Result<Vec<T>, RcountIoError> {
+    let reader = storage.open(path)?;
     let mut records = Vec::new();
     for line in reader.lines() {
         let line = line?;
@@ -2024,11 +2114,12 @@ fn read_ndjson<T: for<'de> Deserialize<'de>>(path: &Path) -> Result<Vec<T>, Rcou
     Ok(records)
 }
 
-fn read_optional_ndjson<T: for<'de> Deserialize<'de>>(
+fn read_optional_ndjson_with_reader<T: for<'de> Deserialize<'de>>(
+    reader: &impl PackageReader,
     path: &Path,
 ) -> Result<Vec<T>, RcountIoError> {
-    if path.exists() {
-        read_ndjson(path)
+    if reader.exists(path) {
+        read_ndjson_with_reader(reader, path)
     } else {
         Ok(Vec::new())
     }

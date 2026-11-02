@@ -1,0 +1,34 @@
+[
+  {
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "startup_ms": 70.60000002384186,
+    "compute_and_render_ms": 14.199999928474426,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+    "overflow": false,
+    "dataset": "summary-basic",
+    "files": 13,
+    "original_bytes": 4357,
+    "cache": "fresh browser context, loopback server",
+    "environment": "Windows headless Chromium; viewport variation, no CPU/network throttling",
+    "representative_only": true
+  },
+  {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "startup_ms": 77,
+    "compute_and_render_ms": 14.399999976158142,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+    "overflow": false,
+    "dataset": "summary-basic",
+    "files": 13,
+    "original_bytes": 4357,
+    "cache": "fresh browser context, loopback server",
+    "environment": "Windows headless Chromium; viewport variation, no CPU/network throttling",
+    "representative_only": true
+  }
+]

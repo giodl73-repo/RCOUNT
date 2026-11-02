@@ -1,0 +1,90 @@
+name: Package workbench Rust WASM Pages
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: rcount-package-pages-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    env:
+      CARGO_TARGET_DIR: ${{ github.workspace }}/target/cargo
+    steps:
+      - uses: actions/checkout@v7
+      - uses: dtolnay/rust-toolchain@1.95.0
+        with:
+          targets: wasm32-unknown-unknown
+          components: rustfmt, clippy
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: browser/package-workbench/package-lock.json
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: |
+            . -> target/cargo
+            browser/package-workbench -> ../../target/cargo
+      - name: Native contracts and portable adapter
+        run: |
+          cargo fmt --all --check
+          cargo test --workspace --locked
+          python scripts/check-native-foundation.py
+          python browser/package-workbench/verify-shared-lock.py
+          cargo fmt --manifest-path browser/package-workbench/Cargo.toml -- --check
+          cargo test --manifest-path browser/package-workbench/Cargo.toml --all-targets --locked
+          cargo clippy --manifest-path browser/package-workbench/Cargo.toml --all-targets --locked --no-deps -- -D warnings
+      - name: Install pinned WASM bindings
+        run: cargo install wasm-bindgen-cli --version 0.2.127 --locked
+      - name: Compile and compare complete native and WASM reports
+        run: python browser/package-workbench/build-prototype.py --bindgen "$HOME/.cargo/bin/wasm-bindgen"
+      - name: Install browser tools
+        working-directory: browser/package-workbench
+        run: |
+          npm ci --ignore-scripts
+          npx playwright install --with-deps chromium
+      - name: Task and recovery checks
+        working-directory: browser/package-workbench
+        run: npm run test:pages
+      - name: Package exact source and original notices
+        run: python browser/package-workbench/package-site.py
+      - name: Exact packaged delivery checks
+        run: python browser/package-workbench/verify-release.py
+      - name: Rebuild delivered source outside Git
+        run: python browser/package-workbench/verify-source.py --bindgen "$HOME/.cargo/bin/wasm-bindgen"
+      - name: Original checkout still works after source replay
+        run: cargo test --workspace --locked
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: package-workbench-qualification
+          include-hidden-files: true
+          path: |
+            browser/package-workbench/.cache/
+            browser/package-workbench/test-results/
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: target/package-release/RCOUNT
+  deploy:
+    if: github.ref == 'refs/heads/master'
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

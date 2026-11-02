@@ -2380,7 +2380,7 @@ pub fn replay_rla_sample(
         let digest = h.finalize();
         let mut bytes = [0u8; 8];
         bytes.copy_from_slice(&digest[..8]);
-        let selected = u64::from_le_bytes(bytes) as usize % population.len();
+        let selected = (u64::from_le_bytes(bytes) % population.len() as u64) as usize;
         draws.push(RlaSampleDraw {
             draw_index,
             cvr_id: population[selected].clone(),

@@ -21,9 +21,10 @@ jobs:
           path: RCOUNT
 
       - name: Install Rust
-        uses: dtolnay/rust-toolchain@stable
+        uses: dtolnay/rust-toolchain@1.95.0
         with:
           components: rustfmt
+          targets: wasm32-unknown-unknown
 
       - name: Check formatting
         working-directory: RCOUNT
@@ -36,4 +37,26 @@ jobs:
       - name: Smoke CLI
         working-directory: RCOUNT
         run: cargo run -p rcount-cli -- --help
+
+      - name: Verify protected native foundation
+        working-directory: RCOUNT
+        run: python scripts/check-native-foundation.py
+
+      - name: Compare original native CLI controls
+        working-directory: RCOUNT
+        run: python scripts/check-original-cli.py target/debug/rcount.exe
+
+      - name: Check portable dependency pins and formatting
+        working-directory: RCOUNT
+        run: |
+          python browser/package-workbench/verify-shared-lock.py
+          cargo fmt --manifest-path browser/package-workbench/Cargo.toml -- --check
+
+      - name: Test package adapter admission
+        working-directory: RCOUNT
+        run: cargo test --manifest-path browser/package-workbench/Cargo.toml --locked
+
+      - name: Check WebAssembly target
+        working-directory: RCOUNT
+        run: cargo check --manifest-path browser/package-workbench/Cargo.toml --lib --target wasm32-unknown-unknown --locked
 

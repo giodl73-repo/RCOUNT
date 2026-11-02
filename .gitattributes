@@ -1,2 +1,4 @@
 # Source bytes are hash evidence; keep them stable across host platforms.
 docs/**/sources/** text eol=lf
+context/waves/2026-11-02-package-workbench/original-cli-controls.json text eol=lf
+context/waves/2026-11-02-package-workbench/native-foundation.json text eol=lf
