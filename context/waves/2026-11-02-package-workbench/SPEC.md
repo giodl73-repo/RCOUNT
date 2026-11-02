@@ -1,6 +1,8 @@
 # Package verification and audit replay workbench
 
-Status: scoped; implementation and publication gates remain open.
+Pre-merge snapshot: implementation qualified at `d862733`; publication requires
+final default-branch deployment and fresh live verification. The qualification
+record keeps implementation and publication evidence separate.
 
 Expose RCOUNT's existing package verification and statistical audit replay in
 WebAssembly. Readers choose a complete local package directory or a supplied

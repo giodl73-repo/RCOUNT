@@ -1,7 +1,10 @@
 # Package workbench build
 
-This prototype is not yet a qualified Pages release. The open release gates are
-in `context/waves/2026-11-02-package-workbench/SPEC.md`.
+This guide covers the prototype builder and full release qualification pipeline.
+The gate contract is in `context/waves/2026-11-02-package-workbench/SPEC.md`;
+[deployed build provenance](https://giodl73-repo.github.io/RCOUNT/build.json) and
+[default-branch Actions runs](https://github.com/giodl73-repo/RCOUNT/actions)
+identify the currently published artifact.
 
 Use Rust 1.95.0 with `wasm32-unknown-unknown`, Python 3.11+, Node.js 22+ and
 `wasm-bindgen-cli` exactly 0.2.127. All build commands run from the repo root:

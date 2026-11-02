@@ -1,8 +1,9 @@
 # Package workbench: reader foundation
 
-Status: reader foundation and browser prototype qualified locally; hosted browser
-qualification, release packaging and publication remain open. This is not a
-Pages release.
+Status at the pre-merge gate: implementation, hosted browser/artifact delivery
+and extracted-source rebuild qualified. Final merge/default deployment/live
+verification are separate gates. See the deployed `build.json` and default-branch
+Actions runs for the currently published source identity.
 
 The additive `PackageReader` API lets the existing package parser and source
 verifier consume original bytes from another read-only backend. Existing
@@ -56,10 +57,10 @@ not claim source authenticity. Memory IO messages belong to the backend; only
 complete supplied packages are claimed to have full transcript parity here.
 
 Audit Replay Auditor: no statistics, replay method selection, transcript schema,
-or pass/fail/boundary semantics change. Before exposing replay, the adapter must
-bound the RLA `sample_size` allocation/loop and Minerva's sample-driven binomial
-work, in addition to file bytes and nested record counts. Worker cancellation
-and memory caps alone do not close native admission requirements.
+or pass/fail/boundary semantics change. The adapter now bounds the RLA `sample_size` allocation/loop and Minerva's sample-driven binomial
+work, in addition to file bytes and nested record counts. Those limits are
+tested before native verification; worker cancellation and memory caps remain
+additional controls.
 
 Package Bridge Reviewer: existing directory entry points and return types stay
 available; the new APIs are additive. Root lock and Git dependency pins stay
@@ -92,7 +93,7 @@ core correction required to preserve existing 64-bit draws on WASM32.
 Local prototype checks: 279 root native tests (271 original, seven reader, one
 new frozen sampler vector), twelve adapter admission tests, all 84 frozen CLI
 controls, 57 complete native/WASM response strings (42 original packages and
-15 generated audit examples), and sixteen actual-browser task/recovery checks.
+15 generated audit examples), and seventeen actual-browser task/recovery checks (including real folder input).
 Those cover privacy/source failures, supported replay and boundary methods,
 binary source downloads, exact transcript exports, malformed bundles, cancellation,
 worker deadlines/restart, unavailable WASM, keyboard and 390-pixel mobile layout.
@@ -102,8 +103,43 @@ build passes the same parity gates; release artifact custody and a full extracte
 source rebuild of the adapter remain open. Shared browser/native
 dependency versions match; native manifest/lock and golden bytes stay preserved.
 
-See [SPEC.md](SPEC.md). Next: hosted adapter/browser gates, complete release
-packaging with scoped dependency notices, independent source/WASM/provenance/license
-downloads, clean-source rebuild, exact hosted artifact qualification and
-default-branch live verification. TRACKER's canonical
-RCOUNT gitlink remains at the original preserved source until those gates pass.
+The full qualification at `d86273335a732e4a72e902f9b5a7798f5b12e635`
+passed [hosted Pages build 41519548361](https://github.com/giodl73-repo/RCOUNT/actions/runs/41519548361)
+and [Windows CI 41519548322](https://github.com/giodl73-repo/RCOUNT/actions/runs/41519548322).
+Its synthetic checkout `51b05c214fef221f96018ebd9f486b35c691ac9d` has the same
+complete Git tree as that candidate. The actual Linux artifact was independently
+downloaded and passed all nineteen delivery/task/recovery cases under `/RCOUNT/`.
+The delivered source rebuilt outside Git on Windows and hosted Linux: 279 root
+tests, twelve adapter tests, 84 frozen original CLI controls, 57 complete
+native/WASM reports and seventeen browser cases. All 957 source files in that
+qualification archive were hash-verified before rebuilding. The archive's repeated
+local packaging produced identical bytes with fixed member timestamps.
+
+The qualified Linux artifact contains 167 served files, 862,038 runtime bytes,
+838,154 WASM bytes, 42 dependency notice groups and twelve Rust notice files.
+Windows and Linux runtime binaries differ; cross-platform binary identity is not
+claimed. Native response strings and raw source evidence remain independently
+checked. [`implementation-qualification.json`](implementation-qualification.json)
+retains the precise candidate/run identities and counts. Subsequent documentation
+commits add evidence without redefining those historical custody measurements.
+
+The [representative local observations](browser-observations.json) use fresh
+headless Chromium contexts on Windows, a loopback server and the thirteen-file,
+4,357-byte `summary-basic` package, without CPU or network throttling: desktop
+startup 70.6 ms and computation/render 14.2 ms; 390-pixel viewport startup 77.0 ms
+and computation/render 14.4 ms. These are two observations, not performance or
+physical-mobile-device guarantees. Screenshots and no-horizontal-overflow checks
+cover both viewports.
+
+Release-stage review: Count Evidence Steward confirms original raw-byte custody
+and unchanged native64 outputs; Audit Replay Auditor confirms supported-method
+parity, explicit boundaries and the separately documented native32 sampler
+correction; Package Bridge Reviewer confirms exact source/dependency notices,
+clean-source rebuild and no BISECT snapshot admission. Local own-input packages
+remain outside all public source/artifact downloads.
+
+See [SPEC.md](SPEC.md) for the complete gates. Final merge, default deployment and
+fresh live browser/file verification remain the publication-stage gate at this
+record's pre-merge timestamp. TRACKER's canonical RCOUNT gitlink is updated only
+after that publication evidence exists; the active BISECT owner session remains
+outside this release's admission scope.

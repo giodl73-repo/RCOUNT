@@ -1,0 +1,48 @@
+{
+  "status": "implementation qualified; merge/default deployment/live gates remain open",
+  "candidate": "d86273335a732e4a72e902f9b5a7798f5b12e635",
+  "qualified_synthetic_checkout": "51b05c214fef221f96018ebd9f486b35c691ac9d",
+  "tree": "dfa905d7925d495d7ffc7bf14335385bb10a4cd3",
+  "hosted_pages_run": 41519548361,
+  "hosted_native_run": 41519548322,
+  "earlier_full_hosted_run": 41518958376,
+  "original_native_tests": 271,
+  "root_native_tests": 279,
+  "adapter_tests": 12,
+  "original_cli_controls": 84,
+  "complete_native_wasm_reports": 57,
+  "browser_task_recovery_cases": 17,
+  "packaged_delivery_cases": 19,
+  "source_replay": {
+    "source_files": 957,
+    "native_tests": 279,
+    "adapter_tests": 12,
+    "cli_controls": 84,
+    "complete_native_wasm_reports": 57,
+    "browser_cases": 17,
+    "outside_git": true,
+    "path_contains_spaces": true,
+    "isolated_profile": "rcount-replay"
+  },
+  "artifact": {
+    "served_files": 167,
+    "bytes_excluding_inventory": 5950470,
+    "runtime_bytes_linux": 862038,
+    "wasm_bytes_linux": 838154,
+    "wasm_sha256_linux": "73e55beaa5815a4043abb65fec4c7f21bb6c8be2ebe384b895c90c213bbfc1d1",
+    "wasm_bytes_windows": 837927,
+    "source_files": 957,
+    "dependency_notice_groups": 42,
+    "rust_notice_files": 12,
+    "actual_memory_max_bytes": 67108864
+  },
+  "scope": "Original64 native sampler draws retained; old32 truncation intentionally corrected. No election/source certification, no unreplayed-method risk guarantee, no BISECT adoption. Exact whole response parity, not cross-directory/platform binary or input-envelope byte identity.",
+  "archive_stability": {
+    "commit": "d86273335a732e4a72e902f9b5a7798f5b12e635",
+    "before": "9d39fd41a46c56ecc04bc6413b1c63d7a43ff3f0e8844cb4af7c016965fe9cc6",
+    "after": "9d39fd41a46c56ecc04bc6413b1c63d7a43ff3f0e8844cb4af7c016965fe9cc6",
+    "members": 958,
+    "all_timestamps": "1980-01-01T00:00:00",
+    "identical": true
+  }
+}
