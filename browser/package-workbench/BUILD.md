@@ -37,3 +37,32 @@ reconciliation meanings. Supported statistical replay and boundary labels stay
 native. Adapter admission limits are an additional browser resource policy, not
 RCOUNT package validity rules. Exact transcript strings are exported from Rust so
 JavaScript cannot round large computed integers during downloads.
+
+For a release, start with clean committed source and run the following after
+the prototype build:
+
+```sh
+cd browser/package-workbench
+npm ci --ignore-scripts
+npx playwright install chromium
+npm run test:pages
+cd ../..
+python browser/package-workbench/package-site.py
+python browser/package-workbench/verify-release.py
+python browser/package-workbench/verify-source.py --bindgen /path/to/wasm-bindgen
+cargo +1.95.0 test --workspace --locked
+```
+
+The final site is `target/package-release/RCOUNT/`. Packaging reads every tracked
+blob directly from Git into a timestamp-stable ZIP and publishes file SHA-256
+records, original dependency/runtime notices, source scope, model and build
+provenance. No source or user data is fetched for packaging. Cargo may fetch the
+locked native Git dependencies during the full native qualification.
+
+The source replay extracts that ZIP outside Git into a path containing spaces,
+verifies every file hash, rebuilds native tests and the adapter, compares native
+and executing-WASM reports, and runs the real worker UI suite. A distinct
+`rcount-replay` native test profile prevents reusing fixture paths compiled in a
+different source directory. Binary identity across source directories is not
+claimed. Original source evidence bytes remain exact; Windows checkout newline
+conversion of other Git text does not imply byte-identical input envelopes.

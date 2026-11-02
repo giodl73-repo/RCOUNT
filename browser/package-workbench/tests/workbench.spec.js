@@ -32,3 +32,8 @@ test('noncanonical source paths are refused by actual WASM without losing input'
   await ready(page);await page.locator('#bundle').setInputFiles({name:'path.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({files:[{path:'../manifest.json',bytes:[]}]}))});
   await page.locator('#run').click();await expect(page.locator('#result-status')).toContainText('Browser limit: Noncanonical package path');await expect(page.locator('#save-bundle')).toBeEnabled();await expect(page.locator('#save-verification')).toBeDisabled();
 });
+
+test('local folder selection preserves package-relative files',async({page})=>{
+  await ready(page);await page.locator('#folder').setInputFiles(path.resolve('../../docs/examples/rcount-golden-packages/summary-basic'));
+  await expect(page.locator('#package-status')).toContainText('Local package:');await page.locator('#run').click();await expect(page.locator('#result-status')).toContainText('Package consistency: pass');
+});
