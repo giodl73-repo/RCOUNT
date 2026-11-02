@@ -1,0 +1,25 @@
+{
+  "probe_sha256": "91634818a0ac8d983687514a0a847a1472b4540acb5512a4c26c8b4e3082cab4",
+  "cases": 42,
+  "mismatches": [
+    "bad-california-rla",
+    "bad-colorado-rla",
+    "bad-rla-discrepancy",
+    "bad-rla-margin",
+    "bad-rla-replay",
+    "bad-rla-statistical",
+    "bad-rla-stopping",
+    "california-rla",
+    "colorado-rla",
+    "rla-discrepancy",
+    "rla-margin",
+    "rla-replay",
+    "rla-statistical",
+    "rla-stopping"
+  ],
+  "first_mismatch": {
+    "equation_id": "rla_sampler_replay",
+    "error": "RLA audit rla:syn-2024-mayor:round-1 sample mismatch at draw 0: declared cvr:P-001:022, computed cvr:P-001:066",
+    "status": "fail"
+  }
+}

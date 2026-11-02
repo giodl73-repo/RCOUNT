@@ -14,6 +14,14 @@ Keep core/statistics algorithms, serialized contracts, errors, CLI commands,
 dependency pins, and original tests unchanged. Memory-reader IO errors may differ
 from operating-system filesystem error messages; do not claim byte parity there.
 
+Evidence-driven portability exception: the pre-portability adapter at `46fa9aec`
+demonstrates 14 native/WASM package-report differences caused by truncating the
+sampler hash to pointer width before modulus. Perform that single modulus in
+`u64` before converting the bounded index, preserving original 64-bit native
+draws. Original 32-bit behavior changes deliberately; see
+[`sampler-portability.md`](sampler-portability.md). No other core algorithm edits
+are admitted, and original test modules, schema and hash declarations stay fixed.
+
 The browser adapter must admit canonical relative paths and bounded inputs before
 computation. Inspect loop-driving numeric fields as well as byte/record limits.
 Run computation in a worker with cancellation, deadline, memory bounds, and

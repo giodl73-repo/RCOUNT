@@ -48,7 +48,7 @@
     },
     {
       "path": "crates/rcount-core/src/lib.rs",
-      "segment": "whole",
+      "segment": "sampler-width-portability",
       "sha256": "23c3ab0252dd48f7994bf268ce02a7d73711a5e5672d3f3407430bc4193e4c48"
     },
     {

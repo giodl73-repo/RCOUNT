@@ -16,6 +16,14 @@ for record in records:
         data = data.replace(b"\r\n", b"\n")
     if record["segment"] == "original-test-module":
         data = data[data.index(b"#[cfg(test)]\nmod tests {"):]
+    if record["segment"] == "sampler-width-portability":
+        # The only approved core source delta: perform modulus in u64 before
+        # converting the bounded index to usize. See sampler-portability.md.
+        corrected = b"let selected = (u64::from_le_bytes(bytes) % population.len() as u64) as usize;"
+        original = b"let selected = u64::from_le_bytes(bytes) as usize % population.len();"
+        if data.count(corrected) != 1:
+            raise SystemExit("Expected exactly one sampler portability correction")
+        data = data.replace(corrected, original)
     if hashlib.sha256(data).hexdigest() != record["sha256"]:
         failures.append(record["path"])
 if failures:
