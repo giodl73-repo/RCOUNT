@@ -97,8 +97,9 @@ Those cover privacy/source failures, supported replay and boundary methods,
 binary source downloads, exact transcript exports, malformed bundles, cancellation,
 worker deadlines/restart, unavailable WASM, keyboard and 390-pixel mobile layout.
 Desktop/mobile screenshots were visually reviewed; a file-picker overflow was
-fixed. The compiled prototype WASM is 837,927 bytes. It remains a dirty prototype
-build until clean-source artifact custody is qualified. Shared browser/native
+fixed. The compiled prototype WASM is 837,927 bytes. A clean committed prototype
+build passes the same parity gates; release artifact custody and a full extracted
+source rebuild of the adapter remain open. Shared browser/native
 dependency versions match; native manifest/lock and golden bytes stay preserved.
 
 See [SPEC.md](SPEC.md). Next: hosted adapter/browser gates, complete release
