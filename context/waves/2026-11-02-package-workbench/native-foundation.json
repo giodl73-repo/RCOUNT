@@ -14,12 +14,12 @@
     {
       "path": "crates/rcount-audit/Cargo.toml",
       "segment": "whole",
-      "sha256": "316a97569194d0074db756dcd6cfc9caceca1b74fcf186ce5dcb95e41c344856"
+      "sha256": "6f009ede68baaf1e10fbb92ba43a7d301ebb1a6f53f229fec7129defad8b19ec"
     },
     {
       "path": "crates/rcount-audit/examples/write_summary_basic_transcript.rs",
       "segment": "whole",
-      "sha256": "72ed1c04abe86bebee0215be77580946c6eaacd020d6ba079371c6df07c50b6a"
+      "sha256": "e1cc31a6467c2970174f7ebb6907931e596e24cf7786388628a62dc3c42dd576"
     },
     {
       "path": "crates/rcount-audit/src/lib.rs",
@@ -29,7 +29,7 @@
     {
       "path": "crates/rcount-cli/Cargo.toml",
       "segment": "whole",
-      "sha256": "cbd1a50d70ee5dece1af63fb8c5b70d2e895aaf53c14d3d1937c7d22d2061795"
+      "sha256": "63ac20c5f1940fa4a264b454f9d745957a503bbd5b118b282ce2a402fd9bb0c2"
     },
     {
       "path": "crates/rcount-cli/src/main.rs",
@@ -39,12 +39,12 @@
     {
       "path": "crates/rcount-cli/tests/verify_cli.rs",
       "segment": "whole",
-      "sha256": "45756f392640c70edf8d9780fbcb6a56ad1bbf88222262a30e2db272dbb36312"
+      "sha256": "6db2f0c8fffcdb19dfdef6712961513ed614a5216ccf81750f34be6840ca54ea"
     },
     {
       "path": "crates/rcount-core/Cargo.toml",
       "segment": "whole",
-      "sha256": "7c4dfaff9861386e5d1ac93c9feae9b9f74f0966bd29c881cd9158ad4acea95c"
+      "sha256": "35824ed7dc7128506f391ffe65eb0a5033bce992f62e46153b43965dfbd776da"
     },
     {
       "path": "crates/rcount-core/src/lib.rs",
@@ -54,172 +54,172 @@
     {
       "path": "crates/rcount-core/tests/pitfall_policy.rs",
       "segment": "whole",
-      "sha256": "572dca738fb4783e225ee73dc3beb590737c78c2fbb6677b0160d18434b45ef0"
+      "sha256": "02ec72cb1b6c953b1e6799ec1000008c3c42612197e836cf526e789d1879b03c"
     },
     {
       "path": "crates/rcount-district/Cargo.toml",
       "segment": "whole",
-      "sha256": "396a6ff1692710440aa683de2fc0a5e10a505bf65bea26bcf171a760bf618d44"
+      "sha256": "57d572061d4010af8cac35097b964b2841ebb6a855014943483674d270a61dee"
     },
     {
       "path": "crates/rcount-district/examples/district_aggregation_rplan.rs",
       "segment": "whole",
-      "sha256": "7c5553d2aeba89e947827109e129b8d50f24511dcb6c0ccd4441c382d9ae82f6"
+      "sha256": "8cfdbbe305d3a69bdb2d1cb291942bbc25c076d8695b1b85893c178a82fcc4da"
     },
     {
       "path": "crates/rcount-district/examples/multi_election_harness.rs",
       "segment": "whole",
-      "sha256": "8e4f15b8123e459789bafd9af20f8ed2c251a1f3dde0b713003b1d68134feafb"
+      "sha256": "eb52803306d3a548bb59037b7333bd2e0a1bc70ef7b9d438895ee670de6b803e"
     },
     {
       "path": "crates/rcount-district/examples/multi_election_negative_harnesses.rs",
       "segment": "whole",
-      "sha256": "3b88f4c8084cf28277b4b71f61f4f966a255b0ef7231071151d14a4129b2cdb1"
+      "sha256": "b62deec96558aa871f75415cf0a1823d86403a82fa3e4a49229e019391c28fa8"
     },
     {
       "path": "crates/rcount-district/src/lib.rs",
       "segment": "whole",
-      "sha256": "9cc7bbbb7bcba6625e475815463864aba0e4c8fd63c9280b9a8ec1868ac9672e"
+      "sha256": "e5e598e21499b487e2eb172ae205464edc5cbdcbc3c5684e2096554e86c37b39"
     },
     {
       "path": "crates/rcount-io/Cargo.toml",
       "segment": "whole",
-      "sha256": "d28aef734e8ac5ec910ef2e2d4c5602f4a811ee706c37faee38fcd3a1f915693"
+      "sha256": "b3c9a3dd4822c8580dcb344cc61cb97ef59671f40838a4d0293c0f015a922945"
     },
     {
       "path": "crates/rcount-io/examples/bad_california_rla_package.rs",
       "segment": "whole",
-      "sha256": "92566809d88378415dfe7867f52c40d3addef60c16dcfc17f4da3b265da46366"
+      "sha256": "f79e0da1f0ca145685695616acfbbe74f70c327e28246be94d62bd0452b79267"
     },
     {
       "path": "crates/rcount-io/examples/bad_colorado_rla_package.rs",
       "segment": "whole",
-      "sha256": "1f6903eba1b8704e81dd34aea75441e61538589dd04c0d6ba9d6331be940474a"
+      "sha256": "a29b10b7185a4cf843f4c0cd8e6722cfff4112a810118dc5505f8233bd3f5d9e"
     },
     {
       "path": "crates/rcount-io/examples/bad_cvr_summary_package.rs",
       "segment": "whole",
-      "sha256": "03aaf33ecdcd5a02c33cca26a5b81f34a87beb53a9199a22198d805e418dbfe4"
+      "sha256": "f0391fdce1723a8b405462fe45e5f510219704e590ab72f9cabadf2f82ccb166"
     },
     {
       "path": "crates/rcount-io/examples/bad_lineage_package.rs",
       "segment": "whole",
-      "sha256": "d12c14bf0bd92f55ebe30c2390f7faec24b8ca143113475c809991c4dd9e4f5c"
+      "sha256": "2b7f7780e290df8f6593fa446b3dc964206debf9294d432b5df5d573cc4134e7"
     },
     {
       "path": "crates/rcount-io/examples/bad_manual_audit_package.rs",
       "segment": "whole",
-      "sha256": "e00713c38c6c188f756f938769224c25948d8b248e389dbed80d852083d8979c"
+      "sha256": "d5e73da9f3c44d7f3c42a4c52e6898ce90cfedcbe00b50db75ca5af4edc7443e"
     },
     {
       "path": "crates/rcount-io/examples/bad_rla_discrepancy_package.rs",
       "segment": "whole",
-      "sha256": "aa7aad1c38813dd234799268cce191d7773c44a7ea9fc76d0f2f215e74448863"
+      "sha256": "ce10799a1801907ea99a5757431f0d289313d0d762136610e507719fbf65d054"
     },
     {
       "path": "crates/rcount-io/examples/bad_rla_margin_package.rs",
       "segment": "whole",
-      "sha256": "db4591e1674ebdfff48b61f87d8cfed3c149ebbbd7875ece864bdba1bc3ce21d"
+      "sha256": "042261eac8cdc12f16582103058ed1d13b1a56abda4416547de0f894caa1172b"
     },
     {
       "path": "crates/rcount-io/examples/bad_rla_replay_package.rs",
       "segment": "whole",
-      "sha256": "03bd2ec41903cd54983d12285aaba48a9f739d87105986f1c1599dbdfb12831e"
+      "sha256": "c123b1fe07180bc69e7771a381cd2819f391d8691d3bbe2a32597ec8455f51d2"
     },
     {
       "path": "crates/rcount-io/examples/bad_rla_statistical_package.rs",
       "segment": "whole",
-      "sha256": "18d1a22fbca860a801b8b5001f886ee573b9c6e8fbbdefb38508f2a755dea740"
+      "sha256": "55d4131b241d15c3c0b237bbb5a8c3ab5a619aa6e86315d5fe4c4fc79936eb89"
     },
     {
       "path": "crates/rcount-io/examples/bad_rla_stopping_package.rs",
       "segment": "whole",
-      "sha256": "5d2514e4694f563ab5ccfc73664e6f25e89e41ea8840e6bbb416e499431b0be0"
+      "sha256": "d47024add92c18c8f0a07ff63faab8974e0225c736fbd89f48981f9b2170e500"
     },
     {
       "path": "crates/rcount-io/examples/bad_selection_sum_package.rs",
       "segment": "whole",
-      "sha256": "a575778e391f730e8d328443383c97c79724259f4f0e29302418d3a2e6f53153"
+      "sha256": "7faf47efe353ed09480d998641807938ca8cc99703fba85499e7cec8c9ccd5c0"
     },
     {
       "path": "crates/rcount-io/examples/california_rla_package.rs",
       "segment": "whole",
-      "sha256": "0e8cf7534d801701abe2c5d23551bf10563e1a4969c4e5c9e2b3a498cba91c84"
+      "sha256": "258408dd69b2fd620442c1e609a726e13062aa50418ac1bb8522392d688ff1f7"
     },
     {
       "path": "crates/rcount-io/examples/canvass_correction_package.rs",
       "segment": "whole",
-      "sha256": "6b3053db95665944d6f2ccf84c6e61a303206436e6f76d4c1137c71c51aeed46"
+      "sha256": "11ef93b9876e3be9d5c3af5beb0708178edd568bbe5e65e84246afbbaaccf047"
     },
     {
       "path": "crates/rcount-io/examples/choice_bearing_proof_package.rs",
       "segment": "whole",
-      "sha256": "b6c67a4ba918f3f8825b9c61f439b5c8ba743a8671aa76751fb86a8914568a06"
+      "sha256": "4d9933e8af2ac698b7372e9d9aaebd25f639f47175899455ca0a7cc391eebdf1"
     },
     {
       "path": "crates/rcount-io/examples/colorado_rla_package.rs",
       "segment": "whole",
-      "sha256": "9dc72e4c68e59eaa09e080bb396a0f7d60eb6a93737a074524a411371ae365e0"
+      "sha256": "d2492a540c5ff06d1b0f2d17fdc60daeed61464bbb91a5897d00ee1a9704b573"
     },
     {
       "path": "crates/rcount-io/examples/cvr_summary_package.rs",
       "segment": "whole",
-      "sha256": "b7fbfbaef59bb9d49332d36e5fab8ce65727586c3aa5a760dddfab73ac3f0198"
+      "sha256": "f0c762b430dcf8b79d3b08fee8ba97f592fe1307e97bf3ba9ccc368258b7d5ce"
     },
     {
       "path": "crates/rcount-io/examples/mail_batch_added_package.rs",
       "segment": "whole",
-      "sha256": "af10028ececae78337f84aa024089f9b45d72faf0b6e15efc8ac3d67e523843d"
+      "sha256": "759d8e111f710cf9f81753760e8e3883a6abd0d0c9861947b0a3bcab6a8b3bd4"
     },
     {
       "path": "crates/rcount-io/examples/manual_audit_package.rs",
       "segment": "whole",
-      "sha256": "cb634cf17f0379cb8b891b62c5d4d700c836aa32802842fd896ad9274a10adbb"
+      "sha256": "d04a1bf0169658c89cc3cffcf30ab5945eb7461a94087243ff74e025f4c4efb9"
     },
     {
       "path": "crates/rcount-io/examples/missing_batch_package.rs",
       "segment": "whole",
-      "sha256": "78130f4db1d4ce5714ef9f655ce854d60e7a758125cdd61d566136c1b5a92181"
+      "sha256": "f7b157df936bd531fc469fd5af8c8e32bed33b58b4ed8eb6419c85ab66a8c2af"
     },
     {
       "path": "crates/rcount-io/examples/precinct_split_lineage_package.rs",
       "segment": "whole",
-      "sha256": "0df109f6bbb8d1cbe43c0d81233fe16fedac5370c9474c086be4b4240a49e3c9"
+      "sha256": "7175d717dde56964bee9e6941db0f9a93b6b9c4cd0d99e80eeb6aeef87bcd734"
     },
     {
       "path": "crates/rcount-io/examples/privacy_inclusion_sketch_package.rs",
       "segment": "whole",
-      "sha256": "63c831b2899a3972851240f48f5d5671a6bcc41f7fa310e0647b53b4f4e5487d"
+      "sha256": "efe24680e0d47b1b1064cb32ef7e50852b57fa26d94d3294127fdf9db9fe5dc5"
     },
     {
       "path": "crates/rcount-io/examples/rla_discrepancy_package.rs",
       "segment": "whole",
-      "sha256": "ad875d98cb1c5258260c4a69708f3ec5e694cfe1aee48ef56439ae45749479b1"
+      "sha256": "b87b0c08f4da9dad0f09b4d2910b5c61fb4e8c653cbf194f22ede3566c502661"
     },
     {
       "path": "crates/rcount-io/examples/rla_margin_package.rs",
       "segment": "whole",
-      "sha256": "9e08e000293ed27fc6e8c66ad8311ac1cf601a5b61c7cfbc0223880bfedbfc1a"
+      "sha256": "a708fcfeb9ec23b7b26149cb8357cfa29a7360e4a407b56072ea777de1f76fef"
     },
     {
       "path": "crates/rcount-io/examples/rla_replay_package.rs",
       "segment": "whole",
-      "sha256": "e695476b6041c73417a89e10cf56aabb895fd1a1aec210f6156af93e90fa2c25"
+      "sha256": "bb8872d144b9efc11baaf7c6e88f230ea150f7b049f0bf820d2209e76b408729"
     },
     {
       "path": "crates/rcount-io/examples/rla_statistical_package.rs",
       "segment": "whole",
-      "sha256": "bb3be9bb86c25288c2ec58f1d23f610d15fca706a2a92428731048414ac66e58"
+      "sha256": "d3a59c3d4801bea720e25c8fe790940b1f2da32770a1aefb6029ae8a087bb9b4"
     },
     {
       "path": "crates/rcount-io/examples/rla_stopping_package.rs",
       "segment": "whole",
-      "sha256": "adf1e14332cc6c73fec8c9af5639e11e032fc779e1ec309c2157d1163f8b2978"
+      "sha256": "e380f06d41c69f0de10351ad220ee994138503573880abe45b67e5156a94b380"
     },
     {
       "path": "crates/rcount-io/examples/summary_basic_package.rs",
       "segment": "whole",
-      "sha256": "932ec58fa3dafb76730597159d822122d2f808d97ce36458f1e3a8484e8b7ba3"
+      "sha256": "b2378d2120b7ee8e40826debd7b80edd67eafc67eda5f3ddb2c04361e82b46fb"
     },
     {
       "path": "crates/rcount-io/src/lib.rs",
@@ -229,17 +229,17 @@
     {
       "path": "crates/rcount-rhist/Cargo.toml",
       "segment": "whole",
-      "sha256": "5120350a82a92f0e984aece87f4a43248d6e765a6b98e4672ea35687fe5c4165"
+      "sha256": "654b38562a4651ee6257b1962d6eb7dda29b96c5b4ce053f74f52b006db367a1"
     },
     {
       "path": "crates/rcount-rhist/src/lib.rs",
       "segment": "whole",
-      "sha256": "6fba828f2837029a5dd803819e879c0283ce791d02c3ad95dd531c5c5fbc548b"
+      "sha256": "103846396bbe19b99d4a0848c1d117d5a572a0d9ebbf23316f5388c6dcfc6a08"
     },
     {
       "path": "crates/rcount-stats/Cargo.toml",
       "segment": "whole",
-      "sha256": "d9e33c1b5fd827d0ecaa8490c7ffe30f90b1b5ab8718dce5a92900706949763f"
+      "sha256": "7016612473bc6365a6caf075a7a620e9b83563456d83cc546f01b0b2d6d54233"
     },
     {
       "path": "crates/rcount-stats/src/lib.rs",
