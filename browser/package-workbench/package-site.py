@@ -40,7 +40,8 @@ with zipfile.ZipFile(S/'source.zip','w',compression=zipfile.ZIP_DEFLATED,compres
         member=zipfile.ZipInfo('RCOUNT-source/'+path,date_time=(1980,1,1,0,0,0));member.compress_type=zipfile.ZIP_DEFLATED;member.external_attr=int(mode,8)<<16;archive.writestr(member,data)
         source.append({'path':path,'mode':mode,'bytes':len(data),'sha256':sha(data)})
     assert offset==len(batch)
-    archive.writestr('RCOUNT-source/.source-record.json',json.dumps({'commit':head,'files':source},indent=2)+'\n')
+    member=zipfile.ZipInfo('RCOUNT-source/.source-record.json',date_time=(1980,1,1,0,0,0));member.compress_type=zipfile.ZIP_DEFLATED;member.external_attr=0o100644<<16
+    archive.writestr(member,json.dumps({'commit':head,'files':source},indent=2)+'\n')
 write(S/'source-files.json',source)
 for name,path in [('LICENSE','LICENSE'),('BUILD.md','browser/package-workbench/BUILD.md'),('MODEL.md','browser/package-workbench/MODEL.md'),('SOURCE-SCOPE.md','browser/package-workbench/SOURCE-SCOPE.md')]:
     (S/name).write_bytes(run('git','show',head+':'+path))
