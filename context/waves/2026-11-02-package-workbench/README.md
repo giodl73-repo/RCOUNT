@@ -30,6 +30,16 @@ Environment: Windows, Rust/Cargo 1.95.0, locked original workspace dependencies.
 - `python scripts/check-native-foundation.py`: checks unchanged native
   algorithms, CLI source, root manifest/lock, examples and original IO/audit tests
   against committed SHA-256 records. Raw source evidence is not newline-normalized.
+- Extracted committed source outside Git into a path containing a space: all
+  278 tests, 84 original CLI controls and 811 protected foundation entries pass.
+  The rebuild used a distinct `rcount-replay` Cargo profile in the shared target
+  cache so fixture paths could not reuse the worktree's compiled test binaries.
+- Hosted Windows qualification at candidate
+  `003526bde2a6fc54ebcf33aa2308a630a871074b`,
+  [run 41514482949](https://github.com/giodl73-repo/RCOUNT/actions/runs/41514482949):
+  formatting, native workspace tests, CLI smoke, foundation and original CLI
+  control steps pass. This qualifies the reader foundation, not the open browser
+  release gates.
 
 Strict Clippy is an existing gap rather than this repo's documented release gate.
 The original all-targets `-D warnings` invocation fails on boolean assertions in

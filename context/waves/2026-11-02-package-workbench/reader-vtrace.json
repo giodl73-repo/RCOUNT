@@ -1,0 +1,32 @@
+{
+  "scope": "reader foundation only; no Pages release or BISECT snapshot admission",
+  "source_baseline": "3849b249b6d4f3016d387faef936d82899527141",
+  "qualified_candidate": "003526bde2a6fc54ebcf33aa2308a630a871074b",
+  "claims": [
+    {
+      "contract": "Existing native commands preserve their results",
+      "evidence": "scripts/check-original-cli.py",
+      "observations": "84 frozen stdout/stderr/exit controls match locally, in extracted source and hosted Windows CI"
+    },
+    {
+      "contract": "Complete golden packages preserve full verification transcripts across storage backends",
+      "evidence": "crates/rcount-audit/tests/package_reader.rs::all_golden_packages_have_identical_filesystem_and_memory_transcripts",
+      "observations": "42 package directories, including deliberate failures"
+    },
+    {
+      "contract": "Raw source hashing, parser line behavior and missing-file gates stay native",
+      "evidence": "crates/rcount-audit/tests/package_reader.rs",
+      "observations": "source-byte corruption, missing source/required/optional files, CRLF/blank lines, malformed JSON and invalid UTF-8"
+    },
+    {
+      "contract": "Native algorithms, dependency pins, fixtures and original tests remain preserved",
+      "evidence": "scripts/check-native-foundation.py",
+      "observations": "811 protected entries match and 271 original tests pass with seven new tests"
+    },
+    {
+      "contract": "The reader can compile for WebAssembly without changing native algorithms",
+      "evidence": "cargo +1.95.0 check -p rcount-audit --target wasm32-unknown-unknown --locked",
+      "observations": "passes; executing-WASM and browser qualification remain open"
+    }
+  ]
+}
