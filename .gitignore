@@ -5,3 +5,4 @@ browser/package-workbench/.cache/
 browser/package-workbench/node_modules/
 browser/package-workbench/test-results/
 browser/package-workbench/playwright-report/
+browser/package-workbench/__pycache__/

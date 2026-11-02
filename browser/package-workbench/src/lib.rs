@@ -243,13 +243,24 @@ fn report(input: &str) -> Result<Value, Value> {
         }
     }
     let verification = verify_package_with_reader(&files, root);
+    let verification_json =
+        serde_json::to_string_pretty(&verification).map_err(|error| diagnostic("error", error))?;
     let replay = match read_package_with_reader(&files, root) {
         Ok((_, package)) => {
-            json!({"kind":"loaded","transcripts":package.audit_algorithm_runs.iter().map(replay_audit_algorithm_statistics).collect::<Vec<_>>() })
+            let transcripts = package
+                .audit_algorithm_runs
+                .iter()
+                .map(replay_audit_algorithm_statistics)
+                .collect::<Vec<_>>();
+            let transcripts_json = serde_json::to_string_pretty(&transcripts)
+                .map_err(|error| diagnostic("error", error))?;
+            json!({"kind":"loaded","transcripts":transcripts,"transcripts_json":transcripts_json})
         }
         Err(error) => json!({"kind":"unavailable","message":error.to_string()}),
     };
-    Ok(json!({"kind":"report","scope":SCOPE,"verification":verification,"replay":replay}))
+    Ok(
+        json!({"kind":"report","scope":SCOPE,"verification":verification,"verification_json":verification_json,"replay":replay}),
+    )
 }
 
 #[wasm_bindgen]

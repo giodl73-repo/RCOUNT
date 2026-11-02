@@ -1,7 +1,8 @@
 # Package workbench: reader foundation
 
-Status: reader foundation qualified locally; browser adapter, UI, hosted
-qualification and publication remain open. This is not a Pages release.
+Status: reader foundation and browser prototype qualified locally; hosted browser
+qualification, release packaging and publication remain open. This is not a
+Pages release.
 
 The additive `PackageReader` API lets the existing package parser and source
 verifier consume original bytes from another read-only backend. Existing
@@ -81,8 +82,27 @@ differences and run BISECT's affected tests/VTRACE before updating that snapshot
 
 ## Remaining release gates
 
-See [SPEC.md](SPEC.md). Next: bounded native/WASM adapter using raw package files,
-complete report parity, worker/browser task and recovery checks, independent
-source/WASM/provenance/license downloads, clean-source rebuild, exact hosted
-artifact qualification and default-branch live verification. TRACKER's canonical
+The local prototype now runs the existing complete verifier and audit replay in
+a worker. It opens local folders and byte-preserving bundles, shows every native
+verification check and method boundary, and downloads original bytes and exact
+Rust transcript strings. Admission bounds are distinct from native validity.
+See [`sampler-portability.md`](sampler-portability.md) for the single measured
+core correction required to preserve existing 64-bit draws on WASM32.
+
+Local prototype checks: 279 root native tests (271 original, seven reader, one
+new frozen sampler vector), twelve adapter admission tests, all 84 frozen CLI
+controls, 57 complete native/WASM response strings (42 original packages and
+15 generated audit examples), and sixteen actual-browser task/recovery checks.
+Those cover privacy/source failures, supported replay and boundary methods,
+binary source downloads, exact transcript exports, malformed bundles, cancellation,
+worker deadlines/restart, unavailable WASM, keyboard and 390-pixel mobile layout.
+Desktop/mobile screenshots were visually reviewed; a file-picker overflow was
+fixed. The compiled prototype WASM is 837,927 bytes. It remains a dirty prototype
+build until clean-source artifact custody is qualified. Shared browser/native
+dependency versions match; native manifest/lock and golden bytes stay preserved.
+
+See [SPEC.md](SPEC.md). Next: hosted adapter/browser gates, complete release
+packaging with scoped dependency notices, independent source/WASM/provenance/license
+downloads, clean-source rebuild, exact hosted artifact qualification and
+default-branch live verification. TRACKER's canonical
 RCOUNT gitlink remains at the original preserved source until those gates pass.

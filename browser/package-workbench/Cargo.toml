@@ -14,6 +14,10 @@ crate-type = ["cdylib", "rlib"]
 name = "rcount-workbench-control"
 path = "src/main.rs"
 
+[[bin]]
+name = "rcount-workbench-examples"
+path = "src/examples.rs"
+
 [dependencies]
 rcount-core = { path = "../../crates/rcount-core" }
 rcount-io = { path = "../../crates/rcount-io" }

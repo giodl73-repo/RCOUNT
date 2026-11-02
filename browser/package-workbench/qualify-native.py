@@ -3,22 +3,27 @@ import argparse
 import json
 from pathlib import Path
 import subprocess
-from controls import golden_requests
+from controls import golden_requests, package_request
 
 p = argparse.ArgumentParser()
 p.add_argument("--binary", required=True, type=Path)
 p.add_argument("--original", required=True, type=Path)
 p.add_argument("--output", required=True, type=Path)
+p.add_argument("--examples", type=Path)
 a = p.parse_args()
 root = Path(__file__).resolve().parents[2]
 cases = []
-for name, request in golden_requests(root):
+requests = [(name, root / "docs/examples/rcount-golden-packages" / name, request)
+            for name, request in golden_requests(root)]
+if a.examples:
+    requests.extend(("synthetic/" + folder.name, folder, package_request(folder))
+                    for folder in sorted(a.examples.iterdir()) if folder.is_dir())
+for name, directory, request in requests:
     raw = json.dumps(request, separators=(",", ":"))
     response = subprocess.check_output([str(a.binary.resolve())], input=raw.encode("utf-8"), timeout=30)
     report = json.loads(response)
     if report["kind"] != "report":
         raise SystemExit(f"Golden package was not admitted: {name}: {report}")
-    directory = root / "docs/examples/rcount-golden-packages" / name
     for command, actual in [
         ("verify", report["verification"]),
         ("replay-audit-algorithms", report["replay"].get("transcripts")),
